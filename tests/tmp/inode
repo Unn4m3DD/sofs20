@@ -1,0 +1,96 @@
+Inode #0
+type = directory, permissions = rwxr-xr-x, lnkcnt = 2, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Mon Oct 19 21:29:16 2020, mtime = Mon Oct 19 21:29:16 2020, ctime = Mon Oct 19 21:29:16 2020
+ d[*] = {0 0 2099308538 32643},  i1[*] = {0 0 155648},  i2[*] = {0}
+----------------
+Inode #1
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #2
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 1519616
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #3
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 1852560
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #4
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #5
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #6
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #7
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #8
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #9
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #10
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #11
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 6
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #12
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 1670560
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #13
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #14
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 155648
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #15
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 308231
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
