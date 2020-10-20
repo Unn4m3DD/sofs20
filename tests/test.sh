@@ -13,5 +13,7 @@ function compile() {
 }
 
 compile
-source mksofs/mksofs.sh
+rm -f diff.log
+source mksofs/fill_inode_table.sh
+source mksofs/fill_superblock.sh
 rm -rf bin
