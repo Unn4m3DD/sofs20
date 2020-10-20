@@ -36,8 +36,6 @@ void grpFillInodeTable(uint32_t itotal, bool date) {
            BlockNullReference, N_DIRECT * 4 + N_INDIRECT * 4 + N_DOUBLE_INDIRECT * 4);
   }
 
-  printf("->%ld<-\n", (itotal + IPB - 1) / IPB);
-
   for (uint block = 0; block < (itotal + IPB - 1) / IPB; block++)
     soWriteRawBlock(block + 1, &inodes[block * IPB]);
   //soWriteRawBlock(1, inodes);

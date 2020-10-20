@@ -1,21 +1,58 @@
-#include "grp_mksofs.h"
+#include <inttypes.h>
+#include <string.h>
+#include <superblock.h>
 
-#include "rawdisk.h"
+#include "bin_mksofs.h"
 #include "core.h"
 #include "devtools.h"
-#include "bin_mksofs.h"
+#include "grp_mksofs.h"
+#include "rawdisk.h"
 
-#include <string.h>
-#include <inttypes.h>
+namespace sofs20 {
+void grpFillSuperblock(const char* name, uint32_t ntotal, uint32_t itotal, uint32_t dbtotal) {
+  soProbe(602, "%s(%s, %u, %u, %u)\n", __FUNCTION__, name, ntotal, itotal, dbtotal);
+  /* replace the following line with your code */
+  //binFillSuperblock(name, ntotal, itotal, dbtotal);
+  //return;
+  SOSuperblock sb;
+  memset(&sb, 0, sizeof(SOSuperblock));
+  sb.magic = 0xFFFF;
 
-namespace sofs20
-{
-    void grpFillSuperblock(const char *name, uint32_t ntotal, uint32_t itotal, uint32_t dbtotal)
-    {
-        soProbe(602, "%s(%s, %u, %u, %u)\n", __FUNCTION__, name, ntotal, itotal, dbtotal);
+  sb.version = VERSION_NUMBER;
 
-        /* replace the following line with your code */
-        binFillSuperblock(name, ntotal, itotal, dbtotal);
-    }
-};
+  sb.mntstat = 1;
 
+  strcpy(sb.name, name);
+
+  sb.ntotal = ntotal;
+
+  sb.itotal = itotal;
+
+  sb.ifree = itotal - 1;
+
+  sb.iidx = 0;
+  
+  sb.ibitmap[0] = 1;
+
+  sb.dbp_start = 1 + (itotal + IPB - 1) / IPB;
+
+  sb.dbtotal = dbtotal;
+
+  sb.dbfree = dbtotal - 1;
+
+  sb.rt_start = sb.dbp_start + sb.dbtotal;
+
+  sb.rt_size = sb.ntotal - sb.rt_start;
+
+  sb.reftable.blk_idx = 0;
+  sb.reftable.ref_idx = 0;
+  sb.reftable.count = sb.dbfree - REF_CACHE_SIZE;
+
+  sb.retrieval_cache.idx = 0;
+  for (int i = 0; i < REF_CACHE_SIZE; i++)
+    sb.retrieval_cache.ref[i] = i + 1;
+  sb.insertion_cache.idx = 0;
+  memset(sb.insertion_cache.ref, 0xFF, REF_CACHE_SIZE * 4);  // 0xFF - BlockNullReference
+  soWriteRawBlock(0, &sb);
+}
+};  // namespace sofs20
