@@ -12,13 +12,30 @@ void grpComputeStructure(uint32_t ntotal, uint32_t& itotal, uint32_t& dbtotal) {
   soProbe(601, "%s(%u, %u, ...)\n", __FUNCTION__, ntotal, itotal);
   /* replace the following line with your code */
   //binComputeStructure(ntotal, itotal, dbtotal);
-  if (itotal % IPB != 0 ||
-      itotal % IPB != 32 ||
-      itotal > (ntotal + 7) / 8 ||
-      itotal < IPB ||
-      itotal == 0)
+  //return;
+  itotal = ((itotal + IPB - 1)/IPB) * IPB;
+  if(itotal > (ntotal + 7)/8) {
+    itotal = (ntotal + 7)/8;
+  }
+  if(itotal < IPB) {
+    itotal = IPB;
+  }
+  /*if(itotal == 0) {
+    itotal = ntotal/16;
+  }*/
+  
+  // (dbtotal - REF_CACHE_SIZE * 8) / RPB = ntotal - 1 - itotal / IPB - dbtotal;
+  // (dbtotal - REF_CACHE_SIZE * 8) / RPB + dbtotal = ntotal - 1 - itotal / IPB;
+  // (dbtotal - REF_CACHE_SIZE * 8) + RPB * dbtotal/ RPB = ntotal - 1 - itotal / IPB;
+  // (REF_CACHE_SIZE * 8 + RPB * dbtotal * (RPB + 1))/ RPB = ntotal - 1 - itotal / IPB;
+  // REF_CACHE_SIZE * 8 + RPB * dbtotal * (RPB + 1) = RPB * (ntotal - 1 - itotal / IPB);
+  // RPB * dbtotal * (RPB + 1)= RPB * (ntotal - 1 - itotal / IPB) - REF_CACHE_SIZE * 8;
+  // dbtotal * (RPB + 1)= ntotal - 1 - itotal / IPB - (REF_CACHE_SIZE * 8) / RPB;
+  dbtotal = (ntotal - 1 - itotal / IPB - (REF_CACHE_SIZE * 8) / RPB) / (RPB + 1);
+  
 
-    itotal = ntotal / 16;
-  uint32_t DBandRT = ntotal - itotal * IPB;
+
+
+  
 }
-};  // namespace sofs20
+}  // namespace sofs20
