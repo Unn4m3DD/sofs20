@@ -1,24 +1,7 @@
-mkdir -p tmp
-bin/createDisk tmp/original_disk 1000 2>/dev/null
-bin/createDisk tmp/disk 1000 2>/dev/null
-bin/mksofs -0 -b tmp/original_disk >/dev/null
-bin/mksofs -p 606-606 -0 -b -r 606-606 tmp/disk | grep 606
-bin/showblock -d 5 tmp/original_disk >>tmp/original_rootdir
-bin/showblock -d 5 tmp/disk >>tmp/rootdir
-diff tmp/original_rootdir tmp/rootdir -d >>diff.log
-bin/showblock -x 5 tmp/original_disk >>tmp/original_rootdir_hex
-bin/showblock -x 5 tmp/disk >>tmp/rootdir_hex
-diff tmp/original_rootdir_hex tmp/rootdir_hex -d >>diff.log
-
-rm -rf tmp/*
-bin/createDisk tmp/original_disk 2000 2>/dev/null
-bin/createDisk tmp/disk 2000 2>/dev/null
-bin/mksofs -0 -b tmp/original_disk >/dev/null
-bin/mksofs -p 606-606 -0 -b -r 606-606 tmp/disk | grep 606
-bin/showblock -d 9 tmp/original_disk >>tmp/original_rootdir
-bin/showblock -d 9 tmp/disk >>tmp/rootdir
-diff tmp/original_rootdir tmp/rootdir -d >>diff.log
-bin/showblock -x 9 tmp/original_disk >>tmp/original_rootdir_hex
-bin/showblock -x 9 tmp/disk >>tmp/rootdir_hex
-diff tmp/original_rootdir_hex tmp/rootdir_hex -d >>diff.log
-rm -rf tmp
+# $1 = function_number
+# $2 = disk_size
+# $3 = block_range_start
+# $4 = block_range_end
+source ./mksofs/test_function.sh
+test_function 606 1000 5 5 -d
+test_function 606 2000 9 9 -d

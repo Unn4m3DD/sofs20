@@ -8,3 +8,6 @@
 !scripts
 !src
 !tests
+!doc.sh
+!README.md
+!.sofs20.pdf

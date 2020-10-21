@@ -13,8 +13,7 @@ function compile() {
 }
 
 compile
-rm -f diff.log
-rm -f bin_diff.log 
+rm -f *.log
 source mksofs/fill_inode_table.sh
 source mksofs/fill_superblock.sh
 source mksofs/fill_root_dir.sh
