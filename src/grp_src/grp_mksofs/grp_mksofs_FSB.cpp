@@ -20,7 +20,7 @@ void grpFillSuperblock(const char* name, uint32_t ntotal, uint32_t itotal, uint3
 
   sb.version = VERSION_NUMBER;
 
-  sb.mntstat = 1;
+  sb.mntstat = 0;
 
   strcpy(sb.name, name);
 

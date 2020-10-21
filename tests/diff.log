@@ -1,8 +1,0 @@
-2c2
-< type = directory, permissions = rwxrwxr-x, lnkcnt = 2, owner = 1000, group = 998
----
-> type = directory, permissions = rwxr-xr-x, lnkcnt = 2, owner = 0, group = 0
-2c2
-< type = directory, permissions = rwxrwxr-x, lnkcnt = 2, owner = 1000, group = 998
----
-> type = directory, permissions = rwxr-xr-x, lnkcnt = 2, owner = 0, group = 0
