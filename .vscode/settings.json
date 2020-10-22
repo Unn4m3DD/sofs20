@@ -1,0 +1,21 @@
+{
+  "cmake.sourceDirectory": "${workspaceFolder}/src",
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "files.exclude": {
+    "build/": true,
+    "include/": true,
+    "lib/": true,
+    "src/[^(grp)]*": true,
+    "bin": true,
+    ".gitignore": true,
+    ".vscode": true,
+    "doc": true
+  },
+  "files.associations": {
+    "*.html": "html",
+    "*.pl": "prolog",
+    "*.bdl": "bdl",
+    "*.shader": "glsl",
+    "random": "cpp"
+  }
+}
