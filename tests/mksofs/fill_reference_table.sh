@@ -11,3 +11,7 @@ test_function 605 2000 988 992 -x
 test_function 605 1000 996 999 -r
 test_function 605 2000 992 999 -r
 test_function 605 10000 9999 9999 -r
+
+test_function 605 4 0 3 -x -z
+test_function 605 20 0 19 -x -z
+test_function 605 1000 0 999 -x -z

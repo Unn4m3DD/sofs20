@@ -15,3 +15,7 @@ test_function 601 1000 1 4 -i
 test_function 601 2000 1 8 -i
 test_function 601 1000 996 999 -r
 test_function 601 2000 992 999 -r
+
+test_function 601 4 0 3 -x -z
+test_function 601 20 0 19 -x -z
+test_function 601 1000 0 999 -x -z
