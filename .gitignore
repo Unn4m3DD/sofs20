@@ -7,7 +7,10 @@
 !lib
 !scripts
 !src
+<<<<<<< HEAD
 !tests
 !doc.sh
 !README.md
 !.sofs20.pdf
+=======
+>>>>>>> f4c221ac197bf7a176e9778cf7226a7f2e0c80d9
