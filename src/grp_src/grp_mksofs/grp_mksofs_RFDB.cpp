@@ -10,7 +10,7 @@
 namespace sofs20 {
 void grpResetFreeDataBlocks(uint32_t ntotal, uint32_t itotal, uint32_t dbtotal) {
   soProbe(607, "%s(%u, %u, %u)\n", __FUNCTION__, ntotal, itotal, dbtotal);
-  int first_data_block = 1 + (itotal + IPB - 1) / IPB + 1;  //super, inode, root
+  int first_data_block = 1 + itotal / IPB + 1;  //super, inode, root
   int8_t empty_block[BlockSize];
   memset(empty_block, 0, BlockSize);
   for (uint32_t i = 0; i < dbtotal; i++) {

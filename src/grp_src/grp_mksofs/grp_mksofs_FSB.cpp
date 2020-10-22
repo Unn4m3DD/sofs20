@@ -31,7 +31,7 @@ void grpFillSuperblock(const char* name, uint32_t ntotal, uint32_t itotal, uint3
   sb.ifree = itotal - 1;
 
   sb.iidx = 0;
-  
+
   sb.ibitmap[0] = 1;
 
   sb.dbp_start = 1 + (itotal + IPB - 1) / IPB;
@@ -50,9 +50,13 @@ void grpFillSuperblock(const char* name, uint32_t ntotal, uint32_t itotal, uint3
 
   sb.retrieval_cache.idx = 0;
   for (int i = 0; i < REF_CACHE_SIZE; i++)
-    sb.retrieval_cache.ref[i] = i + 1;
+    if (i < dbtotal)
+      sb.retrieval_cache.ref[i] = i + 1;
+    else
+      sb.retrieval_cache.ref[i] = BlockNullReference;
+
   sb.insertion_cache.idx = 0;
-  memset(sb.insertion_cache.ref, 0xFF, REF_CACHE_SIZE * 4);  // 0xFF - BlockNullReference
+  memset(sb.insertion_cache.ref, BlockNullReference, REF_CACHE_SIZE * 4);  
   soWriteRawBlock(0, &sb);
 }
 };  // namespace sofs20
