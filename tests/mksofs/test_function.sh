@@ -3,13 +3,20 @@
 # $3 = block_range_start
 # $4 = block_range_end
 # $5 = block_type
+# $6 = mksofs_flags
 test_function() {
   mkdir -p tmp
   touch bin_detect_tmp.log
   bin/createDisk tmp/original_disk $2 2>/dev/null
   cp tmp/original_disk tmp/disk
-  bin/mksofs -0 -b tmp/original_disk >/dev/null
-  bin/mksofs -p $1-$1 -0 -b -r $1-$1 tmp/disk | grep "$1" | grep "31m" >/dev/null
+
+  if [ "$6" != "" ]; then
+    bin/mksofs "$6" -0 -b tmp/original_disk >/dev/null
+    bin/mksofs "$6" -p $1-$1 -0 -b -r $1-$1 tmp/disk | grep "$1" | grep "31m" >/dev/null
+  else
+    bin/mksofs -0 -b tmp/original_disk >/dev/null
+    bin/mksofs -p $1-$1 -0 -b -r $1-$1 tmp/disk | grep "$1" | grep "31m" >/dev/null
+  fi
   if [ $? == 0 ]; then
     echo "binary form of $1 beeing called" >>bin_detect_tmp.log
   fi
