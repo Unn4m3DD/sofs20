@@ -46,17 +46,24 @@ void grpFillSuperblock(const char* name, uint32_t ntotal, uint32_t itotal, uint3
 
   sb.reftable.blk_idx = 0;
   sb.reftable.ref_idx = 0;
-  sb.reftable.count = sb.dbfree - REF_CACHE_SIZE;
+  sb.reftable.count = sb.dbfree > REF_CACHE_SIZE ? sb.dbfree - REF_CACHE_SIZE : 0;
 
-  sb.retrieval_cache.idx = 0;
-  for (int i = 0; i < REF_CACHE_SIZE; i++)
-    if (i < dbtotal)
-      sb.retrieval_cache.ref[i] = i + 1;
+  sb.retrieval_cache.idx = REF_CACHE_SIZE > dbtotal - 1 ? REF_CACHE_SIZE - dbtotal + 1 : 0;
+  uint current = 1;
+  for (uint i = 0; i < REF_CACHE_SIZE; i++)
+    if (i > REF_CACHE_SIZE - dbtotal || dbtotal > REF_CACHE_SIZE)
+      sb.retrieval_cache.ref[i] = current++;
     else
       sb.retrieval_cache.ref[i] = BlockNullReference;
 
+  //for (uint i = 0; i < dbtotal; i++)
+  //  if (i < dbtotal)
+  //    sb.insertion_cache.ref[REF_CACHE_SIZE - i] = -i + dbtotal;
+  //  else
+  //    sb.retrieval_cache.ref[i] = BlockNullReference;
+
   sb.insertion_cache.idx = 0;
-  memset(sb.insertion_cache.ref, BlockNullReference, REF_CACHE_SIZE * 4);  
+  memset(sb.insertion_cache.ref, BlockNullReference, REF_CACHE_SIZE * 4);
   soWriteRawBlock(0, &sb);
 }
 };  // namespace sofs20
