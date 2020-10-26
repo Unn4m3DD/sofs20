@@ -33,7 +33,13 @@ fi
 if [[ $1 == "" || $1 == "RFDB" ]]; then
   source mksofs/reset_free_data_blocks.sh
 fi
+
+if [[ $1 == "" || $1 == "alloc_inode" ]]; then
+  source ilayer/alloc_inode.sh
+fi
+
 errors="$(cat diff_bin.log)$(cat diff.log)$(cat bin_detect.log)"
+
 if [ "$errors" != "" ]; then
   echo -e "\e[31mErrors detected during tests"
 else

@@ -41,39 +41,35 @@ void set_used_inode_index(uint32_t* ibitmap, uint32_t current_inode) {
 
 uint16_t grpAllocInode(uint32_t mode) {
   soProbe(401, "%s(0x%x)\n", __FUNCTION__, mode);
-
   if (
-      mode % 01000 <= 0 ||
-      0777 <= mode % 01000 ||
+      mode % 01000 <= 0 || 0777 <= mode % 01000 ||
       !((mode | S_IFREG) ||
         (mode | S_IFDIR) ||
-        (mode | S_IFLNK))) throw EINVAL;
+        (mode | S_IFLNK))) throw SOException(EINVAL, __FUNCTION__);
+  SOSuperblock* super_block = soGetSuperblockPointer();
 
-  SOSuperblock super_block;
-  soReadDataBlock(0, &super_block);
-  if (super_block.ifree <= 0) throw ENOSPC;
+  if (super_block->ifree <= 0) throw SOException(ENOSPC, __FUNCTION__);
 
-  uint32_t current_inode_number = get_free_inode_index(&super_block);
-  set_used_inode_index(super_block.ibitmap, current_inode_number);
-  super_block.iidx = (current_inode_number + 1) % MAX_INODES;
-  super_block.ifree--;
-  //TODO METADATA SHIT
-  soWriteDataBlock(0, &super_block);
+  uint32_t current_inode_number = get_free_inode_index(super_block);
+  set_used_inode_index(super_block->ibitmap, current_inode_number);
+  super_block->iidx = (current_inode_number) % MAX_INODES;
+  super_block->ifree--;
+  soSaveSuperblock();
 
-  SOInode inode_block[IPB];
-  soReadDataBlock(1 + current_inode_number / IPB, inode_block);
-  SOInode* current_inode = &inode_block[current_inode_number % IPB];
-  memset(current_inode, 0, sizeof(SOInode));
+  int ih = soOpenInode(current_inode_number);
+  SOInode* current_inode = soGetInodePointer(ih);
   current_inode->mode = mode;
-  current_inode->lnkcnt = 2;
   passwd* root_id = getpwnam("root");
   current_inode->owner = root_id->pw_uid;
   current_inode->group = root_id->pw_gid;
-  current_inode->size = 0;
-  current_inode->blkcnt = 0;
+  uint32_t timestamp = time(NULL);
+  current_inode->atime = timestamp;
+  current_inode->mtime = timestamp;
+  current_inode->ctime = timestamp;
   memset((int8_t*)(current_inode) + sizeof(SOInode) - N_DIRECT * 4 - N_INDIRECT * 4 - N_DOUBLE_INDIRECT * 4,
          BlockNullReference, N_DIRECT * 4 + N_INDIRECT * 4 + N_DOUBLE_INDIRECT * 4);
-
+  soSaveInode(ih);
+  soCloseInode(ih);
   return current_inode_number;
 }
 };  // namespace sofs20
