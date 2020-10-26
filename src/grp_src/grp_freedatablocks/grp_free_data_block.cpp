@@ -23,7 +23,16 @@ namespace sofs20
         soProbe(442, "%s(%u)\n", __FUNCTION__, bn);
 
         /* replace the following line with your code */
-        binFreeDataBlock(bn);
+        //binFreeDataBlock(bn);
+        SOSuperblock* sb = soGetSuperblockPointer();
+        if(bn < 0 || sb-> dbtotal <= bn) throw SOException(EINVAL, __FUNCTION__);
+        if(sb->insertion_cache.idx == REF_CACHE_SIZE - 1)
+            soDepleteInsertionCache();
+        for(int i = 0; i < REF_CACHE_SIZE; i++) 
+            if(sb->insertion_cache.ref[i] == 0xFF) {
+                
+                break;
+            }
     }
 };
 
