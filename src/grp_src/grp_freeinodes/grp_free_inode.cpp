@@ -22,7 +22,7 @@ void grpFreeInode(uint16_t in) {
 
   /* replace the following line with your code */
   //binFreeInode(in);
-  if (in >= MAX_INODES || in < 0) throw EINVAL;
+  if (in >= MAX_INODES || in < 0) throw SOException(EINVAL, __FUNCTION__);
   SOSuperblock* super_block = soGetSuperblockPointer();
   int inodeHandler = soOpenInode(in);
   SOInode* toFree = soGetInodePointer(soOpenInode(inodeHandler));
