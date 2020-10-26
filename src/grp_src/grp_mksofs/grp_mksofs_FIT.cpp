@@ -14,6 +14,7 @@
 namespace sofs20 {
 void grpFillInodeTable(uint32_t itotal, bool date) {
   soProbe(604, "%s(%u)\n", __FUNCTION__, itotal);
+  //TODO reduzir utilizacao de memoria
   SOInode inodes[itotal];
   inodes[0].mode = S_IFDIR | 0755;
   inodes[0].lnkcnt = 2;
