@@ -42,7 +42,12 @@ void set_used_inode_index(uint32_t* ibitmap, uint32_t current_inode) {
 uint16_t grpAllocInode(uint32_t mode) {
   soProbe(401, "%s(0x%x)\n", __FUNCTION__, mode);
 
-  if (mode < 0 || 0777 < mode) throw EINVAL;
+  if (
+      mode % 01000 <= 0 ||
+      0777 <= mode % 01000 ||
+      !((mode | S_IFREG) ||
+        (mode | S_IFDIR) ||
+        (mode | S_IFLNK))) throw EINVAL;
 
   SOSuperblock super_block;
   soReadDataBlock(0, &super_block);
@@ -50,27 +55,24 @@ uint16_t grpAllocInode(uint32_t mode) {
 
   uint32_t current_inode_number = get_free_inode_index(&super_block);
   set_used_inode_index(super_block.ibitmap, current_inode_number);
+  super_block.iidx = (current_inode_number + 1) % MAX_INODES;
+  super_block.ifree--;
   //TODO METADATA SHIT
   soWriteDataBlock(0, &super_block);
 
   SOInode inode_block[IPB];
   soReadDataBlock(1 + current_inode_number / IPB, inode_block);
   SOInode* current_inode = &inode_block[current_inode_number % IPB];
-
-  current_inode->mode = 00040755;
+  memset(current_inode, 0, sizeof(SOInode));
+  current_inode->mode = mode;
   current_inode->lnkcnt = 2;
   passwd* root_id = getpwnam("root");
   current_inode->owner = root_id->pw_uid;
   current_inode->group = root_id->pw_gid;
-  current_inode->size = 2 * sizeof(SODirentry);
-  current_inode->blkcnt = 1;
-  uint32_t timestamp = time(NULL);
-  current_inode->atime = timestamp;
-  current_inode->mtime = timestamp;
-  current_inode->ctime = timestamp;
+  current_inode->size = 0;
+  current_inode->blkcnt = 0;
   memset((int8_t*)(current_inode) + sizeof(SOInode) - N_DIRECT * 4 - N_INDIRECT * 4 - N_DOUBLE_INDIRECT * 4,
          BlockNullReference, N_DIRECT * 4 + N_INDIRECT * 4 + N_DOUBLE_INDIRECT * 4);
-  current_inode->d[0] = 0;
 
   return current_inode_number;
 }

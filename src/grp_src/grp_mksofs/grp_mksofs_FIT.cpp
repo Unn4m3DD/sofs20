@@ -15,7 +15,7 @@ namespace sofs20 {
 void grpFillInodeTable(uint32_t itotal, bool date) {
   soProbe(604, "%s(%u)\n", __FUNCTION__, itotal);
   SOInode inodes[itotal];
-  inodes[0].mode = 00040755;
+  inodes[0].mode = S_IFDIR | 0755;
   inodes[0].lnkcnt = 2;
   passwd* root_id = getpwnam("root");
   inodes[0].owner = root_id->pw_uid;
