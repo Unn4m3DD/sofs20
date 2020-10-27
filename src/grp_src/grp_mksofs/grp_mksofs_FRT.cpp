@@ -14,17 +14,17 @@ void grpFillReferenceTable(uint32_t ntotal, uint32_t itotal, uint32_t dbtotal) {
   //return;
   /* replace the following line with your code */
   //binFillReferenceTable(ntotal, itotal, dbtotal);
-  uint32_t rttotal = ntotal - itotal / IPB - dbtotal - 1;
+  uint32_t rbtotal = ntotal - itotal / IPB - dbtotal - 1;
   uint32_t ref[RPB];
-  for (uint b = 0; b < rttotal; b++) {
+  for (uint current_block = 0; current_block < rbtotal; current_block++) {
     memset(ref, BlockNullReference, BlockSize);
     for (uint i = 0; i < RPB; i++) {
-      if (i + RPB * b + 69 < dbtotal)
-        ref[i] = i + RPB * b + 69;
+      if (i + RPB * current_block + 69 < dbtotal)
+        ref[i] = i + RPB * current_block + 69;
       else
         ref[i] = BlockNullReference;
     }
-    soWriteRawBlock(ntotal - rttotal + b, ref);
+    soWriteRawBlock(ntotal - rbtotal + current_block, ref);
   }
 }
 };  // namespace sofs20

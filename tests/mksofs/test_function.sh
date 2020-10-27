@@ -21,8 +21,8 @@ test_function() {
     echo "binary form of $1 beeing called" >>bin_detect_tmp.log
   fi
   if [ "$5" != "" ]; then
-    bin/showblock $5 "$3-$4" tmp/original_disk >>tmp/original_inode
-    bin/showblock $5 "$3-$4" tmp/disk >>tmp/inode
+    bin/showblock $5 "$3-$4" tmp/original_disk  >a
+    bin/showblock $5 "$3-$4" tmp/disk >b
   fi
   bin/showblock -s 0-0 tmp/original_disk >>tmp/original_inode
   bin/showblock -s 0-0 tmp/disk >>tmp/inode
