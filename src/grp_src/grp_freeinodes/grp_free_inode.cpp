@@ -17,6 +17,10 @@
 #include "string.h"
 
 namespace sofs20 {
+
+void set_freed_inode_index(uint32_t* ibitmap, uint32_t current_inode) {
+  ibitmap[current_inode / 32] = ibitmap[current_inode / 32] & (~(0b01 << (current_inode % 32)));
+}
 void grpFreeInode(uint16_t in) {
   soProbe(402, "%s(%u)\n", __FUNCTION__, in);
 
@@ -27,18 +31,14 @@ void grpFreeInode(uint16_t in) {
   int inodeHandler = soOpenInode(in);
   SOInode* toFree = soGetInodePointer(soOpenInode(inodeHandler));
   memset(toFree, 0, sizeof(SOInode));
-  for(int i = 0; i < N_DIRECT; i++) toFree->d[i] = 0xFF;
-  for(int i = 0; i < N_INDIRECT; i++) toFree->i1[i] = 0xFF;
-  for(int i = 0; i < N_DOUBLE_INDIRECT; i++) toFree->i2[i] = 0xFF;
-  set_used_inode_index(super_block->ibitmap, in);
+  for (int i = 0; i < N_DIRECT; i++) toFree->d[i] = 0xFF;
+  for (int i = 0; i < N_INDIRECT; i++) toFree->i1[i] = 0xFF;
+  for (int i = 0; i < N_DOUBLE_INDIRECT; i++) toFree->i2[i] = 0xFF;
+  set_freed_inode_index(super_block->ibitmap, in);
   super_block->ifree++;
   soSaveSuperblock();
   soSaveInode(inodeHandler);
   soCloseInode(inodeHandler);
-
 }
 
-void set_used_inode_index(uint32_t* ibitmap, uint32_t current_inode) {
-  ibitmap[current_inode / 32] = ibitmap[current_inode / 32] & (~(0b01 << (current_inode % 32)));
-}
 };  // namespace sofs20

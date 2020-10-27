@@ -4,6 +4,11 @@
 # $4 = block_range_end
 # $5 = block_type
 source ./mksofs/test_function.sh
+test_function 601 72 0 0 -s
+test_function 601 328 0 0 -s
+test_function 601 329 0 0 -s
+test_function 601 330 0 0 -s
+
 test_function 601 4 0 0 -s
 test_function 601 20 0 0 -s
 test_function 601 50 0 0 -s
@@ -19,3 +24,11 @@ test_function 601 2000 992 999 -r
 test_function 601 4 0 3 -x -z
 test_function 601 20 0 19 -x -z
 test_function 601 1000 0 999 -x -z
+
+if [ "$1" != "complete" ]; then return; fi
+
+for ((i = 4; i < 500; i++)); do
+  if [ "$i" == "73" ]; then i=$((i + 1)); fi
+  printf "\e[34m$i -> "
+  test_function 601 $i 0 $(($i - 1)) -x
+done

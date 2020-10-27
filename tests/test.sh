@@ -1,4 +1,5 @@
-rm diff.log 2>/dev/null
+# $1 -> function
+# $2 -> complete
 
 function compile() {
   current_dir=$(pwd)
@@ -16,26 +17,26 @@ compile
 rm -f *.log
 touch bin_detect.log
 if [[ $1 == "" || $1 == "CS" ]]; then
-  source mksofs/compute_structure.sh
+  source mksofs/compute_structure.sh $2
 fi
 if [[ $1 == "" || $1 == "FIT" ]]; then
-  source mksofs/fill_inode_table.sh
+  source mksofs/fill_inode_table.sh $2
 fi
 if [[ $1 == "" || $1 == "FSB" ]]; then
-  source mksofs/fill_superblock.sh
+  source mksofs/fill_superblock.sh $2
 fi
 if [[ $1 == "" || $1 == "FRD" ]]; then
-  source mksofs/fill_root_dir.sh
+  source mksofs/fill_root_dir.sh $2
 fi
 if [[ $1 == "" || $1 == "FRT" ]]; then
-  source mksofs/fill_reference_table.sh
+  source mksofs/fill_reference_table.sh $2
 fi
 if [[ $1 == "" || $1 == "RFDB" ]]; then
-  source mksofs/reset_free_data_blocks.sh
+  source mksofs/reset_free_data_blocks.sh $2
 fi
 
 if [[ $1 == "" || $1 == "alloc_inode" ]]; then
-  source ilayer/alloc_inode.sh
+  source ilayer/alloc_inode.sh $2
 fi
 
 errors="$(cat diff_bin.log)$(cat diff.log)$(cat bin_detect.log)"

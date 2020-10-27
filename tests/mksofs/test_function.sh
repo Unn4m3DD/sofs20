@@ -24,6 +24,8 @@ test_function() {
     bin/showblock $5 "$3-$4" tmp/original_disk >>tmp/original_inode
     bin/showblock $5 "$3-$4" tmp/disk >>tmp/inode
   fi
+  bin/showblock -s 0-0 tmp/original_disk >>tmp/original_inode
+  bin/showblock -s 0-0 tmp/disk >>tmp/inode
   bin/showblock -x "$3-$4" tmp/original_disk >>tmp/original_inode_bin
   bin/showblock -x "$3-$4" tmp/disk >>tmp/inode_bin
   diff tmp/original_inode tmp/inode -d >>diff_tmp.log
