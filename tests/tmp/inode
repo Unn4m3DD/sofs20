@@ -53,386 +53,322 @@ Insertion cache:
 Inode #0
 type = directory, permissions = rwxrwxr-x, lnkcnt = 2, owner = 1000, group = 998
 size in bytes = 128, block count = 1
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #1
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #2
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #3
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #4
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #5
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #6
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #7
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #8
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #9
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #10
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #11
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #12
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #13
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #14
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #15
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #16
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #17
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #18
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #19
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #20
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #21
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #22
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #23
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #24
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #25
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #26
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #27
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #28
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #29
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #30
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #31
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #32
 type = free, permissions = ---------, lnkcnt = 46, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #33
 type = free, permissions = ---------, lnkcnt = 11822, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #34
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #35
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #36
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #37
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #38
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #39
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #40
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #41
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #42
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #43
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #44
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #45
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #46
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #47
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #48
-type = INVALID_001, permissions = rwx-w---x, lnkcnt = 47727, owner = 1773979567, group = 1044580651
-size in bytes = 2567602298, block count = 1266276187
-atime = Mon Sep 25 20:12:33 1972, mtime = Wed Oct 18 20:49:59 2073, ctime = Mon May 18 07:55:23 2015
- d[*] = {2117418982 2855614428 1161038570 2498888429},  i1[*] = {1829224979 1715841955 3028332981},  i2[*] = {1612418602}
+type = INVALID-002, permissions = -----xr-x, lnkcnt = 41619, owner = 2998174171, group = 799223857
+size in bytes = 3431238294, block count = 1746545536
+ d[*] = {2102911672 308190222 2764879892 869043320},  i1[*] = {1875448986 613246889 1565930871},  i2[*] = {785092270}
 ----------------
 Inode #49
-type = INVALID-016, permissions = -----x-wx, lnkcnt = 60739, owner = 1504399812, group = 3235089560
-size in bytes = 175204307, block count = 3086152941
-atime = Thu Jul 22 13:19:28 1971, mtime = Mon May  1 04:57:30 1972, ctime = Fri May  1 15:52:18 1970
- d[*] = {2559468170 3999378211 2767797699 30726883},  i1[*] = {4233470285 4294339734 3709143099},  i2[*] = {687373128}
+type = INVALID-002, permissions = --xrwx--x, lnkcnt = 56250, owner = 3197697407, group = 1458970980
+size in bytes = 22057413, block count = 154204933
+ d[*] = {2533913843 1742632086 2970509417 2942308313},  i1[*] = {3172925866 3972303812 3650584891},  i2[*] = {2519102673}
 ----------------
 Inode #50
-type = INVALID-002, permissions = -wx-wx-wx, lnkcnt = 14872, owner = 2786176898, group = 2442786838
-size in bytes = 3025948945, block count = 1426404312
-atime = Sat Aug  5 07:15:33 1995, mtime = Wed Sep 30 03:07:32 1970, ctime = Thu Nov 14 22:58:12 2058
- d[*] = {3421493227 309631280 3955486001 2061439975},  i1[*] = {447612951 50990340 1444322536},  i2[*] = {3567036931}
+type = symlink, permissions = rw--wxrwx, lnkcnt = 20559, owner = 1124711937, group = 2118359281
+size in bytes = 2224092064, block count = 742768241
+ d[*] = {83786862 3016589675 3403520110 2244979957},  i1[*] = {2249784230 4028255428 3632708637},  i2[*] = {2254082028}
 ----------------
 Inode #51
-type = INVALID_003, permissions = r---wx-wx, lnkcnt = 29216, owner = 703092669, group = 4058857873
-size in bytes = 721747970, block count = 4228355749
-atime = Mon Jan 10 06:19:29 1983, mtime = Wed Apr 27 10:21:05 2101, ctime = Sun Oct 31 18:14:28 1976
- d[*] = {396071007 3328325232 94683665 1858519530},  i1[*] = {52609333 2283258785 871394212},  i2[*] = {860987964}
+type = INVALID-006, permissions = --xrwx-wx, lnkcnt = 40448, owner = 3930442116, group = 1019286407
+size in bytes = 55175706, block count = 3664533961
+ d[*] = {955018629 929592599 478520247 1668238834},  i1[*] = {2394862894 692188920 1170373268},  i2[*] = {2972697590}
 ----------------
 Inode #52
-type = INVALID_007, permissions = ---rw----, lnkcnt = 57213, owner = 2672456114, group = 3842345645
-size in bytes = 248577312, block count = 2233211617
-atime = Wed Feb 15 15:43:56 2079, mtime = Thu Mar 10 14:49:51 2022, ctime = Sat Jun  3 14:38:57 1995
- d[*] = {4228399946 2616446450 3812276734 1218768930},  i1[*] = {4247696378 1513449275 2776753434},  i2[*] = {909765359}
+type = INVALID-002, permissions = -wxrwx-w-, lnkcnt = 29475, owner = 3107142393, group = 633635956
+size in bytes = 2737006621, block count = 2962605246
+ d[*] = {4117570318 3595460190 1639869099 3200787015},  i1[*] = {78149670 3137813274 818667107},  i2[*] = {2433289599}
 ----------------
 Inode #53
-type = INVALID-016, permissions = r-x-wx-wx, lnkcnt = 39128, owner = 2516023938, group = 1056129430
-size in bytes = 335993396, block count = 2987439441
-atime = Mon Oct  6 10:05:52 2098, mtime = Sat Apr  8 07:15:29 2090, ctime = Fri May 30 12:18:04 2104
- d[*] = {256832613 1665586860 2226675559 1577040683},  i1[*] = {890638127 3199526418 1424537105},  i2[*] = {2898286351}
+type = INVALID_013, permissions = ----wx-wx, lnkcnt = 26440, owner = 2950889254, group = 225333895
+size in bytes = 4024833362, block count = 1556573416
+ d[*] = {2589490235 2433432889 2398194645 923304268},  i1[*] = {2168687927 2508493158 83494513},  i2[*] = {4945710}
 ----------------
 Inode #54
-type = free, permissions = rwx--xrw-, lnkcnt = 22665, owner = 2346180760, group = 3075375141
-size in bytes = 2689321224, block count = 609310634
-atime = Thu May 30 05:28:49 2002, mtime = Tue Oct 30 15:46:46 2085, ctime = Mon Dec  7 03:21:02 2082
- d[*] = {980381071 2250561992 1479266106 2577077111},  i1[*] = {2657192387 2420964508 3602936417},  i2[*] = {1243668871}
+type = INVALID-016, permissions = --x-wxr-x, lnkcnt = 21411, owner = 3287802496, group = 3391580765
+size in bytes = 3172376940, block count = 105539638
+ d[*] = {2963150866 3930711152 1281167127 1602578491},  i1[*] = {3432561306 3635282623 3979149887},  i2[*] = {1923266074}
 ----------------
 Inode #55
-type = symlink, permissions = --xrwx-w-, lnkcnt = 1969, owner = 616529907, group = 1361263578
-size in bytes = 3344804574, block count = 3420668688
-atime = Wed Sep 27 17:17:18 2102, mtime = Sun Feb 19 23:59:18 1989, ctime = Tue May 24 17:12:53 2016
- d[*] = {766510071 1940549238 1124494974 1874058978},  i1[*] = {1420383527 1429941896 3167684121},  i2[*] = {1713039630}
+type = directory, permissions = --x-w----, lnkcnt = 50052, owner = 2792807936, group = 3810644489
+size in bytes = 2433295890, block count = 3792876168
+ d[*] = {2573283406 3883265404 1568419954 1010710562},  i1[*] = {2892285194 3839441271 1133838529},  i2[*] = {1274265652}
 ----------------
 Inode #56
-type = INVALID_001, permissions = --x-w-r-x, lnkcnt = 25386, owner = 1667376577, group = 401352125
-size in bytes = 1371091802, block count = 1802331421
-atime = Mon May 16 10:49:29 2005, mtime = Fri May  7 19:02:01 2088, ctime = Mon Mar 16 08:40:06 2105
- d[*] = {3956219659 3139526173 1161498464 544771386},  i1[*] = {3549137564 2909522507 3797718354},  i2[*] = {752507332}
+type = INVALID_003, permissions = -w-r-x-wx, lnkcnt = 2726, owner = 2020099520, group = 1343834085
+size in bytes = 2769104961, block count = 3235916785
+ d[*] = {2554195084 1763723108 2993000849 3690665765},  i1[*] = {2150615653 4284658635 860782621},  i2[*] = {2566897068}
 ----------------
 Inode #57
-type = INVALID-016, permissions = rwxrw-rwx, lnkcnt = 55674, owner = 3943162876, group = 2506029756
-size in bytes = 705424112, block count = 1738826839
-atime = Sat Oct  2 05:56:02 2032, mtime = Fri Dec 11 07:49:59 2054, ctime = Tue Jun  7 23:03:22 2039
- d[*] = {2496694260 2661724971 2511836175 2133782288},  i1[*] = {3977131684 443780415 217578181},  i2[*] = {3876739686}
+type = INVALID-006, permissions = -wxrwx---, lnkcnt = 27838, owner = 4177921683, group = 3056401806
+size in bytes = 3318230360, block count = 115816299
+ d[*] = {1800232251 3758093643 1702918832 3675233039},  i1[*] = {329848623 3309166929 2258507572},  i2[*] = {3075335937}
 ----------------
 Inode #58
-type = INVALID_003, permissions = -wx----wx, lnkcnt = 35891, owner = 1206807725, group = 2708579961
-size in bytes = 3883963580, block count = 2390129634
-atime = Wed Jan  3 23:40:06 2080, mtime = Sat Mar 19 02:28:37 2067, ctime = Tue Apr 19 10:56:33 2050
- d[*] = {3059846668 4258465209 4108323268 86564825},  i1[*] = {4249699620 3654310764 3082298979},  i2[*] = {512054943}
+type = INVALID-005, permissions = rw---xr--, lnkcnt = 6722, owner = 2891390395, group = 932042843
+size in bytes = 70590669, block count = 1842470200
+ d[*] = {1322725087 346983738 752192354 209919899},  i1[*] = {265093612 223142037 4144523841},  i2[*] = {2377564383}
 ----------------
 Inode #59
-type = INVALID_007, permissions = rwxr---w-, lnkcnt = 29832, owner = 1879184015, group = 292878470
-size in bytes = 794726362, block count = 941221880
-atime = Sat Apr 23 05:10:30 2039, mtime = Fri Oct  4 15:24:44 2047, ctime = Mon Apr 20 04:39:12 1998
- d[*] = {1288862105 3493895231 1195795885 2260694075},  i1[*] = {3168307668 2291326268 2828557026},  i2[*] = {2974190117}
+type = INVALID-015, permissions = --xrw----, lnkcnt = 63441, owner = 3107893199, group = 229435599
+size in bytes = 3903121612, block count = 2118134239
+ d[*] = {1997368909 3171715313 3003600744 2151932483},  i1[*] = {642569538 764553287 3962390512},  i2[*] = {205475155}
 ----------------
 Inode #60
-type = INVALID-005, permissions = r-x------, lnkcnt = 63925, owner = 2837464541, group = 1246186613
-size in bytes = 4154442562, block count = 2978584983
-atime = Sat Oct 28 01:02:19 2006, mtime = Mon Dec 21 20:21:31 1998, ctime = Mon May 10 05:01:54 2032
- d[*] = {4121882213 931156022 80985310 2862554654},  i1[*] = {1800857737 3704454012 3926490731},  i2[*] = {4267125410}
+type = INVALID_011, permissions = -wxr--rw-, lnkcnt = 30435, owner = 1351241512, group = 304654478
+size in bytes = 1198181950, block count = 571298973
+ d[*] = {3796072262 942354832 2682367052 1011331314},  i1[*] = {552535543 2457591069 1491674541},  i2[*] = {897306319}
 ----------------
 Inode #61
-type = INVALID-017, permissions = rw--w-rwx, lnkcnt = 38533, owner = 1748361229, group = 3140930982
-size in bytes = 1439390694, block count = 1424778224
-atime = Fri Dec 25 09:27:10 1970, mtime = Wed Dec  3 18:50:12 2087, ctime = Thu Apr 21 08:19:51 2067
- d[*] = {2534496149 4182052150 252321553 1843712987},  i1[*] = {2191254223 941928677 15824905},  i2[*] = {423751954}
+type = INVALID-017, permissions = rw-rwx---, lnkcnt = 53919, owner = 1489764340, group = 4013064054
+size in bytes = 3123856630, block count = 2287946029
+ d[*] = {30526892 1458991335 2715410515 3282796676},  i1[*] = {2342886243 3492829545 2606801197},  i2[*] = {3614499791}
 ----------------
 Inode #62
-type = symlink, permissions = rw-r--rwx, lnkcnt = 29741, owner = 2222855810, group = 2292421360
-size in bytes = 992391069, block count = 2830707695
-atime = Tue May 17 07:05:37 2033, mtime = Mon May 17 11:44:18 2100, ctime = Sun May 17 03:58:56 2026
- d[*] = {3331530346 2656093132 1926314987 3526234607},  i1[*] = {2991125037 3722210019 2650955115},  i2[*] = {1118687159}
+type = INVALID-005, permissions = ----w-r-x, lnkcnt = 51339, owner = 1978682794, group = 2694842622
+size in bytes = 2407196178, block count = 1849649412
+ d[*] = {3821521098 2178463197 1755113379 2528584318},  i1[*] = {2476290184 3419038750 3087152769},  i2[*] = {2428473136}
 ----------------
 Inode #63
-type = INVALID_003, permissions = --x--xrw-, lnkcnt = 33024, owner = 386123161, group = 678049332
-size in bytes = 3108952925, block count = 4271654224
-atime = Sun Apr 30 05:32:32 2051, mtime = Fri Aug 21 17:26:41 2009, ctime = Thu Nov 28 14:44:44 2058
- d[*] = {3806377562 321812691 564912519 348847322},  i1[*] = {412299195 3996282264 51383972},  i2[*] = {1531659017}
+type = free, permissions = r--r-xr--, lnkcnt = 41578, owner = 2019493344, group = 354284447
+size in bytes = 99515353, block count = 1797871495
+ d[*] = {2318315827 676640635 406764249 2585598057},  i1[*] = {654367572 3298007335 339042282},  i2[*] = {4287704617}
 ----------------
 Header:
   Magic number: 0x50f5
@@ -489,386 +425,322 @@ Insertion cache:
 Inode #0
 type = directory, permissions = rwxrwxr-x, lnkcnt = 2, owner = 1000, group = 998
 size in bytes = 128, block count = 1
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #1
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #2
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #3
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #4
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #5
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #6
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #7
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #8
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #9
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #10
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #11
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #12
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #13
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #14
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #15
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #16
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #17
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #18
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #19
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #20
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #21
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #22
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #23
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #24
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #25
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #26
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #27
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #28
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #29
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #30
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #31
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #32
 type = free, permissions = ---------, lnkcnt = 46, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #33
 type = free, permissions = ---------, lnkcnt = 11822, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #34
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #35
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #36
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #37
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #38
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #39
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #40
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #41
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #42
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #43
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #44
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #45
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #46
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #47
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #48
-type = INVALID_001, permissions = rwx-w---x, lnkcnt = 47727, owner = 1773979567, group = 1044580651
-size in bytes = 2567602298, block count = 1266276187
-atime = Mon Sep 25 20:12:33 1972, mtime = Wed Oct 18 20:49:59 2073, ctime = Mon May 18 07:55:23 2015
- d[*] = {2117418982 2855614428 1161038570 2498888429},  i1[*] = {1829224979 1715841955 3028332981},  i2[*] = {1612418602}
+type = INVALID-002, permissions = -----xr-x, lnkcnt = 41619, owner = 2998174171, group = 799223857
+size in bytes = 3431238294, block count = 1746545536
+ d[*] = {2102911672 308190222 2764879892 869043320},  i1[*] = {1875448986 613246889 1565930871},  i2[*] = {785092270}
 ----------------
 Inode #49
-type = INVALID-016, permissions = -----x-wx, lnkcnt = 60739, owner = 1504399812, group = 3235089560
-size in bytes = 175204307, block count = 3086152941
-atime = Thu Jul 22 13:19:28 1971, mtime = Mon May  1 04:57:30 1972, ctime = Fri May  1 15:52:18 1970
- d[*] = {2559468170 3999378211 2767797699 30726883},  i1[*] = {4233470285 4294339734 3709143099},  i2[*] = {687373128}
+type = INVALID-002, permissions = --xrwx--x, lnkcnt = 56250, owner = 3197697407, group = 1458970980
+size in bytes = 22057413, block count = 154204933
+ d[*] = {2533913843 1742632086 2970509417 2942308313},  i1[*] = {3172925866 3972303812 3650584891},  i2[*] = {2519102673}
 ----------------
 Inode #50
-type = INVALID-002, permissions = -wx-wx-wx, lnkcnt = 14872, owner = 2786176898, group = 2442786838
-size in bytes = 3025948945, block count = 1426404312
-atime = Sat Aug  5 07:15:33 1995, mtime = Wed Sep 30 03:07:32 1970, ctime = Thu Nov 14 22:58:12 2058
- d[*] = {3421493227 309631280 3955486001 2061439975},  i1[*] = {447612951 50990340 1444322536},  i2[*] = {3567036931}
+type = symlink, permissions = rw--wxrwx, lnkcnt = 20559, owner = 1124711937, group = 2118359281
+size in bytes = 2224092064, block count = 742768241
+ d[*] = {83786862 3016589675 3403520110 2244979957},  i1[*] = {2249784230 4028255428 3632708637},  i2[*] = {2254082028}
 ----------------
 Inode #51
-type = INVALID_003, permissions = r---wx-wx, lnkcnt = 29216, owner = 703092669, group = 4058857873
-size in bytes = 721747970, block count = 4228355749
-atime = Mon Jan 10 06:19:29 1983, mtime = Wed Apr 27 10:21:05 2101, ctime = Sun Oct 31 18:14:28 1976
- d[*] = {396071007 3328325232 94683665 1858519530},  i1[*] = {52609333 2283258785 871394212},  i2[*] = {860987964}
+type = INVALID-006, permissions = --xrwx-wx, lnkcnt = 40448, owner = 3930442116, group = 1019286407
+size in bytes = 55175706, block count = 3664533961
+ d[*] = {955018629 929592599 478520247 1668238834},  i1[*] = {2394862894 692188920 1170373268},  i2[*] = {2972697590}
 ----------------
 Inode #52
-type = INVALID_007, permissions = ---rw----, lnkcnt = 57213, owner = 2672456114, group = 3842345645
-size in bytes = 248577312, block count = 2233211617
-atime = Wed Feb 15 15:43:56 2079, mtime = Thu Mar 10 14:49:51 2022, ctime = Sat Jun  3 14:38:57 1995
- d[*] = {4228399946 2616446450 3812276734 1218768930},  i1[*] = {4247696378 1513449275 2776753434},  i2[*] = {909765359}
+type = INVALID-002, permissions = -wxrwx-w-, lnkcnt = 29475, owner = 3107142393, group = 633635956
+size in bytes = 2737006621, block count = 2962605246
+ d[*] = {4117570318 3595460190 1639869099 3200787015},  i1[*] = {78149670 3137813274 818667107},  i2[*] = {2433289599}
 ----------------
 Inode #53
-type = INVALID-016, permissions = r-x-wx-wx, lnkcnt = 39128, owner = 2516023938, group = 1056129430
-size in bytes = 335993396, block count = 2987439441
-atime = Mon Oct  6 10:05:52 2098, mtime = Sat Apr  8 07:15:29 2090, ctime = Fri May 30 12:18:04 2104
- d[*] = {256832613 1665586860 2226675559 1577040683},  i1[*] = {890638127 3199526418 1424537105},  i2[*] = {2898286351}
+type = INVALID_013, permissions = ----wx-wx, lnkcnt = 26440, owner = 2950889254, group = 225333895
+size in bytes = 4024833362, block count = 1556573416
+ d[*] = {2589490235 2433432889 2398194645 923304268},  i1[*] = {2168687927 2508493158 83494513},  i2[*] = {4945710}
 ----------------
 Inode #54
-type = free, permissions = rwx--xrw-, lnkcnt = 22665, owner = 2346180760, group = 3075375141
-size in bytes = 2689321224, block count = 609310634
-atime = Thu May 30 05:28:49 2002, mtime = Tue Oct 30 15:46:46 2085, ctime = Mon Dec  7 03:21:02 2082
- d[*] = {980381071 2250561992 1479266106 2577077111},  i1[*] = {2657192387 2420964508 3602936417},  i2[*] = {1243668871}
+type = INVALID-016, permissions = --x-wxr-x, lnkcnt = 21411, owner = 3287802496, group = 3391580765
+size in bytes = 3172376940, block count = 105539638
+ d[*] = {2963150866 3930711152 1281167127 1602578491},  i1[*] = {3432561306 3635282623 3979149887},  i2[*] = {1923266074}
 ----------------
 Inode #55
-type = symlink, permissions = --xrwx-w-, lnkcnt = 1969, owner = 616529907, group = 1361263578
-size in bytes = 3344804574, block count = 3420668688
-atime = Wed Sep 27 17:17:18 2102, mtime = Sun Feb 19 23:59:18 1989, ctime = Tue May 24 17:12:53 2016
- d[*] = {766510071 1940549238 1124494974 1874058978},  i1[*] = {1420383527 1429941896 3167684121},  i2[*] = {1713039630}
+type = directory, permissions = --x-w----, lnkcnt = 50052, owner = 2792807936, group = 3810644489
+size in bytes = 2433295890, block count = 3792876168
+ d[*] = {2573283406 3883265404 1568419954 1010710562},  i1[*] = {2892285194 3839441271 1133838529},  i2[*] = {1274265652}
 ----------------
 Inode #56
-type = INVALID_001, permissions = --x-w-r-x, lnkcnt = 25386, owner = 1667376577, group = 401352125
-size in bytes = 1371091802, block count = 1802331421
-atime = Mon May 16 10:49:29 2005, mtime = Fri May  7 19:02:01 2088, ctime = Mon Mar 16 08:40:06 2105
- d[*] = {3956219659 3139526173 1161498464 544771386},  i1[*] = {3549137564 2909522507 3797718354},  i2[*] = {752507332}
+type = INVALID_003, permissions = -w-r-x-wx, lnkcnt = 2726, owner = 2020099520, group = 1343834085
+size in bytes = 2769104961, block count = 3235916785
+ d[*] = {2554195084 1763723108 2993000849 3690665765},  i1[*] = {2150615653 4284658635 860782621},  i2[*] = {2566897068}
 ----------------
 Inode #57
-type = INVALID-016, permissions = rwxrw-rwx, lnkcnt = 55674, owner = 3943162876, group = 2506029756
-size in bytes = 705424112, block count = 1738826839
-atime = Sat Oct  2 05:56:02 2032, mtime = Fri Dec 11 07:49:59 2054, ctime = Tue Jun  7 23:03:22 2039
- d[*] = {2496694260 2661724971 2511836175 2133782288},  i1[*] = {3977131684 443780415 217578181},  i2[*] = {3876739686}
+type = INVALID-006, permissions = -wxrwx---, lnkcnt = 27838, owner = 4177921683, group = 3056401806
+size in bytes = 3318230360, block count = 115816299
+ d[*] = {1800232251 3758093643 1702918832 3675233039},  i1[*] = {329848623 3309166929 2258507572},  i2[*] = {3075335937}
 ----------------
 Inode #58
-type = INVALID_003, permissions = -wx----wx, lnkcnt = 35891, owner = 1206807725, group = 2708579961
-size in bytes = 3883963580, block count = 2390129634
-atime = Wed Jan  3 23:40:06 2080, mtime = Sat Mar 19 02:28:37 2067, ctime = Tue Apr 19 10:56:33 2050
- d[*] = {3059846668 4258465209 4108323268 86564825},  i1[*] = {4249699620 3654310764 3082298979},  i2[*] = {512054943}
+type = INVALID-005, permissions = rw---xr--, lnkcnt = 6722, owner = 2891390395, group = 932042843
+size in bytes = 70590669, block count = 1842470200
+ d[*] = {1322725087 346983738 752192354 209919899},  i1[*] = {265093612 223142037 4144523841},  i2[*] = {2377564383}
 ----------------
 Inode #59
-type = INVALID_007, permissions = rwxr---w-, lnkcnt = 29832, owner = 1879184015, group = 292878470
-size in bytes = 794726362, block count = 941221880
-atime = Sat Apr 23 05:10:30 2039, mtime = Fri Oct  4 15:24:44 2047, ctime = Mon Apr 20 04:39:12 1998
- d[*] = {1288862105 3493895231 1195795885 2260694075},  i1[*] = {3168307668 2291326268 2828557026},  i2[*] = {2974190117}
+type = INVALID-015, permissions = --xrw----, lnkcnt = 63441, owner = 3107893199, group = 229435599
+size in bytes = 3903121612, block count = 2118134239
+ d[*] = {1997368909 3171715313 3003600744 2151932483},  i1[*] = {642569538 764553287 3962390512},  i2[*] = {205475155}
 ----------------
 Inode #60
-type = INVALID-005, permissions = r-x------, lnkcnt = 63925, owner = 2837464541, group = 1246186613
-size in bytes = 4154442562, block count = 2978584983
-atime = Sat Oct 28 01:02:19 2006, mtime = Mon Dec 21 20:21:31 1998, ctime = Mon May 10 05:01:54 2032
- d[*] = {4121882213 931156022 80985310 2862554654},  i1[*] = {1800857737 3704454012 3926490731},  i2[*] = {4267125410}
+type = INVALID_011, permissions = -wxr--rw-, lnkcnt = 30435, owner = 1351241512, group = 304654478
+size in bytes = 1198181950, block count = 571298973
+ d[*] = {3796072262 942354832 2682367052 1011331314},  i1[*] = {552535543 2457591069 1491674541},  i2[*] = {897306319}
 ----------------
 Inode #61
-type = INVALID-017, permissions = rw--w-rwx, lnkcnt = 38533, owner = 1748361229, group = 3140930982
-size in bytes = 1439390694, block count = 1424778224
-atime = Fri Dec 25 09:27:10 1970, mtime = Wed Dec  3 18:50:12 2087, ctime = Thu Apr 21 08:19:51 2067
- d[*] = {2534496149 4182052150 252321553 1843712987},  i1[*] = {2191254223 941928677 15824905},  i2[*] = {423751954}
+type = INVALID-017, permissions = rw-rwx---, lnkcnt = 53919, owner = 1489764340, group = 4013064054
+size in bytes = 3123856630, block count = 2287946029
+ d[*] = {30526892 1458991335 2715410515 3282796676},  i1[*] = {2342886243 3492829545 2606801197},  i2[*] = {3614499791}
 ----------------
 Inode #62
-type = symlink, permissions = rw-r--rwx, lnkcnt = 29741, owner = 2222855810, group = 2292421360
-size in bytes = 992391069, block count = 2830707695
-atime = Tue May 17 07:05:37 2033, mtime = Mon May 17 11:44:18 2100, ctime = Sun May 17 03:58:56 2026
- d[*] = {3331530346 2656093132 1926314987 3526234607},  i1[*] = {2991125037 3722210019 2650955115},  i2[*] = {1118687159}
+type = INVALID-005, permissions = ----w-r-x, lnkcnt = 51339, owner = 1978682794, group = 2694842622
+size in bytes = 2407196178, block count = 1849649412
+ d[*] = {3821521098 2178463197 1755113379 2528584318},  i1[*] = {2476290184 3419038750 3087152769},  i2[*] = {2428473136}
 ----------------
 Inode #63
-type = INVALID_003, permissions = --x--xrw-, lnkcnt = 33024, owner = 386123161, group = 678049332
-size in bytes = 3108952925, block count = 4271654224
-atime = Sun Apr 30 05:32:32 2051, mtime = Fri Aug 21 17:26:41 2009, ctime = Thu Nov 28 14:44:44 2058
- d[*] = {3806377562 321812691 564912519 348847322},  i1[*] = {412299195 3996282264 51383972},  i2[*] = {1531659017}
+type = free, permissions = r--r-xr--, lnkcnt = 41578, owner = 2019493344, group = 354284447
+size in bytes = 99515353, block count = 1797871495
+ d[*] = {2318315827 676640635 406764249 2585598057},  i1[*] = {654367572 3298007335 339042282},  i2[*] = {4287704617}
 ----------------
 Header:
   Magic number: 0x50f5
@@ -925,386 +797,322 @@ Insertion cache:
 Inode #0
 type = directory, permissions = rwxrwxr-x, lnkcnt = 2, owner = 1000, group = 998
 size in bytes = 128, block count = 1
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #1
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #2
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #3
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #4
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #5
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #6
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #7
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #8
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #9
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #10
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #11
 type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #12
 type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #13
 type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #14
 type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #15
 type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #16
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #17
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #18
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #19
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #20
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #21
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #22
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #23
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #24
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #25
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #26
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #27
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #28
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #29
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #30
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #31
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #32
 type = free, permissions = ---------, lnkcnt = 46, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #33
 type = free, permissions = ---------, lnkcnt = 11822, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #34
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #35
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #36
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #37
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #38
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #39
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #40
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #41
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #42
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #43
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #44
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #45
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #46
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #47
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #48
-type = INVALID_001, permissions = rwx-w---x, lnkcnt = 47727, owner = 1773979567, group = 1044580651
-size in bytes = 2567602298, block count = 1266276187
-atime = Mon Sep 25 20:12:33 1972, mtime = Wed Oct 18 20:49:59 2073, ctime = Mon May 18 07:55:23 2015
- d[*] = {2117418982 2855614428 1161038570 2498888429},  i1[*] = {1829224979 1715841955 3028332981},  i2[*] = {1612418602}
+type = INVALID-002, permissions = -----xr-x, lnkcnt = 41619, owner = 2998174171, group = 799223857
+size in bytes = 3431238294, block count = 1746545536
+ d[*] = {2102911672 308190222 2764879892 869043320},  i1[*] = {1875448986 613246889 1565930871},  i2[*] = {785092270}
 ----------------
 Inode #49
-type = INVALID-016, permissions = -----x-wx, lnkcnt = 60739, owner = 1504399812, group = 3235089560
-size in bytes = 175204307, block count = 3086152941
-atime = Thu Jul 22 13:19:28 1971, mtime = Mon May  1 04:57:30 1972, ctime = Fri May  1 15:52:18 1970
- d[*] = {2559468170 3999378211 2767797699 30726883},  i1[*] = {4233470285 4294339734 3709143099},  i2[*] = {687373128}
+type = INVALID-002, permissions = --xrwx--x, lnkcnt = 56250, owner = 3197697407, group = 1458970980
+size in bytes = 22057413, block count = 154204933
+ d[*] = {2533913843 1742632086 2970509417 2942308313},  i1[*] = {3172925866 3972303812 3650584891},  i2[*] = {2519102673}
 ----------------
 Inode #50
-type = INVALID-002, permissions = -wx-wx-wx, lnkcnt = 14872, owner = 2786176898, group = 2442786838
-size in bytes = 3025948945, block count = 1426404312
-atime = Sat Aug  5 07:15:33 1995, mtime = Wed Sep 30 03:07:32 1970, ctime = Thu Nov 14 22:58:12 2058
- d[*] = {3421493227 309631280 3955486001 2061439975},  i1[*] = {447612951 50990340 1444322536},  i2[*] = {3567036931}
+type = symlink, permissions = rw--wxrwx, lnkcnt = 20559, owner = 1124711937, group = 2118359281
+size in bytes = 2224092064, block count = 742768241
+ d[*] = {83786862 3016589675 3403520110 2244979957},  i1[*] = {2249784230 4028255428 3632708637},  i2[*] = {2254082028}
 ----------------
 Inode #51
-type = INVALID_003, permissions = r---wx-wx, lnkcnt = 29216, owner = 703092669, group = 4058857873
-size in bytes = 721747970, block count = 4228355749
-atime = Mon Jan 10 06:19:29 1983, mtime = Wed Apr 27 10:21:05 2101, ctime = Sun Oct 31 18:14:28 1976
- d[*] = {396071007 3328325232 94683665 1858519530},  i1[*] = {52609333 2283258785 871394212},  i2[*] = {860987964}
+type = INVALID-006, permissions = --xrwx-wx, lnkcnt = 40448, owner = 3930442116, group = 1019286407
+size in bytes = 55175706, block count = 3664533961
+ d[*] = {955018629 929592599 478520247 1668238834},  i1[*] = {2394862894 692188920 1170373268},  i2[*] = {2972697590}
 ----------------
 Inode #52
-type = INVALID_007, permissions = ---rw----, lnkcnt = 57213, owner = 2672456114, group = 3842345645
-size in bytes = 248577312, block count = 2233211617
-atime = Wed Feb 15 15:43:56 2079, mtime = Thu Mar 10 14:49:51 2022, ctime = Sat Jun  3 14:38:57 1995
- d[*] = {4228399946 2616446450 3812276734 1218768930},  i1[*] = {4247696378 1513449275 2776753434},  i2[*] = {909765359}
+type = INVALID-002, permissions = -wxrwx-w-, lnkcnt = 29475, owner = 3107142393, group = 633635956
+size in bytes = 2737006621, block count = 2962605246
+ d[*] = {4117570318 3595460190 1639869099 3200787015},  i1[*] = {78149670 3137813274 818667107},  i2[*] = {2433289599}
 ----------------
 Inode #53
-type = INVALID-016, permissions = r-x-wx-wx, lnkcnt = 39128, owner = 2516023938, group = 1056129430
-size in bytes = 335993396, block count = 2987439441
-atime = Mon Oct  6 10:05:52 2098, mtime = Sat Apr  8 07:15:29 2090, ctime = Fri May 30 12:18:04 2104
- d[*] = {256832613 1665586860 2226675559 1577040683},  i1[*] = {890638127 3199526418 1424537105},  i2[*] = {2898286351}
+type = INVALID_013, permissions = ----wx-wx, lnkcnt = 26440, owner = 2950889254, group = 225333895
+size in bytes = 4024833362, block count = 1556573416
+ d[*] = {2589490235 2433432889 2398194645 923304268},  i1[*] = {2168687927 2508493158 83494513},  i2[*] = {4945710}
 ----------------
 Inode #54
-type = free, permissions = rwx--xrw-, lnkcnt = 22665, owner = 2346180760, group = 3075375141
-size in bytes = 2689321224, block count = 609310634
-atime = Thu May 30 05:28:49 2002, mtime = Tue Oct 30 15:46:46 2085, ctime = Mon Dec  7 03:21:02 2082
- d[*] = {980381071 2250561992 1479266106 2577077111},  i1[*] = {2657192387 2420964508 3602936417},  i2[*] = {1243668871}
+type = INVALID-016, permissions = --x-wxr-x, lnkcnt = 21411, owner = 3287802496, group = 3391580765
+size in bytes = 3172376940, block count = 105539638
+ d[*] = {2963150866 3930711152 1281167127 1602578491},  i1[*] = {3432561306 3635282623 3979149887},  i2[*] = {1923266074}
 ----------------
 Inode #55
-type = symlink, permissions = --xrwx-w-, lnkcnt = 1969, owner = 616529907, group = 1361263578
-size in bytes = 3344804574, block count = 3420668688
-atime = Wed Sep 27 17:17:18 2102, mtime = Sun Feb 19 23:59:18 1989, ctime = Tue May 24 17:12:53 2016
- d[*] = {766510071 1940549238 1124494974 1874058978},  i1[*] = {1420383527 1429941896 3167684121},  i2[*] = {1713039630}
+type = directory, permissions = --x-w----, lnkcnt = 50052, owner = 2792807936, group = 3810644489
+size in bytes = 2433295890, block count = 3792876168
+ d[*] = {2573283406 3883265404 1568419954 1010710562},  i1[*] = {2892285194 3839441271 1133838529},  i2[*] = {1274265652}
 ----------------
 Inode #56
-type = INVALID_001, permissions = --x-w-r-x, lnkcnt = 25386, owner = 1667376577, group = 401352125
-size in bytes = 1371091802, block count = 1802331421
-atime = Mon May 16 10:49:29 2005, mtime = Fri May  7 19:02:01 2088, ctime = Mon Mar 16 08:40:06 2105
- d[*] = {3956219659 3139526173 1161498464 544771386},  i1[*] = {3549137564 2909522507 3797718354},  i2[*] = {752507332}
+type = INVALID_003, permissions = -w-r-x-wx, lnkcnt = 2726, owner = 2020099520, group = 1343834085
+size in bytes = 2769104961, block count = 3235916785
+ d[*] = {2554195084 1763723108 2993000849 3690665765},  i1[*] = {2150615653 4284658635 860782621},  i2[*] = {2566897068}
 ----------------
 Inode #57
-type = INVALID-016, permissions = rwxrw-rwx, lnkcnt = 55674, owner = 3943162876, group = 2506029756
-size in bytes = 705424112, block count = 1738826839
-atime = Sat Oct  2 05:56:02 2032, mtime = Fri Dec 11 07:49:59 2054, ctime = Tue Jun  7 23:03:22 2039
- d[*] = {2496694260 2661724971 2511836175 2133782288},  i1[*] = {3977131684 443780415 217578181},  i2[*] = {3876739686}
+type = INVALID-006, permissions = -wxrwx---, lnkcnt = 27838, owner = 4177921683, group = 3056401806
+size in bytes = 3318230360, block count = 115816299
+ d[*] = {1800232251 3758093643 1702918832 3675233039},  i1[*] = {329848623 3309166929 2258507572},  i2[*] = {3075335937}
 ----------------
 Inode #58
-type = INVALID_003, permissions = -wx----wx, lnkcnt = 35891, owner = 1206807725, group = 2708579961
-size in bytes = 3883963580, block count = 2390129634
-atime = Wed Jan  3 23:40:06 2080, mtime = Sat Mar 19 02:28:37 2067, ctime = Tue Apr 19 10:56:33 2050
- d[*] = {3059846668 4258465209 4108323268 86564825},  i1[*] = {4249699620 3654310764 3082298979},  i2[*] = {512054943}
+type = INVALID-005, permissions = rw---xr--, lnkcnt = 6722, owner = 2891390395, group = 932042843
+size in bytes = 70590669, block count = 1842470200
+ d[*] = {1322725087 346983738 752192354 209919899},  i1[*] = {265093612 223142037 4144523841},  i2[*] = {2377564383}
 ----------------
 Inode #59
-type = INVALID_007, permissions = rwxr---w-, lnkcnt = 29832, owner = 1879184015, group = 292878470
-size in bytes = 794726362, block count = 941221880
-atime = Sat Apr 23 05:10:30 2039, mtime = Fri Oct  4 15:24:44 2047, ctime = Mon Apr 20 04:39:12 1998
- d[*] = {1288862105 3493895231 1195795885 2260694075},  i1[*] = {3168307668 2291326268 2828557026},  i2[*] = {2974190117}
+type = INVALID-015, permissions = --xrw----, lnkcnt = 63441, owner = 3107893199, group = 229435599
+size in bytes = 3903121612, block count = 2118134239
+ d[*] = {1997368909 3171715313 3003600744 2151932483},  i1[*] = {642569538 764553287 3962390512},  i2[*] = {205475155}
 ----------------
 Inode #60
-type = INVALID-005, permissions = r-x------, lnkcnt = 63925, owner = 2837464541, group = 1246186613
-size in bytes = 4154442562, block count = 2978584983
-atime = Sat Oct 28 01:02:19 2006, mtime = Mon Dec 21 20:21:31 1998, ctime = Mon May 10 05:01:54 2032
- d[*] = {4121882213 931156022 80985310 2862554654},  i1[*] = {1800857737 3704454012 3926490731},  i2[*] = {4267125410}
+type = INVALID_011, permissions = -wxr--rw-, lnkcnt = 30435, owner = 1351241512, group = 304654478
+size in bytes = 1198181950, block count = 571298973
+ d[*] = {3796072262 942354832 2682367052 1011331314},  i1[*] = {552535543 2457591069 1491674541},  i2[*] = {897306319}
 ----------------
 Inode #61
-type = INVALID-017, permissions = rw--w-rwx, lnkcnt = 38533, owner = 1748361229, group = 3140930982
-size in bytes = 1439390694, block count = 1424778224
-atime = Fri Dec 25 09:27:10 1970, mtime = Wed Dec  3 18:50:12 2087, ctime = Thu Apr 21 08:19:51 2067
- d[*] = {2534496149 4182052150 252321553 1843712987},  i1[*] = {2191254223 941928677 15824905},  i2[*] = {423751954}
+type = INVALID-017, permissions = rw-rwx---, lnkcnt = 53919, owner = 1489764340, group = 4013064054
+size in bytes = 3123856630, block count = 2287946029
+ d[*] = {30526892 1458991335 2715410515 3282796676},  i1[*] = {2342886243 3492829545 2606801197},  i2[*] = {3614499791}
 ----------------
 Inode #62
-type = symlink, permissions = rw-r--rwx, lnkcnt = 29741, owner = 2222855810, group = 2292421360
-size in bytes = 992391069, block count = 2830707695
-atime = Tue May 17 07:05:37 2033, mtime = Mon May 17 11:44:18 2100, ctime = Sun May 17 03:58:56 2026
- d[*] = {3331530346 2656093132 1926314987 3526234607},  i1[*] = {2991125037 3722210019 2650955115},  i2[*] = {1118687159}
+type = INVALID-005, permissions = ----w-r-x, lnkcnt = 51339, owner = 1978682794, group = 2694842622
+size in bytes = 2407196178, block count = 1849649412
+ d[*] = {3821521098 2178463197 1755113379 2528584318},  i1[*] = {2476290184 3419038750 3087152769},  i2[*] = {2428473136}
 ----------------
 Inode #63
-type = INVALID_003, permissions = --x--xrw-, lnkcnt = 33024, owner = 386123161, group = 678049332
-size in bytes = 3108952925, block count = 4271654224
-atime = Sun Apr 30 05:32:32 2051, mtime = Fri Aug 21 17:26:41 2009, ctime = Thu Nov 28 14:44:44 2058
- d[*] = {3806377562 321812691 564912519 348847322},  i1[*] = {412299195 3996282264 51383972},  i2[*] = {1531659017}
+type = free, permissions = r--r-xr--, lnkcnt = 41578, owner = 2019493344, group = 354284447
+size in bytes = 99515353, block count = 1797871495
+ d[*] = {2318315827 676640635 406764249 2585598057},  i1[*] = {654367572 3298007335 339042282},  i2[*] = {4287704617}
 ----------------
 Header:
   Magic number: 0x50f5
@@ -1361,384 +1169,320 @@ Insertion cache:
 Inode #0
 type = directory, permissions = rwxrwxr-x, lnkcnt = 2, owner = 1000, group = 998
 size in bytes = 128, block count = 1
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #1
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #2
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #3
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #4
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #5
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #6
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #7
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #8
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #9
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #10
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #11
 type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #12
 type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #13
 type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #14
 type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #15
 type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #16
 type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #17
 type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #18
-type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #19
-type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #20
-type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
 size in bytes = 0, block count = 0
-atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #21
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #22
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #23
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #24
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #25
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #26
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #27
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #28
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #29
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #30
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #31
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
 ----------------
 Inode #32
 type = free, permissions = ---------, lnkcnt = 46, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #33
 type = free, permissions = ---------, lnkcnt = 11822, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #34
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #35
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #36
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #37
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #38
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #39
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #40
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #41
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #42
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #43
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #44
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #45
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #46
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #47
 type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
 size in bytes = 0, block count = 0
-atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
  d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
 ----------------
 Inode #48
-type = INVALID_001, permissions = rwx-w---x, lnkcnt = 47727, owner = 1773979567, group = 1044580651
-size in bytes = 2567602298, block count = 1266276187
-atime = Mon Sep 25 20:12:33 1972, mtime = Wed Oct 18 20:49:59 2073, ctime = Mon May 18 07:55:23 2015
- d[*] = {2117418982 2855614428 1161038570 2498888429},  i1[*] = {1829224979 1715841955 3028332981},  i2[*] = {1612418602}
+type = INVALID-002, permissions = -----xr-x, lnkcnt = 41619, owner = 2998174171, group = 799223857
+size in bytes = 3431238294, block count = 1746545536
+ d[*] = {2102911672 308190222 2764879892 869043320},  i1[*] = {1875448986 613246889 1565930871},  i2[*] = {785092270}
 ----------------
 Inode #49
-type = INVALID-016, permissions = -----x-wx, lnkcnt = 60739, owner = 1504399812, group = 3235089560
-size in bytes = 175204307, block count = 3086152941
-atime = Thu Jul 22 13:19:28 1971, mtime = Mon May  1 04:57:30 1972, ctime = Fri May  1 15:52:18 1970
- d[*] = {2559468170 3999378211 2767797699 30726883},  i1[*] = {4233470285 4294339734 3709143099},  i2[*] = {687373128}
+type = INVALID-002, permissions = --xrwx--x, lnkcnt = 56250, owner = 3197697407, group = 1458970980
+size in bytes = 22057413, block count = 154204933
+ d[*] = {2533913843 1742632086 2970509417 2942308313},  i1[*] = {3172925866 3972303812 3650584891},  i2[*] = {2519102673}
 ----------------
 Inode #50
-type = INVALID-002, permissions = -wx-wx-wx, lnkcnt = 14872, owner = 2786176898, group = 2442786838
-size in bytes = 3025948945, block count = 1426404312
-atime = Sat Aug  5 07:15:33 1995, mtime = Wed Sep 30 03:07:32 1970, ctime = Thu Nov 14 22:58:12 2058
- d[*] = {3421493227 309631280 3955486001 2061439975},  i1[*] = {447612951 50990340 1444322536},  i2[*] = {3567036931}
+type = symlink, permissions = rw--wxrwx, lnkcnt = 20559, owner = 1124711937, group = 2118359281
+size in bytes = 2224092064, block count = 742768241
+ d[*] = {83786862 3016589675 3403520110 2244979957},  i1[*] = {2249784230 4028255428 3632708637},  i2[*] = {2254082028}
 ----------------
 Inode #51
-type = INVALID_003, permissions = r---wx-wx, lnkcnt = 29216, owner = 703092669, group = 4058857873
-size in bytes = 721747970, block count = 4228355749
-atime = Mon Jan 10 06:19:29 1983, mtime = Wed Apr 27 10:21:05 2101, ctime = Sun Oct 31 18:14:28 1976
- d[*] = {396071007 3328325232 94683665 1858519530},  i1[*] = {52609333 2283258785 871394212},  i2[*] = {860987964}
+type = INVALID-006, permissions = --xrwx-wx, lnkcnt = 40448, owner = 3930442116, group = 1019286407
+size in bytes = 55175706, block count = 3664533961
+ d[*] = {955018629 929592599 478520247 1668238834},  i1[*] = {2394862894 692188920 1170373268},  i2[*] = {2972697590}
 ----------------
 Inode #52
-type = INVALID_007, permissions = ---rw----, lnkcnt = 57213, owner = 2672456114, group = 3842345645
-size in bytes = 248577312, block count = 2233211617
-atime = Wed Feb 15 15:43:56 2079, mtime = Thu Mar 10 14:49:51 2022, ctime = Sat Jun  3 14:38:57 1995
- d[*] = {4228399946 2616446450 3812276734 1218768930},  i1[*] = {4247696378 1513449275 2776753434},  i2[*] = {909765359}
+type = INVALID-002, permissions = -wxrwx-w-, lnkcnt = 29475, owner = 3107142393, group = 633635956
+size in bytes = 2737006621, block count = 2962605246
+ d[*] = {4117570318 3595460190 1639869099 3200787015},  i1[*] = {78149670 3137813274 818667107},  i2[*] = {2433289599}
 ----------------
 Inode #53
-type = INVALID-016, permissions = r-x-wx-wx, lnkcnt = 39128, owner = 2516023938, group = 1056129430
-size in bytes = 335993396, block count = 2987439441
-atime = Mon Oct  6 10:05:52 2098, mtime = Sat Apr  8 07:15:29 2090, ctime = Fri May 30 12:18:04 2104
- d[*] = {256832613 1665586860 2226675559 1577040683},  i1[*] = {890638127 3199526418 1424537105},  i2[*] = {2898286351}
+type = INVALID_013, permissions = ----wx-wx, lnkcnt = 26440, owner = 2950889254, group = 225333895
+size in bytes = 4024833362, block count = 1556573416
+ d[*] = {2589490235 2433432889 2398194645 923304268},  i1[*] = {2168687927 2508493158 83494513},  i2[*] = {4945710}
 ----------------
 Inode #54
-type = free, permissions = rwx--xrw-, lnkcnt = 22665, owner = 2346180760, group = 3075375141
-size in bytes = 2689321224, block count = 609310634
-atime = Thu May 30 05:28:49 2002, mtime = Tue Oct 30 15:46:46 2085, ctime = Mon Dec  7 03:21:02 2082
- d[*] = {980381071 2250561992 1479266106 2577077111},  i1[*] = {2657192387 2420964508 3602936417},  i2[*] = {1243668871}
+type = INVALID-016, permissions = --x-wxr-x, lnkcnt = 21411, owner = 3287802496, group = 3391580765
+size in bytes = 3172376940, block count = 105539638
+ d[*] = {2963150866 3930711152 1281167127 1602578491},  i1[*] = {3432561306 3635282623 3979149887},  i2[*] = {1923266074}
 ----------------
 Inode #55
-type = symlink, permissions = --xrwx-w-, lnkcnt = 1969, owner = 616529907, group = 1361263578
-size in bytes = 3344804574, block count = 3420668688
-atime = Wed Sep 27 17:17:18 2102, mtime = Sun Feb 19 23:59:18 1989, ctime = Tue May 24 17:12:53 2016
- d[*] = {766510071 1940549238 1124494974 1874058978},  i1[*] = {1420383527 1429941896 3167684121},  i2[*] = {1713039630}
+type = directory, permissions = --x-w----, lnkcnt = 50052, owner = 2792807936, group = 3810644489
+size in bytes = 2433295890, block count = 3792876168
+ d[*] = {2573283406 3883265404 1568419954 1010710562},  i1[*] = {2892285194 3839441271 1133838529},  i2[*] = {1274265652}
 ----------------
 Inode #56
-type = INVALID_001, permissions = --x-w-r-x, lnkcnt = 25386, owner = 1667376577, group = 401352125
-size in bytes = 1371091802, block count = 1802331421
-atime = Mon May 16 10:49:29 2005, mtime = Fri May  7 19:02:01 2088, ctime = Mon Mar 16 08:40:06 2105
- d[*] = {3956219659 3139526173 1161498464 544771386},  i1[*] = {3549137564 2909522507 3797718354},  i2[*] = {752507332}
+type = INVALID_003, permissions = -w-r-x-wx, lnkcnt = 2726, owner = 2020099520, group = 1343834085
+size in bytes = 2769104961, block count = 3235916785
+ d[*] = {2554195084 1763723108 2993000849 3690665765},  i1[*] = {2150615653 4284658635 860782621},  i2[*] = {2566897068}
 ----------------
 Inode #57
-type = INVALID-016, permissions = rwxrw-rwx, lnkcnt = 55674, owner = 3943162876, group = 2506029756
-size in bytes = 705424112, block count = 1738826839
-atime = Sat Oct  2 05:56:02 2032, mtime = Fri Dec 11 07:49:59 2054, ctime = Tue Jun  7 23:03:22 2039
- d[*] = {2496694260 2661724971 2511836175 2133782288},  i1[*] = {3977131684 443780415 217578181},  i2[*] = {3876739686}
+type = INVALID-006, permissions = -wxrwx---, lnkcnt = 27838, owner = 4177921683, group = 3056401806
+size in bytes = 3318230360, block count = 115816299
+ d[*] = {1800232251 3758093643 1702918832 3675233039},  i1[*] = {329848623 3309166929 2258507572},  i2[*] = {3075335937}
 ----------------
 Inode #58
-type = INVALID_003, permissions = -wx----wx, lnkcnt = 35891, owner = 1206807725, group = 2708579961
-size in bytes = 3883963580, block count = 2390129634
-atime = Wed Jan  3 23:40:06 2080, mtime = Sat Mar 19 02:28:37 2067, ctime = Tue Apr 19 10:56:33 2050
- d[*] = {3059846668 4258465209 4108323268 86564825},  i1[*] = {4249699620 3654310764 3082298979},  i2[*] = {512054943}
+type = INVALID-005, permissions = rw---xr--, lnkcnt = 6722, owner = 2891390395, group = 932042843
+size in bytes = 70590669, block count = 1842470200
+ d[*] = {1322725087 346983738 752192354 209919899},  i1[*] = {265093612 223142037 4144523841},  i2[*] = {2377564383}
 ----------------
 Inode #59
-type = INVALID_007, permissions = rwxr---w-, lnkcnt = 29832, owner = 1879184015, group = 292878470
-size in bytes = 794726362, block count = 941221880
-atime = Sat Apr 23 05:10:30 2039, mtime = Fri Oct  4 15:24:44 2047, ctime = Mon Apr 20 04:39:12 1998
- d[*] = {1288862105 3493895231 1195795885 2260694075},  i1[*] = {3168307668 2291326268 2828557026},  i2[*] = {2974190117}
+type = INVALID-015, permissions = --xrw----, lnkcnt = 63441, owner = 3107893199, group = 229435599
+size in bytes = 3903121612, block count = 2118134239
+ d[*] = {1997368909 3171715313 3003600744 2151932483},  i1[*] = {642569538 764553287 3962390512},  i2[*] = {205475155}
 ----------------
 Inode #60
-type = INVALID-005, permissions = r-x------, lnkcnt = 63925, owner = 2837464541, group = 1246186613
-size in bytes = 4154442562, block count = 2978584983
-atime = Sat Oct 28 01:02:19 2006, mtime = Mon Dec 21 20:21:31 1998, ctime = Mon May 10 05:01:54 2032
- d[*] = {4121882213 931156022 80985310 2862554654},  i1[*] = {1800857737 3704454012 3926490731},  i2[*] = {4267125410}
+type = INVALID_011, permissions = -wxr--rw-, lnkcnt = 30435, owner = 1351241512, group = 304654478
+size in bytes = 1198181950, block count = 571298973
+ d[*] = {3796072262 942354832 2682367052 1011331314},  i1[*] = {552535543 2457591069 1491674541},  i2[*] = {897306319}
 ----------------
 Inode #61
-type = INVALID-017, permissions = rw--w-rwx, lnkcnt = 38533, owner = 1748361229, group = 3140930982
-size in bytes = 1439390694, block count = 1424778224
-atime = Fri Dec 25 09:27:10 1970, mtime = Wed Dec  3 18:50:12 2087, ctime = Thu Apr 21 08:19:51 2067
- d[*] = {2534496149 4182052150 252321553 1843712987},  i1[*] = {2191254223 941928677 15824905},  i2[*] = {423751954}
+type = INVALID-017, permissions = rw-rwx---, lnkcnt = 53919, owner = 1489764340, group = 4013064054
+size in bytes = 3123856630, block count = 2287946029
+ d[*] = {30526892 1458991335 2715410515 3282796676},  i1[*] = {2342886243 3492829545 2606801197},  i2[*] = {3614499791}
 ----------------
 Inode #62
-type = symlink, permissions = rw-r--rwx, lnkcnt = 29741, owner = 2222855810, group = 2292421360
-size in bytes = 992391069, block count = 2830707695
-atime = Tue May 17 07:05:37 2033, mtime = Mon May 17 11:44:18 2100, ctime = Sun May 17 03:58:56 2026
- d[*] = {3331530346 2656093132 1926314987 3526234607},  i1[*] = {2991125037 3722210019 2650955115},  i2[*] = {1118687159}
+type = INVALID-005, permissions = ----w-r-x, lnkcnt = 51339, owner = 1978682794, group = 2694842622
+size in bytes = 2407196178, block count = 1849649412
+ d[*] = {3821521098 2178463197 1755113379 2528584318},  i1[*] = {2476290184 3419038750 3087152769},  i2[*] = {2428473136}
 ----------------
 Inode #63
-type = INVALID_003, permissions = --x--xrw-, lnkcnt = 33024, owner = 386123161, group = 678049332
-size in bytes = 3108952925, block count = 4271654224
-atime = Sun Apr 30 05:32:32 2051, mtime = Fri Aug 21 17:26:41 2009, ctime = Thu Nov 28 14:44:44 2058
- d[*] = {3806377562 321812691 564912519 348847322},  i1[*] = {412299195 3996282264 51383972},  i2[*] = {1531659017}
+type = free, permissions = r--r-xr--, lnkcnt = 41578, owner = 2019493344, group = 354284447
+size in bytes = 99515353, block count = 1797871495
+ d[*] = {2318315827 676640635 406764249 2585598057},  i1[*] = {654367572 3298007335 339042282},  i2[*] = {4287704617}
 ----------------

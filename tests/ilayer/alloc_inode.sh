@@ -29,12 +29,16 @@ function alloc_inode_test() {
   if [ $? == 0 ]; then
     echo "binary form of $1 beeing called" >>bin_detect_tmp.log
   fi
-  bin/showblock -s 0 tmp/original_disk >>tmp/original_inode
-  bin/showblock -s 0 tmp/disk >>tmp/inode
-  bin/showblock -i $3-$4 tmp/original_disk >>tmp/original_inode
-  bin/showblock -i $3-$4 tmp/disk >>tmp/inode
-  bin/showblock -x "0-$(($5 - 1))" tmp/original_disk >>tmp/original_inode_bin
-  bin/showblock -x "0-$(($5 - 1))" tmp/disk >>tmp/inode_bin
+  bin/showblock -s 0 tmp/original_disk | grep -v "atime" >>tmp/original_inode
+  bin/showblock -s 0 tmp/disk | grep -v "atime" >>tmp/inode
+  bin/showblock -i $3-$4 tmp/original_disk | grep -v "atime" >>tmp/original_inode
+  bin/showblock -i $3-$4 tmp/disk | grep -v "atime" >>tmp/inode
+  touch tmp/original_inode_bin
+  touch tmp/inode_bin
+  if [ $? != 0 ]; then
+    bin/showblock -x "0-$(($5 - 1))" tmp/original_disk | grep -v "atime" >>tmp/original_inode_bin
+    bin/showblock -x "0-$(($5 - 1))" tmp/disk | grep -v "atime" >>tmp/inode_bin
+  fi
   diff tmp/original_inode tmp/inode -d >>diff_tmp.log
   diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
   test_tmp_diff_and_append 401
@@ -57,8 +61,8 @@ alloc_inode_test 30 0 1 4 1000
 for ((j = 10; j < 500; j += 10)); do
   printf "$j -> \n"
   create_disk $j
-  alloc_inode_test 5 1 1 4 $j;
-  alloc_inode_test 5 2 1 4 $j;
-  alloc_inode_test 5 3 1 4 $j;
-  alloc_inode_test 5 0 1 4 $j;
+  alloc_inode_test 5 1 1 4 $j
+  alloc_inode_test 5 2 1 4 $j
+  alloc_inode_test 5 3 1 4 $j
+  alloc_inode_test 5 0 1 4 $j
 done
