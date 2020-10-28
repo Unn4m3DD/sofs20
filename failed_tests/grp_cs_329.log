@@ -1,0 +1,52 @@
+Header:
+  Magic number: 0x50f5
+  Version number: 0x20
+  Volume name: "sofs20_disk"
+  Properly unmounted: yes
+  Number of mounts: 0
+  Total number of blocks in the device: 329
+Inodes' metadata:
+  Total number of inodes: 32
+  Number of free inodes: 31
+  Last allocated inode: 0
+  Inode allocation bitmap:
+    0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+Data blocks' metadata:
+  First block of the data block pool: 3
+  Total number of data blocks: 324
+  Number of free data blocks: 323
+Reference table's metadata:
+  First block of the reference table: 327
+  Number of blocks of the reference table: 2
+  Index of first block with references: 0
+  Index of first cell, within first block, with references: 0
+  Number of references in reference table: 255
+Retrieval cache:
+  Index of the first occupied cache position: 0
+  Cache contents:
+         1     2     3     4     5     6     7     8     9    10
+        11    12    13    14    15    16    17    18    19    20
+        21    22    23    24    25    26    27    28    29    30
+        31    32    33    34    35    36    37    38    39    40
+        41    42    43    44    45    46    47    48    49    50
+        51    52    53    54    55    56    57    58    59    60
+        61    62    63    64    65    66    67    68
+Insertion cache:
+  Index of the first empty cache position: 0
+  Cache contents:
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
