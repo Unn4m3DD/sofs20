@@ -1,0 +1,24 @@
+9,10c9,10
+<   Total number of inodes: 48
+<   Number of free inodes: 47
+---
+>   Total number of inodes: 32
+>   Number of free inodes: 31
+24,26c24,26
+<   First block of the data block pool: 4
+<   Total number of data blocks: 325
+<   Number of free data blocks: 324
+---
+>   First block of the data block pool: 3
+>   Total number of data blocks: 324
+>   Number of free data blocks: 323
+28,29c28,29
+<   First block of the reference table: 329
+<   Number of blocks of the reference table: 0
+---
+>   First block of the reference table: 327
+>   Number of blocks of the reference table: 2
+32c32
+<   Number of references in reference table: 256
+---
+>   Number of references in reference table: 255
