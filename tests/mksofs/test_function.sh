@@ -21,8 +21,8 @@ test_function() {
     echo "binary form of $1 beeing called" >>bin_detect_tmp.log
   fi
   if [ "$5" != "" ]; then
-    bin/showblock $5 "$3-$4" tmp/original_disk >a
-    bin/showblock $5 "$3-$4" tmp/disk >b
+    bin/showblock $5 "$3-$4" tmp/original_disk >tmp/original_inode
+    bin/showblock $5 "$3-$4" tmp/disk >tmp/inode
   fi
   bin/showblock -s 0-0 tmp/original_disk >>tmp/original_inode
   bin/showblock -s 0-0 tmp/disk >>tmp/inode
@@ -32,13 +32,5 @@ test_function() {
   diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
   rm -rf tmp
 
-  errors="$(cat diff_bin_tmp.log)$(cat diff_tmp.log)$(cat bin_detect_tmp.log)"
-  if [ "$errors" != "" ]; then
-    echo -e "\e[31mErrors detected during $1 test"
-  else
-    echo -e "\e[34m$1 tests passed"
-  fi
-  cat diff_bin_tmp.log >>diff_bin.log && rm -f diff_bin_tmp.log
-  cat diff_tmp.log >>diff.log && rm -f diff_tmp.log
-  cat bin_detect_tmp.log >>bin_detect.log && rm -f bin_detect_tmp.log
+  test_tmp_diff_and_append $1
 }

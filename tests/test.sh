@@ -1,6 +1,6 @@
 # $1 -> function
 # $2 -> complete
-
+source ./test_tmp_diff_and_append.sh
 function compile() {
   current_dir=$(pwd)
   rm -rf bin

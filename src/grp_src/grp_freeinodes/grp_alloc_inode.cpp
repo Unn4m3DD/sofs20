@@ -42,7 +42,7 @@ void set_used_inode_index(uint32_t* ibitmap, uint32_t current_inode) {
 uint16_t grpAllocInode(uint32_t mode) {
   soProbe(401, "%s(0x%x)\n", __FUNCTION__, mode);
   if (
-      mode % 01000 <= 0 || 0777 <= mode % 01000 ||
+      (mode % 01000) < 0 || 0777 < (mode % 01000) ||
       !((mode | S_IFREG) ||
         (mode | S_IFDIR) ||
         (mode | S_IFLNK))) throw SOException(EINVAL, __FUNCTION__);
@@ -59,9 +59,8 @@ uint16_t grpAllocInode(uint32_t mode) {
   int ih = soOpenInode(current_inode_number);
   SOInode* current_inode = soGetInodePointer(ih);
   current_inode->mode = mode;
-  passwd* root_id = getpwnam("root");
-  current_inode->owner = root_id->pw_uid;
-  current_inode->group = root_id->pw_gid;
+  current_inode->owner = getuid();
+  current_inode->group = getgid();
   uint32_t timestamp = time(NULL);
   current_inode->atime = timestamp;
   current_inode->mtime = timestamp;

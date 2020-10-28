@@ -1,0 +1,1744 @@
+Header:
+  Magic number: 0x50f5
+  Version number: 0x20
+  Volume name: "sofs20_disk"
+  Properly unmounted: yes
+  Number of mounts: 1
+  Total number of blocks in the device: 490
+Inodes' metadata:
+  Total number of inodes: 32
+  Number of free inodes: 26
+  Last allocated inode: 5
+  Inode allocation bitmap:
+    0x0000003f 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+Data blocks' metadata:
+  First block of the data block pool: 3
+  Total number of data blocks: 485
+  Number of free data blocks: 484
+Reference table's metadata:
+  First block of the reference table: 488
+  Number of blocks of the reference table: 2
+  Index of first block with references: 0
+  Index of first cell, within first block, with references: 0
+  Number of references in reference table: 416
+Retrieval cache:
+  Index of the first occupied cache position: 0
+  Cache contents:
+         1     2     3     4     5     6     7     8     9    10
+        11    12    13    14    15    16    17    18    19    20
+        21    22    23    24    25    26    27    28    29    30
+        31    32    33    34    35    36    37    38    39    40
+        41    42    43    44    45    46    47    48    49    50
+        51    52    53    54    55    56    57    58    59    60
+        61    62    63    64    65    66    67    68
+Insertion cache:
+  Index of the first empty cache position: 0
+  Cache contents:
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+Inode #0
+type = directory, permissions = rwxrwxr-x, lnkcnt = 2, owner = 1000, group = 998
+size in bytes = 128, block count = 1
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #1
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #2
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #3
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #4
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #5
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #6
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #7
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #8
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #9
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #10
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #11
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #12
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #13
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #14
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #15
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #16
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #17
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #18
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #19
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #20
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #21
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #22
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #23
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #24
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #25
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #26
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #27
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #28
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #29
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #30
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #31
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #32
+type = free, permissions = ---------, lnkcnt = 46, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #33
+type = free, permissions = ---------, lnkcnt = 11822, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #34
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #35
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #36
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #37
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #38
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #39
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #40
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #41
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #42
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #43
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #44
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #45
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #46
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #47
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #48
+type = INVALID_001, permissions = rwx-w---x, lnkcnt = 47727, owner = 1773979567, group = 1044580651
+size in bytes = 2567602298, block count = 1266276187
+atime = Mon Sep 25 20:12:33 1972, mtime = Wed Oct 18 20:49:59 2073, ctime = Mon May 18 07:55:23 2015
+ d[*] = {2117418982 2855614428 1161038570 2498888429},  i1[*] = {1829224979 1715841955 3028332981},  i2[*] = {1612418602}
+----------------
+Inode #49
+type = INVALID-016, permissions = -----x-wx, lnkcnt = 60739, owner = 1504399812, group = 3235089560
+size in bytes = 175204307, block count = 3086152941
+atime = Thu Jul 22 13:19:28 1971, mtime = Mon May  1 04:57:30 1972, ctime = Fri May  1 15:52:18 1970
+ d[*] = {2559468170 3999378211 2767797699 30726883},  i1[*] = {4233470285 4294339734 3709143099},  i2[*] = {687373128}
+----------------
+Inode #50
+type = INVALID-002, permissions = -wx-wx-wx, lnkcnt = 14872, owner = 2786176898, group = 2442786838
+size in bytes = 3025948945, block count = 1426404312
+atime = Sat Aug  5 07:15:33 1995, mtime = Wed Sep 30 03:07:32 1970, ctime = Thu Nov 14 22:58:12 2058
+ d[*] = {3421493227 309631280 3955486001 2061439975},  i1[*] = {447612951 50990340 1444322536},  i2[*] = {3567036931}
+----------------
+Inode #51
+type = INVALID_003, permissions = r---wx-wx, lnkcnt = 29216, owner = 703092669, group = 4058857873
+size in bytes = 721747970, block count = 4228355749
+atime = Mon Jan 10 06:19:29 1983, mtime = Wed Apr 27 10:21:05 2101, ctime = Sun Oct 31 18:14:28 1976
+ d[*] = {396071007 3328325232 94683665 1858519530},  i1[*] = {52609333 2283258785 871394212},  i2[*] = {860987964}
+----------------
+Inode #52
+type = INVALID_007, permissions = ---rw----, lnkcnt = 57213, owner = 2672456114, group = 3842345645
+size in bytes = 248577312, block count = 2233211617
+atime = Wed Feb 15 15:43:56 2079, mtime = Thu Mar 10 14:49:51 2022, ctime = Sat Jun  3 14:38:57 1995
+ d[*] = {4228399946 2616446450 3812276734 1218768930},  i1[*] = {4247696378 1513449275 2776753434},  i2[*] = {909765359}
+----------------
+Inode #53
+type = INVALID-016, permissions = r-x-wx-wx, lnkcnt = 39128, owner = 2516023938, group = 1056129430
+size in bytes = 335993396, block count = 2987439441
+atime = Mon Oct  6 10:05:52 2098, mtime = Sat Apr  8 07:15:29 2090, ctime = Fri May 30 12:18:04 2104
+ d[*] = {256832613 1665586860 2226675559 1577040683},  i1[*] = {890638127 3199526418 1424537105},  i2[*] = {2898286351}
+----------------
+Inode #54
+type = free, permissions = rwx--xrw-, lnkcnt = 22665, owner = 2346180760, group = 3075375141
+size in bytes = 2689321224, block count = 609310634
+atime = Thu May 30 05:28:49 2002, mtime = Tue Oct 30 15:46:46 2085, ctime = Mon Dec  7 03:21:02 2082
+ d[*] = {980381071 2250561992 1479266106 2577077111},  i1[*] = {2657192387 2420964508 3602936417},  i2[*] = {1243668871}
+----------------
+Inode #55
+type = symlink, permissions = --xrwx-w-, lnkcnt = 1969, owner = 616529907, group = 1361263578
+size in bytes = 3344804574, block count = 3420668688
+atime = Wed Sep 27 17:17:18 2102, mtime = Sun Feb 19 23:59:18 1989, ctime = Tue May 24 17:12:53 2016
+ d[*] = {766510071 1940549238 1124494974 1874058978},  i1[*] = {1420383527 1429941896 3167684121},  i2[*] = {1713039630}
+----------------
+Inode #56
+type = INVALID_001, permissions = --x-w-r-x, lnkcnt = 25386, owner = 1667376577, group = 401352125
+size in bytes = 1371091802, block count = 1802331421
+atime = Mon May 16 10:49:29 2005, mtime = Fri May  7 19:02:01 2088, ctime = Mon Mar 16 08:40:06 2105
+ d[*] = {3956219659 3139526173 1161498464 544771386},  i1[*] = {3549137564 2909522507 3797718354},  i2[*] = {752507332}
+----------------
+Inode #57
+type = INVALID-016, permissions = rwxrw-rwx, lnkcnt = 55674, owner = 3943162876, group = 2506029756
+size in bytes = 705424112, block count = 1738826839
+atime = Sat Oct  2 05:56:02 2032, mtime = Fri Dec 11 07:49:59 2054, ctime = Tue Jun  7 23:03:22 2039
+ d[*] = {2496694260 2661724971 2511836175 2133782288},  i1[*] = {3977131684 443780415 217578181},  i2[*] = {3876739686}
+----------------
+Inode #58
+type = INVALID_003, permissions = -wx----wx, lnkcnt = 35891, owner = 1206807725, group = 2708579961
+size in bytes = 3883963580, block count = 2390129634
+atime = Wed Jan  3 23:40:06 2080, mtime = Sat Mar 19 02:28:37 2067, ctime = Tue Apr 19 10:56:33 2050
+ d[*] = {3059846668 4258465209 4108323268 86564825},  i1[*] = {4249699620 3654310764 3082298979},  i2[*] = {512054943}
+----------------
+Inode #59
+type = INVALID_007, permissions = rwxr---w-, lnkcnt = 29832, owner = 1879184015, group = 292878470
+size in bytes = 794726362, block count = 941221880
+atime = Sat Apr 23 05:10:30 2039, mtime = Fri Oct  4 15:24:44 2047, ctime = Mon Apr 20 04:39:12 1998
+ d[*] = {1288862105 3493895231 1195795885 2260694075},  i1[*] = {3168307668 2291326268 2828557026},  i2[*] = {2974190117}
+----------------
+Inode #60
+type = INVALID-005, permissions = r-x------, lnkcnt = 63925, owner = 2837464541, group = 1246186613
+size in bytes = 4154442562, block count = 2978584983
+atime = Sat Oct 28 01:02:19 2006, mtime = Mon Dec 21 20:21:31 1998, ctime = Mon May 10 05:01:54 2032
+ d[*] = {4121882213 931156022 80985310 2862554654},  i1[*] = {1800857737 3704454012 3926490731},  i2[*] = {4267125410}
+----------------
+Inode #61
+type = INVALID-017, permissions = rw--w-rwx, lnkcnt = 38533, owner = 1748361229, group = 3140930982
+size in bytes = 1439390694, block count = 1424778224
+atime = Fri Dec 25 09:27:10 1970, mtime = Wed Dec  3 18:50:12 2087, ctime = Thu Apr 21 08:19:51 2067
+ d[*] = {2534496149 4182052150 252321553 1843712987},  i1[*] = {2191254223 941928677 15824905},  i2[*] = {423751954}
+----------------
+Inode #62
+type = symlink, permissions = rw-r--rwx, lnkcnt = 29741, owner = 2222855810, group = 2292421360
+size in bytes = 992391069, block count = 2830707695
+atime = Tue May 17 07:05:37 2033, mtime = Mon May 17 11:44:18 2100, ctime = Sun May 17 03:58:56 2026
+ d[*] = {3331530346 2656093132 1926314987 3526234607},  i1[*] = {2991125037 3722210019 2650955115},  i2[*] = {1118687159}
+----------------
+Inode #63
+type = INVALID_003, permissions = --x--xrw-, lnkcnt = 33024, owner = 386123161, group = 678049332
+size in bytes = 3108952925, block count = 4271654224
+atime = Sun Apr 30 05:32:32 2051, mtime = Fri Aug 21 17:26:41 2009, ctime = Thu Nov 28 14:44:44 2058
+ d[*] = {3806377562 321812691 564912519 348847322},  i1[*] = {412299195 3996282264 51383972},  i2[*] = {1531659017}
+----------------
+Header:
+  Magic number: 0x50f5
+  Version number: 0x20
+  Volume name: "sofs20_disk"
+  Properly unmounted: yes
+  Number of mounts: 1
+  Total number of blocks in the device: 490
+Inodes' metadata:
+  Total number of inodes: 32
+  Number of free inodes: 21
+  Last allocated inode: 10
+  Inode allocation bitmap:
+    0x000007ff 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+Data blocks' metadata:
+  First block of the data block pool: 3
+  Total number of data blocks: 485
+  Number of free data blocks: 484
+Reference table's metadata:
+  First block of the reference table: 488
+  Number of blocks of the reference table: 2
+  Index of first block with references: 0
+  Index of first cell, within first block, with references: 0
+  Number of references in reference table: 416
+Retrieval cache:
+  Index of the first occupied cache position: 0
+  Cache contents:
+         1     2     3     4     5     6     7     8     9    10
+        11    12    13    14    15    16    17    18    19    20
+        21    22    23    24    25    26    27    28    29    30
+        31    32    33    34    35    36    37    38    39    40
+        41    42    43    44    45    46    47    48    49    50
+        51    52    53    54    55    56    57    58    59    60
+        61    62    63    64    65    66    67    68
+Insertion cache:
+  Index of the first empty cache position: 0
+  Cache contents:
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+Inode #0
+type = directory, permissions = rwxrwxr-x, lnkcnt = 2, owner = 1000, group = 998
+size in bytes = 128, block count = 1
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #1
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #2
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #3
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #4
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #5
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #6
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #7
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #8
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #9
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #10
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #11
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #12
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #13
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #14
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #15
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #16
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #17
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #18
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #19
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #20
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #21
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #22
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #23
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #24
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #25
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #26
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #27
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #28
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #29
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #30
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #31
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #32
+type = free, permissions = ---------, lnkcnt = 46, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #33
+type = free, permissions = ---------, lnkcnt = 11822, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #34
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #35
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #36
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #37
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #38
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #39
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #40
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #41
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #42
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #43
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #44
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #45
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #46
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #47
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #48
+type = INVALID_001, permissions = rwx-w---x, lnkcnt = 47727, owner = 1773979567, group = 1044580651
+size in bytes = 2567602298, block count = 1266276187
+atime = Mon Sep 25 20:12:33 1972, mtime = Wed Oct 18 20:49:59 2073, ctime = Mon May 18 07:55:23 2015
+ d[*] = {2117418982 2855614428 1161038570 2498888429},  i1[*] = {1829224979 1715841955 3028332981},  i2[*] = {1612418602}
+----------------
+Inode #49
+type = INVALID-016, permissions = -----x-wx, lnkcnt = 60739, owner = 1504399812, group = 3235089560
+size in bytes = 175204307, block count = 3086152941
+atime = Thu Jul 22 13:19:28 1971, mtime = Mon May  1 04:57:30 1972, ctime = Fri May  1 15:52:18 1970
+ d[*] = {2559468170 3999378211 2767797699 30726883},  i1[*] = {4233470285 4294339734 3709143099},  i2[*] = {687373128}
+----------------
+Inode #50
+type = INVALID-002, permissions = -wx-wx-wx, lnkcnt = 14872, owner = 2786176898, group = 2442786838
+size in bytes = 3025948945, block count = 1426404312
+atime = Sat Aug  5 07:15:33 1995, mtime = Wed Sep 30 03:07:32 1970, ctime = Thu Nov 14 22:58:12 2058
+ d[*] = {3421493227 309631280 3955486001 2061439975},  i1[*] = {447612951 50990340 1444322536},  i2[*] = {3567036931}
+----------------
+Inode #51
+type = INVALID_003, permissions = r---wx-wx, lnkcnt = 29216, owner = 703092669, group = 4058857873
+size in bytes = 721747970, block count = 4228355749
+atime = Mon Jan 10 06:19:29 1983, mtime = Wed Apr 27 10:21:05 2101, ctime = Sun Oct 31 18:14:28 1976
+ d[*] = {396071007 3328325232 94683665 1858519530},  i1[*] = {52609333 2283258785 871394212},  i2[*] = {860987964}
+----------------
+Inode #52
+type = INVALID_007, permissions = ---rw----, lnkcnt = 57213, owner = 2672456114, group = 3842345645
+size in bytes = 248577312, block count = 2233211617
+atime = Wed Feb 15 15:43:56 2079, mtime = Thu Mar 10 14:49:51 2022, ctime = Sat Jun  3 14:38:57 1995
+ d[*] = {4228399946 2616446450 3812276734 1218768930},  i1[*] = {4247696378 1513449275 2776753434},  i2[*] = {909765359}
+----------------
+Inode #53
+type = INVALID-016, permissions = r-x-wx-wx, lnkcnt = 39128, owner = 2516023938, group = 1056129430
+size in bytes = 335993396, block count = 2987439441
+atime = Mon Oct  6 10:05:52 2098, mtime = Sat Apr  8 07:15:29 2090, ctime = Fri May 30 12:18:04 2104
+ d[*] = {256832613 1665586860 2226675559 1577040683},  i1[*] = {890638127 3199526418 1424537105},  i2[*] = {2898286351}
+----------------
+Inode #54
+type = free, permissions = rwx--xrw-, lnkcnt = 22665, owner = 2346180760, group = 3075375141
+size in bytes = 2689321224, block count = 609310634
+atime = Thu May 30 05:28:49 2002, mtime = Tue Oct 30 15:46:46 2085, ctime = Mon Dec  7 03:21:02 2082
+ d[*] = {980381071 2250561992 1479266106 2577077111},  i1[*] = {2657192387 2420964508 3602936417},  i2[*] = {1243668871}
+----------------
+Inode #55
+type = symlink, permissions = --xrwx-w-, lnkcnt = 1969, owner = 616529907, group = 1361263578
+size in bytes = 3344804574, block count = 3420668688
+atime = Wed Sep 27 17:17:18 2102, mtime = Sun Feb 19 23:59:18 1989, ctime = Tue May 24 17:12:53 2016
+ d[*] = {766510071 1940549238 1124494974 1874058978},  i1[*] = {1420383527 1429941896 3167684121},  i2[*] = {1713039630}
+----------------
+Inode #56
+type = INVALID_001, permissions = --x-w-r-x, lnkcnt = 25386, owner = 1667376577, group = 401352125
+size in bytes = 1371091802, block count = 1802331421
+atime = Mon May 16 10:49:29 2005, mtime = Fri May  7 19:02:01 2088, ctime = Mon Mar 16 08:40:06 2105
+ d[*] = {3956219659 3139526173 1161498464 544771386},  i1[*] = {3549137564 2909522507 3797718354},  i2[*] = {752507332}
+----------------
+Inode #57
+type = INVALID-016, permissions = rwxrw-rwx, lnkcnt = 55674, owner = 3943162876, group = 2506029756
+size in bytes = 705424112, block count = 1738826839
+atime = Sat Oct  2 05:56:02 2032, mtime = Fri Dec 11 07:49:59 2054, ctime = Tue Jun  7 23:03:22 2039
+ d[*] = {2496694260 2661724971 2511836175 2133782288},  i1[*] = {3977131684 443780415 217578181},  i2[*] = {3876739686}
+----------------
+Inode #58
+type = INVALID_003, permissions = -wx----wx, lnkcnt = 35891, owner = 1206807725, group = 2708579961
+size in bytes = 3883963580, block count = 2390129634
+atime = Wed Jan  3 23:40:06 2080, mtime = Sat Mar 19 02:28:37 2067, ctime = Tue Apr 19 10:56:33 2050
+ d[*] = {3059846668 4258465209 4108323268 86564825},  i1[*] = {4249699620 3654310764 3082298979},  i2[*] = {512054943}
+----------------
+Inode #59
+type = INVALID_007, permissions = rwxr---w-, lnkcnt = 29832, owner = 1879184015, group = 292878470
+size in bytes = 794726362, block count = 941221880
+atime = Sat Apr 23 05:10:30 2039, mtime = Fri Oct  4 15:24:44 2047, ctime = Mon Apr 20 04:39:12 1998
+ d[*] = {1288862105 3493895231 1195795885 2260694075},  i1[*] = {3168307668 2291326268 2828557026},  i2[*] = {2974190117}
+----------------
+Inode #60
+type = INVALID-005, permissions = r-x------, lnkcnt = 63925, owner = 2837464541, group = 1246186613
+size in bytes = 4154442562, block count = 2978584983
+atime = Sat Oct 28 01:02:19 2006, mtime = Mon Dec 21 20:21:31 1998, ctime = Mon May 10 05:01:54 2032
+ d[*] = {4121882213 931156022 80985310 2862554654},  i1[*] = {1800857737 3704454012 3926490731},  i2[*] = {4267125410}
+----------------
+Inode #61
+type = INVALID-017, permissions = rw--w-rwx, lnkcnt = 38533, owner = 1748361229, group = 3140930982
+size in bytes = 1439390694, block count = 1424778224
+atime = Fri Dec 25 09:27:10 1970, mtime = Wed Dec  3 18:50:12 2087, ctime = Thu Apr 21 08:19:51 2067
+ d[*] = {2534496149 4182052150 252321553 1843712987},  i1[*] = {2191254223 941928677 15824905},  i2[*] = {423751954}
+----------------
+Inode #62
+type = symlink, permissions = rw-r--rwx, lnkcnt = 29741, owner = 2222855810, group = 2292421360
+size in bytes = 992391069, block count = 2830707695
+atime = Tue May 17 07:05:37 2033, mtime = Mon May 17 11:44:18 2100, ctime = Sun May 17 03:58:56 2026
+ d[*] = {3331530346 2656093132 1926314987 3526234607},  i1[*] = {2991125037 3722210019 2650955115},  i2[*] = {1118687159}
+----------------
+Inode #63
+type = INVALID_003, permissions = --x--xrw-, lnkcnt = 33024, owner = 386123161, group = 678049332
+size in bytes = 3108952925, block count = 4271654224
+atime = Sun Apr 30 05:32:32 2051, mtime = Fri Aug 21 17:26:41 2009, ctime = Thu Nov 28 14:44:44 2058
+ d[*] = {3806377562 321812691 564912519 348847322},  i1[*] = {412299195 3996282264 51383972},  i2[*] = {1531659017}
+----------------
+Header:
+  Magic number: 0x50f5
+  Version number: 0x20
+  Volume name: "sofs20_disk"
+  Properly unmounted: yes
+  Number of mounts: 1
+  Total number of blocks in the device: 490
+Inodes' metadata:
+  Total number of inodes: 32
+  Number of free inodes: 16
+  Last allocated inode: 15
+  Inode allocation bitmap:
+    0x0000ffff 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+Data blocks' metadata:
+  First block of the data block pool: 3
+  Total number of data blocks: 485
+  Number of free data blocks: 484
+Reference table's metadata:
+  First block of the reference table: 488
+  Number of blocks of the reference table: 2
+  Index of first block with references: 0
+  Index of first cell, within first block, with references: 0
+  Number of references in reference table: 416
+Retrieval cache:
+  Index of the first occupied cache position: 0
+  Cache contents:
+         1     2     3     4     5     6     7     8     9    10
+        11    12    13    14    15    16    17    18    19    20
+        21    22    23    24    25    26    27    28    29    30
+        31    32    33    34    35    36    37    38    39    40
+        41    42    43    44    45    46    47    48    49    50
+        51    52    53    54    55    56    57    58    59    60
+        61    62    63    64    65    66    67    68
+Insertion cache:
+  Index of the first empty cache position: 0
+  Cache contents:
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+Inode #0
+type = directory, permissions = rwxrwxr-x, lnkcnt = 2, owner = 1000, group = 998
+size in bytes = 128, block count = 1
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #1
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #2
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #3
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #4
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #5
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #6
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #7
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #8
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #9
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #10
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #11
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #12
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #13
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #14
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #15
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #16
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #17
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #18
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #19
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #20
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #21
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #22
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #23
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #24
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #25
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #26
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #27
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #28
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #29
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #30
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #31
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #32
+type = free, permissions = ---------, lnkcnt = 46, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #33
+type = free, permissions = ---------, lnkcnt = 11822, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #34
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #35
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #36
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #37
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #38
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #39
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #40
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #41
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #42
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #43
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #44
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #45
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #46
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #47
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #48
+type = INVALID_001, permissions = rwx-w---x, lnkcnt = 47727, owner = 1773979567, group = 1044580651
+size in bytes = 2567602298, block count = 1266276187
+atime = Mon Sep 25 20:12:33 1972, mtime = Wed Oct 18 20:49:59 2073, ctime = Mon May 18 07:55:23 2015
+ d[*] = {2117418982 2855614428 1161038570 2498888429},  i1[*] = {1829224979 1715841955 3028332981},  i2[*] = {1612418602}
+----------------
+Inode #49
+type = INVALID-016, permissions = -----x-wx, lnkcnt = 60739, owner = 1504399812, group = 3235089560
+size in bytes = 175204307, block count = 3086152941
+atime = Thu Jul 22 13:19:28 1971, mtime = Mon May  1 04:57:30 1972, ctime = Fri May  1 15:52:18 1970
+ d[*] = {2559468170 3999378211 2767797699 30726883},  i1[*] = {4233470285 4294339734 3709143099},  i2[*] = {687373128}
+----------------
+Inode #50
+type = INVALID-002, permissions = -wx-wx-wx, lnkcnt = 14872, owner = 2786176898, group = 2442786838
+size in bytes = 3025948945, block count = 1426404312
+atime = Sat Aug  5 07:15:33 1995, mtime = Wed Sep 30 03:07:32 1970, ctime = Thu Nov 14 22:58:12 2058
+ d[*] = {3421493227 309631280 3955486001 2061439975},  i1[*] = {447612951 50990340 1444322536},  i2[*] = {3567036931}
+----------------
+Inode #51
+type = INVALID_003, permissions = r---wx-wx, lnkcnt = 29216, owner = 703092669, group = 4058857873
+size in bytes = 721747970, block count = 4228355749
+atime = Mon Jan 10 06:19:29 1983, mtime = Wed Apr 27 10:21:05 2101, ctime = Sun Oct 31 18:14:28 1976
+ d[*] = {396071007 3328325232 94683665 1858519530},  i1[*] = {52609333 2283258785 871394212},  i2[*] = {860987964}
+----------------
+Inode #52
+type = INVALID_007, permissions = ---rw----, lnkcnt = 57213, owner = 2672456114, group = 3842345645
+size in bytes = 248577312, block count = 2233211617
+atime = Wed Feb 15 15:43:56 2079, mtime = Thu Mar 10 14:49:51 2022, ctime = Sat Jun  3 14:38:57 1995
+ d[*] = {4228399946 2616446450 3812276734 1218768930},  i1[*] = {4247696378 1513449275 2776753434},  i2[*] = {909765359}
+----------------
+Inode #53
+type = INVALID-016, permissions = r-x-wx-wx, lnkcnt = 39128, owner = 2516023938, group = 1056129430
+size in bytes = 335993396, block count = 2987439441
+atime = Mon Oct  6 10:05:52 2098, mtime = Sat Apr  8 07:15:29 2090, ctime = Fri May 30 12:18:04 2104
+ d[*] = {256832613 1665586860 2226675559 1577040683},  i1[*] = {890638127 3199526418 1424537105},  i2[*] = {2898286351}
+----------------
+Inode #54
+type = free, permissions = rwx--xrw-, lnkcnt = 22665, owner = 2346180760, group = 3075375141
+size in bytes = 2689321224, block count = 609310634
+atime = Thu May 30 05:28:49 2002, mtime = Tue Oct 30 15:46:46 2085, ctime = Mon Dec  7 03:21:02 2082
+ d[*] = {980381071 2250561992 1479266106 2577077111},  i1[*] = {2657192387 2420964508 3602936417},  i2[*] = {1243668871}
+----------------
+Inode #55
+type = symlink, permissions = --xrwx-w-, lnkcnt = 1969, owner = 616529907, group = 1361263578
+size in bytes = 3344804574, block count = 3420668688
+atime = Wed Sep 27 17:17:18 2102, mtime = Sun Feb 19 23:59:18 1989, ctime = Tue May 24 17:12:53 2016
+ d[*] = {766510071 1940549238 1124494974 1874058978},  i1[*] = {1420383527 1429941896 3167684121},  i2[*] = {1713039630}
+----------------
+Inode #56
+type = INVALID_001, permissions = --x-w-r-x, lnkcnt = 25386, owner = 1667376577, group = 401352125
+size in bytes = 1371091802, block count = 1802331421
+atime = Mon May 16 10:49:29 2005, mtime = Fri May  7 19:02:01 2088, ctime = Mon Mar 16 08:40:06 2105
+ d[*] = {3956219659 3139526173 1161498464 544771386},  i1[*] = {3549137564 2909522507 3797718354},  i2[*] = {752507332}
+----------------
+Inode #57
+type = INVALID-016, permissions = rwxrw-rwx, lnkcnt = 55674, owner = 3943162876, group = 2506029756
+size in bytes = 705424112, block count = 1738826839
+atime = Sat Oct  2 05:56:02 2032, mtime = Fri Dec 11 07:49:59 2054, ctime = Tue Jun  7 23:03:22 2039
+ d[*] = {2496694260 2661724971 2511836175 2133782288},  i1[*] = {3977131684 443780415 217578181},  i2[*] = {3876739686}
+----------------
+Inode #58
+type = INVALID_003, permissions = -wx----wx, lnkcnt = 35891, owner = 1206807725, group = 2708579961
+size in bytes = 3883963580, block count = 2390129634
+atime = Wed Jan  3 23:40:06 2080, mtime = Sat Mar 19 02:28:37 2067, ctime = Tue Apr 19 10:56:33 2050
+ d[*] = {3059846668 4258465209 4108323268 86564825},  i1[*] = {4249699620 3654310764 3082298979},  i2[*] = {512054943}
+----------------
+Inode #59
+type = INVALID_007, permissions = rwxr---w-, lnkcnt = 29832, owner = 1879184015, group = 292878470
+size in bytes = 794726362, block count = 941221880
+atime = Sat Apr 23 05:10:30 2039, mtime = Fri Oct  4 15:24:44 2047, ctime = Mon Apr 20 04:39:12 1998
+ d[*] = {1288862105 3493895231 1195795885 2260694075},  i1[*] = {3168307668 2291326268 2828557026},  i2[*] = {2974190117}
+----------------
+Inode #60
+type = INVALID-005, permissions = r-x------, lnkcnt = 63925, owner = 2837464541, group = 1246186613
+size in bytes = 4154442562, block count = 2978584983
+atime = Sat Oct 28 01:02:19 2006, mtime = Mon Dec 21 20:21:31 1998, ctime = Mon May 10 05:01:54 2032
+ d[*] = {4121882213 931156022 80985310 2862554654},  i1[*] = {1800857737 3704454012 3926490731},  i2[*] = {4267125410}
+----------------
+Inode #61
+type = INVALID-017, permissions = rw--w-rwx, lnkcnt = 38533, owner = 1748361229, group = 3140930982
+size in bytes = 1439390694, block count = 1424778224
+atime = Fri Dec 25 09:27:10 1970, mtime = Wed Dec  3 18:50:12 2087, ctime = Thu Apr 21 08:19:51 2067
+ d[*] = {2534496149 4182052150 252321553 1843712987},  i1[*] = {2191254223 941928677 15824905},  i2[*] = {423751954}
+----------------
+Inode #62
+type = symlink, permissions = rw-r--rwx, lnkcnt = 29741, owner = 2222855810, group = 2292421360
+size in bytes = 992391069, block count = 2830707695
+atime = Tue May 17 07:05:37 2033, mtime = Mon May 17 11:44:18 2100, ctime = Sun May 17 03:58:56 2026
+ d[*] = {3331530346 2656093132 1926314987 3526234607},  i1[*] = {2991125037 3722210019 2650955115},  i2[*] = {1118687159}
+----------------
+Inode #63
+type = INVALID_003, permissions = --x--xrw-, lnkcnt = 33024, owner = 386123161, group = 678049332
+size in bytes = 3108952925, block count = 4271654224
+atime = Sun Apr 30 05:32:32 2051, mtime = Fri Aug 21 17:26:41 2009, ctime = Thu Nov 28 14:44:44 2058
+ d[*] = {3806377562 321812691 564912519 348847322},  i1[*] = {412299195 3996282264 51383972},  i2[*] = {1531659017}
+----------------
+Header:
+  Magic number: 0x50f5
+  Version number: 0x20
+  Volume name: "sofs20_disk"
+  Properly unmounted: yes
+  Number of mounts: 1
+  Total number of blocks in the device: 490
+Inodes' metadata:
+  Total number of inodes: 32
+  Number of free inodes: 11
+  Last allocated inode: 20
+  Inode allocation bitmap:
+    0x001fffff 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+Data blocks' metadata:
+  First block of the data block pool: 3
+  Total number of data blocks: 485
+  Number of free data blocks: 484
+Reference table's metadata:
+  First block of the reference table: 488
+  Number of blocks of the reference table: 2
+  Index of first block with references: 0
+  Index of first cell, within first block, with references: 0
+  Number of references in reference table: 416
+Retrieval cache:
+  Index of the first occupied cache position: 0
+  Cache contents:
+         1     2     3     4     5     6     7     8     9    10
+        11    12    13    14    15    16    17    18    19    20
+        21    22    23    24    25    26    27    28    29    30
+        31    32    33    34    35    36    37    38    39    40
+        41    42    43    44    45    46    47    48    49    50
+        51    52    53    54    55    56    57    58    59    60
+        61    62    63    64    65    66    67    68
+Insertion cache:
+  Index of the first empty cache position: 0
+  Cache contents:
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+Inode #0
+type = directory, permissions = rwxrwxr-x, lnkcnt = 2, owner = 1000, group = 998
+size in bytes = 128, block count = 1
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #1
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #2
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #3
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #4
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #5
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #6
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #7
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #8
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #9
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #10
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #11
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #12
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #13
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #14
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #15
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #16
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #17
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #18
+type = symlink, permissions = rwxrwxrwx, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #19
+type = directory, permissions = rwxr-xr-x, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #20
+type = regular file, permissions = rw-r--r--, lnkcnt = 0, owner = 1000, group = 998
+size in bytes = 0, block count = 0
+atime = Wed Oct 28 11:43:57 2020, mtime = Wed Oct 28 11:43:57 2020, ctime = Wed Oct 28 11:43:57 2020
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #21
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #22
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #23
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #24
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #25
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #26
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #27
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #28
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #29
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #30
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #31
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {(nil) (nil) (nil) (nil)},  i1[*] = {(nil) (nil) (nil)},  i2[*] = {(nil)}
+----------------
+Inode #32
+type = free, permissions = ---------, lnkcnt = 46, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #33
+type = free, permissions = ---------, lnkcnt = 11822, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #34
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #35
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #36
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #37
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #38
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #39
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #40
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #41
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #42
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #43
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #44
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #45
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #46
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #47
+type = free, permissions = ---------, lnkcnt = 0, owner = 0, group = 0
+size in bytes = 0, block count = 0
+atime = Thu Jan  1 01:00:00 1970, mtime = Thu Jan  1 01:00:00 1970, ctime = Thu Jan  1 01:00:00 1970
+ d[*] = {0 0 0 0},  i1[*] = {0 0 0},  i2[*] = {0}
+----------------
+Inode #48
+type = INVALID_001, permissions = rwx-w---x, lnkcnt = 47727, owner = 1773979567, group = 1044580651
+size in bytes = 2567602298, block count = 1266276187
+atime = Mon Sep 25 20:12:33 1972, mtime = Wed Oct 18 20:49:59 2073, ctime = Mon May 18 07:55:23 2015
+ d[*] = {2117418982 2855614428 1161038570 2498888429},  i1[*] = {1829224979 1715841955 3028332981},  i2[*] = {1612418602}
+----------------
+Inode #49
+type = INVALID-016, permissions = -----x-wx, lnkcnt = 60739, owner = 1504399812, group = 3235089560
+size in bytes = 175204307, block count = 3086152941
+atime = Thu Jul 22 13:19:28 1971, mtime = Mon May  1 04:57:30 1972, ctime = Fri May  1 15:52:18 1970
+ d[*] = {2559468170 3999378211 2767797699 30726883},  i1[*] = {4233470285 4294339734 3709143099},  i2[*] = {687373128}
+----------------
+Inode #50
+type = INVALID-002, permissions = -wx-wx-wx, lnkcnt = 14872, owner = 2786176898, group = 2442786838
+size in bytes = 3025948945, block count = 1426404312
+atime = Sat Aug  5 07:15:33 1995, mtime = Wed Sep 30 03:07:32 1970, ctime = Thu Nov 14 22:58:12 2058
+ d[*] = {3421493227 309631280 3955486001 2061439975},  i1[*] = {447612951 50990340 1444322536},  i2[*] = {3567036931}
+----------------
+Inode #51
+type = INVALID_003, permissions = r---wx-wx, lnkcnt = 29216, owner = 703092669, group = 4058857873
+size in bytes = 721747970, block count = 4228355749
+atime = Mon Jan 10 06:19:29 1983, mtime = Wed Apr 27 10:21:05 2101, ctime = Sun Oct 31 18:14:28 1976
+ d[*] = {396071007 3328325232 94683665 1858519530},  i1[*] = {52609333 2283258785 871394212},  i2[*] = {860987964}
+----------------
+Inode #52
+type = INVALID_007, permissions = ---rw----, lnkcnt = 57213, owner = 2672456114, group = 3842345645
+size in bytes = 248577312, block count = 2233211617
+atime = Wed Feb 15 15:43:56 2079, mtime = Thu Mar 10 14:49:51 2022, ctime = Sat Jun  3 14:38:57 1995
+ d[*] = {4228399946 2616446450 3812276734 1218768930},  i1[*] = {4247696378 1513449275 2776753434},  i2[*] = {909765359}
+----------------
+Inode #53
+type = INVALID-016, permissions = r-x-wx-wx, lnkcnt = 39128, owner = 2516023938, group = 1056129430
+size in bytes = 335993396, block count = 2987439441
+atime = Mon Oct  6 10:05:52 2098, mtime = Sat Apr  8 07:15:29 2090, ctime = Fri May 30 12:18:04 2104
+ d[*] = {256832613 1665586860 2226675559 1577040683},  i1[*] = {890638127 3199526418 1424537105},  i2[*] = {2898286351}
+----------------
+Inode #54
+type = free, permissions = rwx--xrw-, lnkcnt = 22665, owner = 2346180760, group = 3075375141
+size in bytes = 2689321224, block count = 609310634
+atime = Thu May 30 05:28:49 2002, mtime = Tue Oct 30 15:46:46 2085, ctime = Mon Dec  7 03:21:02 2082
+ d[*] = {980381071 2250561992 1479266106 2577077111},  i1[*] = {2657192387 2420964508 3602936417},  i2[*] = {1243668871}
+----------------
+Inode #55
+type = symlink, permissions = --xrwx-w-, lnkcnt = 1969, owner = 616529907, group = 1361263578
+size in bytes = 3344804574, block count = 3420668688
+atime = Wed Sep 27 17:17:18 2102, mtime = Sun Feb 19 23:59:18 1989, ctime = Tue May 24 17:12:53 2016
+ d[*] = {766510071 1940549238 1124494974 1874058978},  i1[*] = {1420383527 1429941896 3167684121},  i2[*] = {1713039630}
+----------------
+Inode #56
+type = INVALID_001, permissions = --x-w-r-x, lnkcnt = 25386, owner = 1667376577, group = 401352125
+size in bytes = 1371091802, block count = 1802331421
+atime = Mon May 16 10:49:29 2005, mtime = Fri May  7 19:02:01 2088, ctime = Mon Mar 16 08:40:06 2105
+ d[*] = {3956219659 3139526173 1161498464 544771386},  i1[*] = {3549137564 2909522507 3797718354},  i2[*] = {752507332}
+----------------
+Inode #57
+type = INVALID-016, permissions = rwxrw-rwx, lnkcnt = 55674, owner = 3943162876, group = 2506029756
+size in bytes = 705424112, block count = 1738826839
+atime = Sat Oct  2 05:56:02 2032, mtime = Fri Dec 11 07:49:59 2054, ctime = Tue Jun  7 23:03:22 2039
+ d[*] = {2496694260 2661724971 2511836175 2133782288},  i1[*] = {3977131684 443780415 217578181},  i2[*] = {3876739686}
+----------------
+Inode #58
+type = INVALID_003, permissions = -wx----wx, lnkcnt = 35891, owner = 1206807725, group = 2708579961
+size in bytes = 3883963580, block count = 2390129634
+atime = Wed Jan  3 23:40:06 2080, mtime = Sat Mar 19 02:28:37 2067, ctime = Tue Apr 19 10:56:33 2050
+ d[*] = {3059846668 4258465209 4108323268 86564825},  i1[*] = {4249699620 3654310764 3082298979},  i2[*] = {512054943}
+----------------
+Inode #59
+type = INVALID_007, permissions = rwxr---w-, lnkcnt = 29832, owner = 1879184015, group = 292878470
+size in bytes = 794726362, block count = 941221880
+atime = Sat Apr 23 05:10:30 2039, mtime = Fri Oct  4 15:24:44 2047, ctime = Mon Apr 20 04:39:12 1998
+ d[*] = {1288862105 3493895231 1195795885 2260694075},  i1[*] = {3168307668 2291326268 2828557026},  i2[*] = {2974190117}
+----------------
+Inode #60
+type = INVALID-005, permissions = r-x------, lnkcnt = 63925, owner = 2837464541, group = 1246186613
+size in bytes = 4154442562, block count = 2978584983
+atime = Sat Oct 28 01:02:19 2006, mtime = Mon Dec 21 20:21:31 1998, ctime = Mon May 10 05:01:54 2032
+ d[*] = {4121882213 931156022 80985310 2862554654},  i1[*] = {1800857737 3704454012 3926490731},  i2[*] = {4267125410}
+----------------
+Inode #61
+type = INVALID-017, permissions = rw--w-rwx, lnkcnt = 38533, owner = 1748361229, group = 3140930982
+size in bytes = 1439390694, block count = 1424778224
+atime = Fri Dec 25 09:27:10 1970, mtime = Wed Dec  3 18:50:12 2087, ctime = Thu Apr 21 08:19:51 2067
+ d[*] = {2534496149 4182052150 252321553 1843712987},  i1[*] = {2191254223 941928677 15824905},  i2[*] = {423751954}
+----------------
+Inode #62
+type = symlink, permissions = rw-r--rwx, lnkcnt = 29741, owner = 2222855810, group = 2292421360
+size in bytes = 992391069, block count = 2830707695
+atime = Tue May 17 07:05:37 2033, mtime = Mon May 17 11:44:18 2100, ctime = Sun May 17 03:58:56 2026
+ d[*] = {3331530346 2656093132 1926314987 3526234607},  i1[*] = {2991125037 3722210019 2650955115},  i2[*] = {1118687159}
+----------------
+Inode #63
+type = INVALID_003, permissions = --x--xrw-, lnkcnt = 33024, owner = 386123161, group = 678049332
+size in bytes = 3108952925, block count = 4271654224
+atime = Sun Apr 30 05:32:32 2051, mtime = Fri Aug 21 17:26:41 2009, ctime = Thu Nov 28 14:44:44 2058
+ d[*] = {3806377562 321812691 564912519 348847322},  i1[*] = {412299195 3996282264 51383972},  i2[*] = {1531659017}
+----------------
