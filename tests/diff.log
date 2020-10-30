@@ -1,0 +1,68 @@
+9,10c9,10
+<   Total number of inodes: 48
+<   Number of free inodes: 47
+---
+>   Total number of inodes: 32
+>   Number of free inodes: 31
+24,26c24,26
+<   First block of the data block pool: 4
+<   Total number of data blocks: 325
+<   Number of free data blocks: 324
+---
+>   First block of the data block pool: 3
+>   Total number of data blocks: 324
+>   Number of free data blocks: 323
+28,29c28,29
+<   First block of the reference table: 329
+<   Number of blocks of the reference table: 0
+---
+>   First block of the reference table: 327
+>   Number of blocks of the reference table: 2
+32c32
+<   Number of references in reference table: 256
+---
+>   Number of references in reference table: 255
+61,62c61,62
+<   Total number of inodes: 48
+<   Number of free inodes: 47
+---
+>   Total number of inodes: 32
+>   Number of free inodes: 31
+76,78c76,78
+<   First block of the data block pool: 4
+<   Total number of data blocks: 325
+<   Number of free data blocks: 324
+---
+>   First block of the data block pool: 3
+>   Total number of data blocks: 324
+>   Number of free data blocks: 323
+80,81c80,81
+<   First block of the reference table: 329
+<   Number of blocks of the reference table: 0
+---
+>   First block of the reference table: 327
+>   Number of blocks of the reference table: 2
+84c84
+<   Number of references in reference table: 256
+---
+>   Number of references in reference table: 255
+2c2
+< type = directory, permissions = rwxrwxr-x, lnkcnt = 2, owner = 1000, group = 998
+---
+> type = directory, permissions = rwxr-xr-x, lnkcnt = 2, owner = 0, group = 0
+2c2
+< type = directory, permissions = rwxrwxr-x, lnkcnt = 2, owner = 1000, group = 998
+---
+> type = directory, permissions = rwxr-xr-x, lnkcnt = 2, owner = 0, group = 0
+34c34
+< 0400: fd 41 02 00 e8 03 00 00 e6 03 00 00 80 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+---
+> 0400: ed 41 02 00 00 00 00 00 00 00 00 00 80 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+34c34
+< 0400: fd 41 02 00 e8 03 00 00 e6 03 00 00 80 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+---
+> 0400: ed 41 02 00 00 00 00 00 00 00 00 00 80 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+34c34
+< 0400: fd 41 02 00 e8 03 00 00 e6 03 00 00 80 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+---
+> 0400: ed 41 02 00 00 00 00 00 00 00 00 00 80 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

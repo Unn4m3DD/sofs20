@@ -14,7 +14,6 @@ test_function 607 1000 0 999 -x -z
 test_function 607 2000 0 1999 -x -z
 
 
-
 if [ "$1" != "complete" ]; then return; fi
 
 for ((i = 4; i < 500; i++)); do
