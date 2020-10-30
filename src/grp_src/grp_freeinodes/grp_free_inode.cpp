@@ -29,11 +29,10 @@ void grpFreeInode(uint16_t in) {
   if (in >= MAX_INODES || in < 0) throw SOException(EINVAL, __FUNCTION__);
   SOSuperblock* super_block = soGetSuperblockPointer();
   int inodeHandler = soOpenInode(in);
-  SOInode* toFree = soGetInodePointer(soOpenInode(inodeHandler));
+  SOInode* toFree = soGetInodePointer(inodeHandler);
   memset(toFree, 0, sizeof(SOInode));
-  for (int i = 0; i < N_DIRECT; i++) toFree->d[i] = 0xFF;
-  for (int i = 0; i < N_INDIRECT; i++) toFree->i1[i] = 0xFF;
-  for (int i = 0; i < N_DOUBLE_INDIRECT; i++) toFree->i2[i] = 0xFF;
+  memset((int8_t*)(toFree) + sizeof(SOInode) - N_DIRECT * 4 - N_INDIRECT * 4 - N_DOUBLE_INDIRECT * 4,
+         BlockNullReference, N_DIRECT * 4 + N_INDIRECT * 4 + N_DOUBLE_INDIRECT * 4);
   set_freed_inode_index(super_block->ibitmap, in);
   super_block->ifree++;
   soSaveSuperblock();

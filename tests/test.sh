@@ -39,6 +39,14 @@ if [[ $1 == "" || $1 == "alloc_inode" ]]; then
   source ilayer/alloc_inode.sh $2
 fi
 
+if [[ $1 == "" || $1 == "free_inode" ]]; then
+  source ilayer/free_inode.sh $2
+fi
+
+if [[ $1 == "" || $1 == "alloc_db" ]]; then
+  source ilayer/alloc_db.sh $2
+fi
+
 errors="$(cat diff_bin.log)$(cat diff.log)$(cat bin_detect.log)"
 
 if [ "$errors" != "" ]; then

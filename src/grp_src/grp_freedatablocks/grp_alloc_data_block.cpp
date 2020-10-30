@@ -19,17 +19,18 @@ namespace sofs20 {
 uint32_t grpAllocDataBlock() {
   soProbe(441, "%s()\n", __FUNCTION__);
 
-  /* replace the following line with your code */
-  //return binAllocDataBlock();
   SOSuperblock* sb = soGetSuperblockPointer();
   if (sb->dbfree == 0) throw SOException(ENOSPC, __FUNCTION__);
-  if (sb->retrieval_cache.idx == REF_CACHE_SIZE - 1)
+  if (sb->retrieval_cache.idx == REF_CACHE_SIZE - 1) {
     soReplenishRetrievalCache();
-  int idx = 0;
-  for (;sb->retrieval_cache.ref[idx] == BlockNullReference; idx++);
-  int res = sb->retrieval_cache.ref[idx];
+    sb->retrieval_cache.idx = 0;
+  }
+  int idx = sb->retrieval_cache.idx;
+  int result = sb->retrieval_cache.ref[idx];
   sb->retrieval_cache.ref[idx] = BlockNullReference;
+  sb->retrieval_cache.idx++;
+  sb->dbfree--;
   soSaveSuperblock();
-  return res;
+  return result;
 }
 };  // namespace sofs20

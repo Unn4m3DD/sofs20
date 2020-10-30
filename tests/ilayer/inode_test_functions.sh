@@ -13,7 +13,7 @@ function free_inode_test() {
     printf "fi\n$i\nq\n" | bin/testtool -q 2 -p 402-402 -b -r 402-402 tmp/disk | grep "402" | grep "31m" >/dev/null
   done
   if [ $? == 0 ]; then
-    echo "binary form of $1 beeing called" >>bin_detect_tmp.log
+    echo "binary form of 402 beeing called" >>bin_detect_tmp.log
   fi
   bin/showblock -s 0 tmp/original_disk | grep -v "atime" >>tmp/original_inode
   bin/showblock -s 0 tmp/disk | grep -v "atime" >>tmp/inode
@@ -27,7 +27,7 @@ function free_inode_test() {
   fi
   diff tmp/original_inode tmp/inode -d >>diff_tmp.log
   diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
-  test_tmp_diff_and_append 401
+  test_tmp_diff_and_append 402
 }
 
 # alloc_inode
@@ -48,7 +48,6 @@ function alloc_inode_bin() {
     printf "ai\n$inode_type\n$permission\nq\n" | bin/testtool -q 2 -b tmp/disk >/dev/null
   done
 }
-
 
 # alloc_inode_test
 # $1 inode count
@@ -72,7 +71,7 @@ function alloc_inode_test() {
     printf "ai\n$inode_type\n$permission\nq\n" | bin/testtool -q 2 -p 401-401 -b -r 401-401 tmp/disk | grep "401" | grep "31m" >/dev/null
   done
   if [ $? == 0 ]; then
-    echo "binary form of $1 beeing called" >>bin_detect_tmp.log
+    echo "binary form of 401 beeing called" >>bin_detect_tmp.log
   fi
   bin/showblock -s 0 tmp/original_disk | grep -v "atime" >>tmp/original_inode
   bin/showblock -s 0 tmp/disk | grep -v "atime" >>tmp/inode
