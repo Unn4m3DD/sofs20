@@ -11,46 +11,19 @@ function create_disk() { #$1 -> disk size
 # $3 analysis block range begin
 # $4 analysis block range end
 # $5 disk size
-function alloc_inode_test() {
-  touch bin_detect_tmp.log
-  inode_type="$2"
-  declare -a permissions_array=(0 644 755 777)
-  permission=${permissions_array[inode_type]}
-
-  for ((i = 0; i < $1; i++)); do
-    if [ "$2" == "0" ]; then
-      inode_type=$(($RANDOM % 3 + 1))
-      declare -a permissions_array=(0 644 755 777)
-      permission=${permissions_array[inode_type]}
-    fi
-    printf "ai\n$inode_type\n$permission\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
-    printf "ai\n$inode_type\n$permission\nq\n" | bin/testtool -q 2 -p 401-401 -b -r 401-401 tmp/disk | grep "401" | grep "31m" >/dev/null
-  done
-  if [ $? == 0 ]; then
-    echo "binary form of $1 beeing called" >>bin_detect_tmp.log
-  fi
-  bin/showblock -s 0 tmp/original_disk | grep -v "atime" >>tmp/original_inode
-  bin/showblock -s 0 tmp/disk | grep -v "atime" >>tmp/inode
-  bin/showblock -i $3-$4 tmp/original_disk | grep -v "atime" >>tmp/original_inode
-  bin/showblock -i $3-$4 tmp/disk | grep -v "atime" >>tmp/inode
-  touch tmp/original_inode_bin
-  touch tmp/inode_bin
-  if [ $? != 0 ]; then
-    bin/showblock -x "0-$(($5 - 1))" tmp/original_disk | grep -v "atime" >>tmp/original_inode_bin
-    bin/showblock -x "0-$(($5 - 1))" tmp/disk | grep -v "atime" >>tmp/inode_bin
-  fi
-  diff tmp/original_inode tmp/inode -d >>diff_tmp.log
-  diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
-  test_tmp_diff_and_append 401
-
-}
-#$1 -> disk size
-create_disk 1000
+#------------------------------------------------------------------
+# create_disk
+# $1 -> disk size
+#------------------------------------------------------------------
+# alloc_inode_test
 # $1 inode count
 # $2 inode type (0 - random, 1 - file, 2 - dir, 3 - link)
 # $3 analysis block range begin
 # $4 analysis block range end
 # $5 disk size
+#------------------------------------------------------------------
+
+create_disk 1000
 alloc_inode_test 63 0 1 4 1000
 create_disk 1000
 alloc_inode_test 10 1 1 4 1000
