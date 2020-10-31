@@ -10,7 +10,6 @@ echo "This size is probably not correctly handled by the binaries given"
 test_function 601 329 0 0 -s
 test_function 601 73 0 0 -s
 test_function 601 330 0 0 -s
-
 test_function 601 4 0 0 -s
 test_function 601 20 0 0 -s
 test_function 601 50 0 0 -s
@@ -30,7 +29,6 @@ test_function 601 1000 0 999 -x -z
 if [ "$1" != "complete" ]; then return; fi
 
 for ((i = 4; i < 500; i++)); do
-  if [ "$i" == "73" ]; then i=$((i + 1)); fi
   printf "\e[34m$i -> "
   test_function 601 $i 0 $(($i - 1)) -x
 done

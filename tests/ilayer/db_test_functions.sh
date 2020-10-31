@@ -5,12 +5,11 @@
 # $4 analysis block range end
 # $5 disk size
 function free_db_test() {
-  # FUCKIN TODO
   touch bin_detect_tmp.log
 
   for ((i = $1; i < $2; i++)); do
-    printf "fi\n$i\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
-    printf "fi\n$i\nq\n" | bin/testtool -q 2 -p 442-442 -b -r 442-442 tmp/disk | grep "442" | grep "31m" >/dev/null
+    printf "fdb\n$i\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
+    printf "fdb\n$i\nq\n" | bin/testtool -q 2 -p 442-442 -b -r 442-442 tmp/disk | grep "442" | grep "31m" >/dev/null
   done
   if [ $? == 0 ]; then
     echo "binary form of 442 beeing called" >>bin_detect_tmp.log
@@ -32,19 +31,8 @@ function free_db_test() {
 
 # alloc_db
 # $1 db count
-# $2 db type (0 - random, 1 - file, 2 - dir, 3 - link)
 function alloc_db_bin() {
-  # FUCKIN TODO
-  db_type="$2"
-  declare -a permissions_array=(0 644 755 777)
-  permission=${permissions_array[db_type]}
-
   for ((i = 0; i < $1; i++)); do
-    if [ "$2" == "0" ]; then
-      db_type=$(($RANDOM % 3 + 1))
-      declare -a permissions_array=(0 644 755 777)
-      permission=${permissions_array[db_type]}
-    fi
     printf "ai\n$db_type\n$permission\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
     printf "ai\n$db_type\n$permission\nq\n" | bin/testtool -q 2 -b tmp/disk >/dev/null
   done
