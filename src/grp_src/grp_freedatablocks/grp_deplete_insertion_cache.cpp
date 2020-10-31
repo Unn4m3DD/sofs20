@@ -29,7 +29,7 @@ namespace sofs20
         if(sb->insertion_cache.idx != REF_CACHE_SIZE) return;
         uint32_t* reft = soGetReferenceBlockPointer(sb->reftable.blk_idx);
         uint i;
-        for(i = sb->reftable.ref_idx; i < RPB; i++) {
+        for(i = sb->reftable.ref_idx; i < RPB && i < sb->reftable.ref_idx + REF_CACHE_SIZE; i++) {
           reft[i] = sb->insertion_cache.ref[i - sb->reftable.ref_idx];
           sb->insertion_cache.ref[i - sb->reftable.ref_idx] = BlockNullReference;
         }

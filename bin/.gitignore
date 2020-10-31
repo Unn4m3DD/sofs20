@@ -6,4 +6,5 @@
 !createDisk
 !launch_tt.sh
 !replenish_rc.sh 
+!deplete_ic.sh
 
