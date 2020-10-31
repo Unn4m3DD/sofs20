@@ -4,4 +4,5 @@
 # except those following
 !.gitignore
 !createDisk
+!launch_tt.sh
 
