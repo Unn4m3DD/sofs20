@@ -23,7 +23,20 @@ namespace sofs20
         soProbe(444, "%s()\n", __FUNCTION__);
 
         /* replace the following line with your code */
-        binDepleteInsertionCache();
+        //binDepleteInsertionCache();
+        SOSuperblock* sb = soGetSuperblockPointer();
+        soOpenReferenceTable();
+        if(sb->insertion_cache.idx != REF_CACHE_SIZE) return;
+        uint32_t* reft = soGetReferenceBlockPointer(sb->reftable.blk_idx);
+        uint i;
+        for(i = sb->reftable.ref_idx; i < RPB; i++) {
+          reft[i] = sb->insertion_cache.ref[i - sb->reftable.ref_idx];
+          sb->insertion_cache.ref[i - sb->reftable.ref_idx] = BlockNullReference;
+        }
+        sb->insertion_cache.idx = i - sb->reftable.ref_idx + 1;
+        soSaveReferenceBlock();
+        soCloseReferenceTable();
+        soSaveSuperblock();
     }
 };
 
