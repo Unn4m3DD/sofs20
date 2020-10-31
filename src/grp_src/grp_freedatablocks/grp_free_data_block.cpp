@@ -21,13 +21,13 @@ void grpFreeDataBlock(uint32_t bn) {
 
   SOSuperblock* sb = soGetSuperblockPointer();
   if (bn < 0 || sb->dbtotal <= bn) throw SOException(EINVAL, __FUNCTION__);
-  if (sb->insertion_cache.idx == REF_CACHE_SIZE - 1)
+  if (sb->insertion_cache.idx == REF_CACHE_SIZE) {
     soDepleteInsertionCache();
-  for (int idx = 0; idx < REF_CACHE_SIZE; idx++)
-    if (sb->insertion_cache.ref[idx] == BlockNullReference) {
-      sb->insertion_cache.ref[idx] = bn;
-      break;
-    }
+    sb->insertion_cache.idx = 0;
+  }
+  while (sb->insertion_cache.ref[sb->insertion_cache.idx] != BlockNullReference)
+    sb->insertion_cache.idx++;
+  sb->insertion_cache.ref[sb->insertion_cache.idx++] = bn;
   sb->dbfree++;
   soSaveSuperblock();
 }

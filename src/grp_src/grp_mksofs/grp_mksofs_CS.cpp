@@ -25,10 +25,12 @@ void grpComputeStructure(uint32_t ntotal, uint32_t& itotal, uint32_t& dbtotal) {
   //dbtotal = ntotal - (2 + itotal / IPB + 1 + ref_table_block_count)
 
   uint ref_table_block_count =
-      ((ntotal - 2 - itotal / IPB + REF_CACHE_SIZE / RPB) / (1 + 1 / RPB) - REF_CACHE_SIZE + RPB - 1) / RPB;
+      (ntotal - 2 - itotal / IPB + REF_CACHE_SIZE / RPB - REF_CACHE_SIZE + RPB - 2) / RPB;
 
   dbtotal = ntotal - 1 - itotal / IPB - ref_table_block_count;
 
+  if (1 + itotal / IPB + dbtotal + ref_table_block_count < ntotal)
+    dbtotal++;
   if (1 + itotal / IPB + dbtotal + ref_table_block_count < ntotal)
     itotal += IPB;
 }
