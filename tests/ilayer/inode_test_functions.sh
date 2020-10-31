@@ -5,7 +5,6 @@
 # $4 analysis block range end
 # $5 disk size
 function free_inode_test() {
-  #TODO
   touch bin_detect_tmp.log
 
   for ((i = $1; i < $2; i++)); do

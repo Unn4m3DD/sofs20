@@ -17,8 +17,6 @@ namespace sofs20 {
 void grpReplenishRetrievalCache(void) {
   soProbe(443, "%s()\n", __FUNCTION__);
 
-  /* replace the following line with your code */
-  //binReplenishRetrievalCache();
   SOSuperblock* sb = soGetSuperblockPointer();
   if (sb->retrieval_cache.idx != REF_CACHE_SIZE) return;
   if (sb->reftable.count != 0) {
@@ -33,10 +31,10 @@ void grpReplenishRetrievalCache(void) {
     refT[i] = BlockNullReference;
   }
   if (sb->reftable.ref_idx + REF_CACHE_SIZE >= RPB) {
-    sb->reftable.blk_idx = (sb->reftable.blk_idx + 1) % sb->rt_size; 
+    sb->reftable.blk_idx = (sb->reftable.blk_idx + 1) % sb->rt_size;
     sb->reftable.ref_idx = 0;
-  }
-  else sb->reftable.ref_idx += REF_CACHE_SIZE;
+  } else
+    sb->reftable.ref_idx += REF_CACHE_SIZE;
   sb->retrieval_cache.idx = 0;
   soSaveReferenceBlock();
   soCloseReferenceTable();
