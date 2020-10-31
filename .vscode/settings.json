@@ -72,6 +72,11 @@
     "streambuf": "cpp",
     "thread": "cpp",
     "cinttypes": "cpp",
-    "typeinfo": "cpp"
+    "typeinfo": "cpp",
+  },
+  "cmake.debugConfig": {
+    "args": [
+      "/tmp/dsk"
+    ]
   }
 }

@@ -37,9 +37,9 @@ void grpReplenishRetrievalCache(void) {
     sb->reftable.ref_idx = 0;
   }
   else sb->reftable.ref_idx += REF_CACHE_SIZE;
-  sb->retrieval_cache.idx = 0;
+  sb->retrieval_cache.idx = 0;  
   soSaveReferenceBlock();
   soCloseReferenceTable();
-  soCloseSuperblock();
+  soSaveSuperblock();
 }
 };  // namespace sofs20
