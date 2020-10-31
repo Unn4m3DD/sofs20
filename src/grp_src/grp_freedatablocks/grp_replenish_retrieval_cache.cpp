@@ -38,6 +38,6 @@ void grpReplenishRetrievalCache(void) {
   sb->retrieval_cache.idx = 0;
   soSaveReferenceBlock();
   soCloseReferenceTable();
-  soCloseSuperblock();
+  soSaveSuperblock();
 }
 };  // namespace sofs20

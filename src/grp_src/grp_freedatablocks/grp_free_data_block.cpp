@@ -21,7 +21,7 @@ void grpFreeDataBlock(uint32_t bn) {
 
   SOSuperblock* sb = soGetSuperblockPointer();
   if (bn < 0 || sb->dbtotal <= bn) throw SOException(EINVAL, __FUNCTION__);
-  if (sb->insertion_cache.idx == REF_CACHE_SIZE) {
+  if (sb->insertion_cache.idx == REF_CACHE_SIZE + 1) {
     soDepleteInsertionCache();
     sb->insertion_cache.idx = 0;
   }
