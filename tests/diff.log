@@ -1,92 +1,48 @@
-26c26
-<   Number of free data blocks: 201
+2c2
+<   Magic number: 0x50f5
 ---
->   Number of free data blocks: 200
+>   Magic number: 0xffff
+9,10c9,10
+<   Total number of inodes: 64
+<   Number of free inodes: 63
+---
+>   Total number of inodes: 32
+>   Number of free inodes: 31
+24,26c24,26
+<   First block of the data block pool: 5
+<   Total number of data blocks: 68
+<   Number of free data blocks: 67
+---
+>   First block of the data block pool: 3
+>   Total number of data blocks: 257
+>   Number of free data blocks: 256
+28,29c28,29
+<   First block of the reference table: 73
+<   Number of blocks of the reference table: 0
+---
+>   First block of the reference table: 260
+>   Number of blocks of the reference table: 4294967109
 32c32
-<   Number of references in reference table: 120
+<   Number of references in reference table: 0
 ---
->   Number of references in reference table: 66
-44c44
-<   Index of the first empty cache position: 15
+>   Number of references in reference table: 188
+34c34
+<   Index of the first occupied cache position: 1
 ---
->   Index of the first empty cache position: 68
-46,52c46,52
-<      55 56 57 58 59 60 61 62 63 64
-<      65 66 67 68 69 (nil) (nil) (nil) (nil) (nil)
-<      (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
-<      (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
-<      (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
-<      (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
-<      (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+>   Index of the first occupied cache position: 0
+36,42c36,42
+<      (nil)     1     2     3     4     5     6     7     8     9
+<         10    11    12    13    14    15    16    17    18    19
+<         20    21    22    23    24    25    26    27    28    29
+<         30    31    32    33    34    35    36    37    38    39
+<         40    41    42    43    44    45    46    47    48    49
+<         50    51    52    53    54    55    56    57    58    59
+<         60    61    62    63    64    65    66    67
 ---
->      1 2 3 4 5 6 7 8 9 10
->      11 12 13 14 15 16 17 18 19 20
->      21 22 23 24 25 26 27 28 29 30
->      31 32 33 34 35 36 37 38 39 40
->      41 42 43 44 45 46 47 48 49 50
->      51 52 53 54 55 56 57 58 59 60
->      61 62 63 64 65 66 67 68
-78,84c78,84
-< 0200: 0000000269 0000000270 0000000001 0000000002 0000000003 0000000004 0000000005 0000000006
-< 0208: 0000000007 0000000008 0000000009 0000000010 0000000011 0000000012 0000000013 0000000014
-< 0216: 0000000015 0000000016 0000000017 0000000018 0000000019 0000000020 0000000021 0000000022
-< 0224: 0000000023 0000000024 0000000025 0000000026 0000000027 0000000028 0000000029 0000000030
-< 0232: 0000000031 0000000032 0000000033 0000000034 0000000035 0000000036 0000000037 0000000038
-< 0240: 0000000039 0000000040 0000000041 0000000042 0000000043 0000000044 0000000045 0000000046
-< 0248: 0000000047 0000000048 0000000049 0000000050 0000000051 0000000052 0000000053 0000000054
----
-> 0200: 0000000269 0000000270   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0208:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0216:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0224:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0232:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0240:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0248:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-26c26
-<   Number of free data blocks: 151
----
->   Number of free data blocks: 150
-32c32
-<   Number of references in reference table: 84
----
->   Number of references in reference table: 16
-44c44
-<   Index of the first empty cache position: 1
----
->   Index of the first empty cache position: 68
-46,52c46,52
-<      69 (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
-<      (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
-<      (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
-<      (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
-<      (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
-<      (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
-<      (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
----
->      1 2 3 4 5 6 7 8 9 10
->      11 12 13 14 15 16 17 18 19 20
->      21 22 23 24 25 26 27 28 29 30
->      31 32 33 34 35 36 37 38 39 40
->      41 42 43 44 45 46 47 48 49 50
->      51 52 53 54 55 56 57 58 59 60
->      61 62 63 64 65 66 67 68
-72,80c72,80
-< 0152: 0000000001 0000000002 0000000003 0000000004 0000000005 0000000006 0000000007 0000000008
-< 0160: 0000000009 0000000010 0000000011 0000000012 0000000013 0000000014 0000000015 0000000016
-< 0168: 0000000017 0000000018 0000000019 0000000020 0000000021 0000000022 0000000023 0000000024
-< 0176: 0000000025 0000000026 0000000027 0000000028 0000000029 0000000030 0000000031 0000000032
-< 0184: 0000000033 0000000034 0000000035 0000000036 0000000037 0000000038 0000000039 0000000040
-< 0192: 0000000041 0000000042 0000000043 0000000044 0000000045 0000000046 0000000047 0000000048
-< 0200: 0000000049 0000000050 0000000051 0000000052 0000000053 0000000054 0000000055 0000000056
-< 0208: 0000000057 0000000058 0000000059 0000000060 0000000061 0000000062 0000000063 0000000064
-< 0216: 0000000065 0000000066 0000000067 0000000068   (nil)      (nil)      (nil)      (nil)   
----
-> 0152:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0160:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0168:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0176:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0184:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0192:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0200:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0208:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
-> 0216:   (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)      (nil)   
+>          1     2     3     4     5     6     7     8     9    10
+>         11    12    13    14    15    16    17    18    19    20
+>         21    22    23    24    25    26    27    28    29    30
+>         31    32    33    34    35    36    37    38    39    40
+>         41    42    43    44    45    46    47    48    49    50
+>         51    52    53    54    55    56    57    58    59    60
+>         61    62    63    64    65    66    67    68

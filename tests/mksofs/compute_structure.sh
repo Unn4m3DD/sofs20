@@ -4,11 +4,13 @@
 # $4 = block_range_end
 # $5 = block_type
 source ./mksofs/test_function.sh
-test_function 601 72 0 0 -s
-test_function 601 328 0 0 -s
 echo "This size is probably not correctly handled by the binaries given"
 test_function 601 73 0 0 -s
+return
 test_function 601 330 0 0 -s
+
+test_function 601 72 0 0 -s
+test_function 601 328 0 0 -s
 
 
 

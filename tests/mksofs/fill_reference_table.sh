@@ -5,7 +5,6 @@
 # $5 = block_type
 source ./mksofs/test_function.sh
 test_function 605 330 0 0 -s
-echo "This size is probably not correctly handled by the binaries given"
 test_function 605 330 328 329 -r
 
 test_function 605 1000 990 996 -x
