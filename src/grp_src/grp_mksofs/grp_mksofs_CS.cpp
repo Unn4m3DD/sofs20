@@ -29,10 +29,11 @@ void grpComputeStructure(uint32_t ntotal, uint32_t& itotal, uint32_t& dbtotal) {
     dbtotal = ntotal - (ref_table_block_count + 1 + itotal / IPB);
     if (dbtotal - 1 <= REF_CACHE_SIZE + ref_table_block_count * RPB) break;
   }
-
   dbtotal = ntotal - (1 + itotal / IPB + ref_table_block_count);
-  if (1 + itotal / IPB + dbtotal + ref_table_block_count < ntotal)
-    itotal += IPB;
+  if (dbtotal - 1 == REF_CACHE_SIZE + (ref_table_block_count - 1) * RPB) {
+    itotal += 2 * IPB;
+    dbtotal--;
+  }
 }
 }  // namespace sofs20
 
