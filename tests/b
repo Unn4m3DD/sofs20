@@ -1,5 +1,5 @@
 Header:
-  Magic number: 0xffff
+  Magic number: 0x50f5
   Version number: 0x20
   Volume name: "sofs20_disk"
   Properly unmounted: yes
@@ -22,14 +22,14 @@ Inodes' metadata:
     0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
 Data blocks' metadata:
   First block of the data block pool: 3
-  Total number of data blocks: 257
-  Number of free data blocks: 256
+  Total number of data blocks: 69
+  Number of free data blocks: 68
 Reference table's metadata:
-  First block of the reference table: 260
-  Number of blocks of the reference table: 4294967109
+  First block of the reference table: 72
+  Number of blocks of the reference table: 1
   Index of first block with references: 0
   Index of first cell, within first block, with references: 0
-  Number of references in reference table: 188
+  Number of references in reference table: 0
 Retrieval cache:
   Index of the first occupied cache position: 0
   Cache contents:

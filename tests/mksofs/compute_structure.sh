@@ -6,7 +6,7 @@
 source ./mksofs/test_function.sh
 echo "This size is probably not correctly handled by the binaries given"
 test_function 601 73 0 0 -s
-return
+return 
 test_function 601 330 0 0 -s
 
 test_function 601 72 0 0 -s
