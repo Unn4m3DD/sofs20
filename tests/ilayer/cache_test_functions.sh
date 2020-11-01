@@ -55,8 +55,8 @@ deplete_test() {
   if [ $e == 1 ]; then
     echo "binary form of 443 beeing called" >>bin_detect_tmp.log
   fi
-  bin/showblock -s 0 tmp/original_disk | grep -v "atime" > a
-  bin/showblock -s 0 tmp/disk | grep -v "atime" > b
+  bin/showblock -s 0 tmp/original_disk | grep -v "atime" >>tmp/original_inode
+  bin/showblock -s 0 tmp/disk | grep -v "atime" >>tmp/inode
   bin/showblock -r $4-$5 tmp/original_disk | grep -v "atime" >>tmp/original_inode
   bin/showblock -r $4-$5 tmp/disk | grep -v "atime" >>tmp/inode
   touch tmp/original_inode_bin
