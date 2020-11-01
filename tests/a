@@ -1,0 +1,52 @@
+Header:
+  Magic number: 0x50f5
+  Version number: 0x20
+  Volume name: "sofs20_disk"
+  Properly unmounted: yes
+  Number of mounts: 1
+  Total number of blocks in the device: 75
+Inodes' metadata:
+  Total number of inodes: 32
+  Number of free inodes: 31
+  Last allocated inode: 0
+  Inode allocation bitmap:
+    0x00000001 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+    0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+Data blocks' metadata:
+  First block of the data block pool: 3
+  Total number of data blocks: 71
+  Number of free data blocks: 70
+Reference table's metadata:
+  First block of the reference table: 74
+  Number of blocks of the reference table: 1
+  Index of first block with references: 0
+  Index of first cell, within first block, with references: 0
+  Number of references in reference table: 68
+Retrieval cache:
+  Index of the first occupied cache position: 68
+  Cache contents:
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+Insertion cache:
+  Index of the first empty cache position: 2
+  Cache contents:
+     69 70 (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
+     (nil) (nil) (nil) (nil) (nil) (nil) (nil) (nil)
