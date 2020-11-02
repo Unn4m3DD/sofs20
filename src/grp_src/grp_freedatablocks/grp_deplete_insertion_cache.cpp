@@ -25,13 +25,13 @@ void grpDepleteInsertionCache(void) {
   SOSuperblock* sb = soGetSuperblockPointer();
   soOpenReferenceTable();
   if (sb->insertion_cache.idx != REF_CACHE_SIZE) return;
-  uint32_t* ref_table = soGetReferenceBlockPointer(
+  uint32_t* ref_table  = soGetReferenceBlockPointer(
       (sb->reftable.blk_idx + (sb->reftable.ref_idx + sb->reftable.count + 1) / RPB) % sb->rt_size);
 
   uint last_not_null;
   for (uint i = 0; i < RPB; i++)
     if (ref_table[i] != BlockNullReference) last_not_null = i;
-
+  
   uint offset;
   for (offset = last_not_null; offset < RPB; offset++)
     if (ref_table[offset] == BlockNullReference) break;
