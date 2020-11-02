@@ -13,6 +13,7 @@ static uint32_t grpGetDoubleIndirectFileBlock(SOInode* ip, uint32_t fbn);
 
 uint32_t grpGetFileBlock(int ih, uint32_t fbn) {
   soProbe(301, "%s(%d, %u)\n", __FUNCTION__, ih, fbn);
+  soCheckInodeHandler(ih, __FUNCTION__);
   SOInode* current_inode = soGetInodePointer(ih);
   if (fbn < N_DIRECT)
     return current_inode->d[fbn];
