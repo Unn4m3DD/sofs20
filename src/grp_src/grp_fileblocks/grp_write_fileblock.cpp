@@ -9,7 +9,7 @@
 namespace sofs20 {
 void grpWriteFileBlock(int ih, uint32_t fbn, void* buf) {
   soProbe(332, "%s(%d, %u, %p)\n", __FUNCTION__, ih, fbn, buf);
-  soCheckInodeHandler(ih, __FUNCTION__);
+  //soCheckInodeHandler(ih, __FUNCTION__);
   uint32_t physical_block_number = soGetFileBlock(ih, fbn);
   if (physical_block_number == BlockNullReference)
     physical_block_number = soAllocFileBlock(ih, fbn);
