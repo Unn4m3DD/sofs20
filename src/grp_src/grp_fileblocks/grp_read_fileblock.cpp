@@ -13,6 +13,9 @@ void grpReadFileBlock(int ih, uint32_t fbn, void* buf) {
   /* replace the following line with your code */
   //binReadFileBlock(ih, fbn, buf);
   uint32_t current_data_block = soGetFileBlock(ih, fbn);
-  soReadDataBlock(current_data_block, buf);
+  if (current_data_block != BlockNullReference)
+    soReadDataBlock(current_data_block, buf);
+  else
+    memset(buf, 0, BlockSize);
 }
 };  // namespace sofs20
