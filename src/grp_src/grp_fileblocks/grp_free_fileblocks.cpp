@@ -10,49 +10,47 @@
 
 namespace sofs20 {
 
-/* free all blocks between positions ffbn and RPB - 1
-     * existing in the block of references given by i1.
-     * Return true if, after the operation, all references become BlockNullReference.
-     * It assumes i1 is valid.
-     */
-static bool grpFreeIndirectFileBlocks(SOInode* ip, uint32_t i1, uint32_t ffbn) {
-  if (ffbn > RPB - 1) return false;
-  for (uint32_t i = 0; i < RPB - 1; i++)
-    ip->i1[i] = BlockNullReference;
-  return true;
-}
+typedef struct
+{
+  uint32_t idx0, idx1, idx2;
+} location;
 
-/* free all blocks between positions ffbn and RPB**2 - 1
-     * existing in the block of indirect references given by i2.
-     * Return true if, after the operation, all references become BlockNullReference.
-     * It assumes i2 is valid.
-     */
-static bool grpFreeDoubleIndirectFileBlocks(SOInode* ip, uint32_t i2, uint32_t ffbn) {
-  if (ffbn > RPB * RPB - 1) return false;
-  for (uint32_t i = 0; i < RPB * RPB - 1; i++)
-    ip->i1[i] = BlockNullReference;
-  return true;
-}
+static void grpFreeIndirectFileBlocks(SOInode* ip, uint32_t fbn);
+static void grpFreeDoubleIndirectFileBlocks(SOInode* ip, uint32_t fbn);
 
-/* ********************************************************* */
+static void free_fileblock(SOInode* inode, uint32_t fbn) {
+  if (fbn < N_DIRECT)
+    inode->d[fbn];
+  else if (fbn - N_DIRECT < N_INDIRECT * RPB)
+    grpFreeIndirectFileBlocks(inode, fbn - N_DIRECT);
+  else if (fbn - N_DIRECT - N_INDIRECT < N_DOUBLE_INDIRECT * RPB * RPB)
+    grpFreeDoubleIndirectFileBlocks(inode, fbn - N_DIRECT - N_INDIRECT);
+}
 
 void grpFreeFileBlocks(int ih, uint32_t ffbn) {
   soProbe(303, "%s(%d, %u)\n", __FUNCTION__, ih, ffbn);
-  (void)grpFreeDoubleIndirectFileBlocks;
-  (void)grpFreeIndirectFileBlocks;
-  /* replace the following line with your code */
-  //binFreeFileBlocks(ih, ffbn);
+  SOInode* inode = soGetInodePointer(ih);
+  while (ffbn < N_DIRECT + N_INDIRECT * RPB + N_DOUBLE_INDIRECT * RPB * RPB) {
+    free_fileblock(inode, ffbn);
+  }
 }
 
-#if false
-    static bool grpFreeDoubleIndirectFileBlocks(SOInode * ip, uint32_t i2, uint32_t ffbn)
-    {
-        soProbe(303, "%s(..., %u, %u)\n", __FUNCTION__, i2, ffbn);
-
-        /* replace the following line with your code */
-        throw SOException(ENOSYS, __FUNCTION__); 
-    }
-#endif
-
-/* ********************************************************* */
+static void grpFreeIndirectFileBlocks(SOInode* ip, uint32_t fbn) {
+  soProbe(301, "%s(%d, ...)\n", __FUNCTION__, fbn);
+  uint32_t ref_table[RPB];
+  soReadDataBlock(ip->i1[fbn / RPB], ref_table);
+  if (ref_table[fbn % RPB] != BlockNullReference) {
+    ref_table[fbn % RPB] = BlockNullReference;
+    ip->blkcnt--;
+  }
+  soWriteDataBlock(ip->i1[fbn / RPB], &ref_table);
+}
+static void grpFreeDoubleIndirectFileBlocks(SOInode* ip, uint32_t fbn) {
+  soProbe(301, "%s(%d, ...)\n", __FUNCTION__, fbn);
+  uint32_t ref_table_first[RPB];
+  soReadDataBlock(ip->i2[fbn / (RPB * RPB)], ref_table_first);
+  uint32_t ref_table[RPB];
+  soReadDataBlock(ref_table_first[fbn / (RPB)], ref_table);
+  ref_table[fbn % RPB];
+}
 };  // namespace sofs20
