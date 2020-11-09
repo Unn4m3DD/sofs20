@@ -104,8 +104,45 @@ function ttfi() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local num=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 402"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "fi\n$num\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "fi\n$num\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -120,8 +157,43 @@ function ttadb() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 441"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "adb\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "adb\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -138,8 +210,45 @@ function ttfdb() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local num=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 442"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "fdb\n$num\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "fdb\n$num\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -154,8 +263,43 @@ function ttrrc() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 443"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+  
+  if [ $verbose -eq 1 ]; then
+    echo -ne "rrc\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "rrc\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -170,8 +314,43 @@ function ttdic() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 444"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+  
+  if [ $verbose -eq 1 ]; then
+    echo -ne "dic\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "dic\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -189,8 +368,45 @@ function ttgfb() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local num=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 301"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "gfb\n$num\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "gfb\n$num\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+  
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -208,8 +424,45 @@ function ttafb() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local num=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 302"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "afb\n$num\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "afb\n$num\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -227,8 +480,45 @@ function ttffb() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local num=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 303"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "ffb\n$num\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "ffb\n$num\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -247,8 +537,45 @@ function ttrfb() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local num=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 331"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "rfb\n$num\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "rfb\n$num\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -268,8 +595,45 @@ function ttwfb() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local num=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 332"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "wfb\n$num\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "wfb\n$num\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -287,8 +651,47 @@ function ttgde() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local pin=$1
+  shift 1
+  local sname=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 201"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "gde\n$pin\n$sname\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "gde\n$pin\n$sname\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -307,8 +710,49 @@ function ttade() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local pim=$1
+  shift 1
+  local sname=$1
+  shift 1
+  local cin=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 202"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "ade\n$pin\n$sname\n$cin\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "ade\n$pin\n$sname\n$cin\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -326,8 +770,47 @@ function ttdde() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local pin=$1
+  shift 1
+  local sname=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 203"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "dde\n$pin\n$sname\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "dde\n$pin\n$sname\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -346,8 +829,49 @@ function ttrde() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local pin=$1
+  shift 1
+  local sname=$1
+  shift 1
+  local nname=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 204"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "rde\n$pin\n$sname\n$nname\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "rde\n$pin\n$sname\n$nname\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -364,8 +888,45 @@ function ttcde() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local pin=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 205"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "cde\n$pin\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "cde\n$pin\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
@@ -382,8 +943,45 @@ function tttp() {
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
 
-  WarnMessage "NOT IMPLEMENTED YET"
-  InfoMessage "$helpmsg"
+  local ipath=$1
+  shift 1
+  local ttoptions="-g" verbose=0
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+    "-b" | "-g") # testtool options are the same
+      ttoptions+=" $1"
+      shift 1
+      ;;
+    "-p") # probe only this function
+      ttoptions+=" -p 221"
+      verbose=1
+      shift 1
+      ;;
+    "-v") # probe all functions
+      ttoptions+=" -p 0-999"
+      verbose=1
+      shift 1
+      ;;
+    "-h") # help message
+      InfoMessage "$helpmsg"
+      return
+      ;;
+    *) # some thing wrong
+      ErrorMessage "Wrong arguments: \"$@\""
+      InfoMessage "$helpmsg"
+      break
+      ;;
+    esac
+  done
+
+  if [ $verbose -eq 1 ]; then
+    echo -ne "tp\n$ipath\nq\n" | tt -q 1 $ttoptions
+  else
+    echo -ne "tp\n$ipath\nq\n" | tt -q 1 $ttoptions -p 0-0 | head -1 | cut -d\  -f3
+  fi
+
+  #WarnMessage "NOT IMPLEMENTED YET"
+  #InfoMessage "$helpmsg"
 }
 
 # --------------------------------------------------------------------------
