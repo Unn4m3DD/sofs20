@@ -36,6 +36,7 @@ void free_rec(uint32_t* reference, uint32_t depth) {
 
 void grpFreeFileBlocks(int ih, uint32_t ffbn) {
   soProbe(303, "%s(%d, %u)\n", __FUNCTION__, ih, ffbn);
+  soGetFileBlock(ih, ffbn); // throws exception on invalide file block number
   inode = soGetInodePointer(ih);
   to_free_count = N_DIRECT + N_INDIRECT * RPB + N_DOUBLE_INDIRECT * RPB * RPB - ffbn;
   uint8_t depths[N_DIRECT + N_INDIRECT + N_DOUBLE_INDIRECT];

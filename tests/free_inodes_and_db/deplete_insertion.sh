@@ -1,5 +1,5 @@
 source ./create_disk.sh
-source ./ilayer/cache_test_functions.sh
+source ./free_inodes_and_db/cache_test_functions.sh
 
 # deplete_test
 # $1 disk size

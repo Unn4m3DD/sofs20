@@ -13,7 +13,7 @@ function free_db_test() {
     if [ $? == 0 ]; then e=1; fi
   done
   if [ $e == 1 ]; then
-    echo "binary form of 443 beeing called" >>bin_detect_tmp.log
+    echo "binary form of 442 beeing called" >>bin_detect_tmp.log
   fi
   bin/showblock -s 0 tmp/original_disk | grep -v "atime" >>tmp/original_db
   bin/showblock -s 0 tmp/disk | grep -v "atime" >>tmp/db

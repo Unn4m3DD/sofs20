@@ -1,6 +1,6 @@
 source ./create_disk.sh
-source ./ilayer/cache_test_functions.sh
-source ./ilayer/db_test_functions.sh
+source ./free_inodes_and_db/cache_test_functions.sh
+source ./free_inodes_and_db/db_test_functions.sh
 # alloc_db_test
 # $1 db count
 # $2 analysis block range begin

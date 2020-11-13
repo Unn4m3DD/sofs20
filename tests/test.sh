@@ -20,9 +20,13 @@ if [[ $1 == "" || $1 == "mksofs" ]]; then
   source mksofs/test.sh 
   test_mksoft $2 $3
 fi
-if [[ $1 == "" || $1 == "ilayer" ]]; then
-  source ilayer/test.sh 
-  test_ilayer $2 $3
+if [[ $1 == "" || $1 == "free_inodes_and_db" ]]; then
+  source free_inodes_and_db/test.sh 
+  free_inodes_and_db $2 $3
+fi
+if [[ $1 == "" || $1 == "fileblocks" ]]; then
+  source fileblocks/test.sh 
+  fileblocks $2 $3
 fi
 
 errors="$(cat diff_bin.log)$(cat diff.log)$(cat bin_detect.log)"

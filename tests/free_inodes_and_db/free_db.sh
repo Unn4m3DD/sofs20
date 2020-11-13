@@ -1,4 +1,4 @@
-source ./ilayer/db_test_functions.sh
+source ./free_inodes_and_db/db_test_functions.sh
 source ./create_disk.sh
 
 #------------------------------------------------------------------
