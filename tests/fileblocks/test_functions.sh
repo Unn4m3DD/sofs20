@@ -19,12 +19,20 @@ function alloc_fb_test() {
   touch tmp/original_inode_bin
   touch tmp/inode_bin
 
-  bin/showblock -x "0-$(($5 - 1))" tmp/original_disk | grep -v "atime" >>tmp/original_inode_bin
-  bin/showblock -x "0-$(($5 - 1))" tmp/disk | grep -v "atime" >>tmp/inode_bin
+  #bin/showblock -x "0-$(($5 - 1))" tmp/original_disk | grep -v "atime" >>tmp/original_inode_bin
+  #bin/showblock -x "0-$(($5 - 1))" tmp/disk | grep -v "atime" >>tmp/inode_bin
 
   diff tmp/original_inode tmp/inode -d >>diff_tmp.log
   diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
   test_tmp_diff_and_append 302
+}
+
+# alloc_fb_bin
+# $1 inode number
+# $2 fb index
+function alloc_fb_bin() {
+  printf "afb\n$1\n$2\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
+  printf "afb\n$1\n$2\nq\n" | bin/testtool -q 2 -b tmp/disk >/dev/null
 }
 
 

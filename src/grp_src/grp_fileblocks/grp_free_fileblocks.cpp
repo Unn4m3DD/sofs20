@@ -15,6 +15,7 @@ uint32_t to_free_count, free_count = 0;
 void free_rec(uint32_t* reference, uint32_t depth) {
   if (*reference == BlockNullReference) {
     free_count += pow(RPB, depth);
+    return;
   }
   if (depth != 0) {
     uint32_t ref_block[RPB];
@@ -27,35 +28,38 @@ void free_rec(uint32_t* reference, uint32_t depth) {
   }
   if (*reference != BlockNullReference) {
     inode->blkcnt--;
+    soFreeDataBlock(*reference);
     *reference = BlockNullReference;
   }
-  if (depth == 0) {
+  if (depth == 0)
     free_count++;
-  }
 }
 
 void grpFreeFileBlocks(int ih, uint32_t ffbn) {
   soProbe(303, "%s(%d, %u)\n", __FUNCTION__, ih, ffbn);
-  soGetFileBlock(ih, ffbn); // throws exception on invalide file block number
+  //soGetFileBlock(ih, ffbn); // throws exception on invalide file block number, apparently we should not do it
   inode = soGetInodePointer(ih);
   to_free_count = N_DIRECT + N_INDIRECT * RPB + N_DOUBLE_INDIRECT * RPB * RPB - ffbn;
   uint8_t depths[N_DIRECT + N_INDIRECT + N_DOUBLE_INDIRECT];
   //poderia ser substituído pelos valores mas deixaria de depender das macros definidas
+  //poderia também ser definido com uma macro
   //uint8_t depths[] = {0, 0, 0, 0, 1, 1, 1, 2};
-  int i = 0;
-  while (i++ < N_DIRECT)
+  int i = -1;
+  while (++i < N_DIRECT)
     depths[i] = 0;
-  while (i++ < N_INDIRECT)
+  do
     depths[i] = 1;
-  while (i++ < N_DOUBLE_INDIRECT)
+  while (++i < N_DIRECT + N_INDIRECT);
+  do
     depths[i] = 2;
-
+  while (++i < N_DIRECT + N_INDIRECT + N_DOUBLE_INDIRECT);
   for (
-      uint32_t current = N_DIRECT + N_INDIRECT + N_DOUBLE_INDIRECT - ffbn;
+      uint32_t current = N_DIRECT + N_INDIRECT + N_DOUBLE_INDIRECT - 1;
       free_count < to_free_count;
       current--) {
     free_rec(inode->d + current, depths[current]);
   }
+  printf("%u\n", free_count);
 }
 
 };  // namespace sofs20

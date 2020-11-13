@@ -13,6 +13,14 @@ namespace sofs20 {
 static uint32_t grpAllocIndirectFileBlock(SOInode* ip, uint32_t afbn);
 static uint32_t grpAllocDoubleIndirectFileBlock(SOInode* ip, uint32_t afbn);
 
+uint32_t getCleanDataBlock() {
+  uint32_t result = soAllocDataBlock();
+  uint32_t ref_table[RPB];
+  memset(ref_table, BlockNullReference, RPB * sizeof(uint32_t));
+  soWriteDataBlock(result, ref_table);
+  return result;
+}
+
 uint32_t grpAllocFileBlock(int ih, uint32_t fbn) {
   soProbe(302, "%s(%d, %u)\n", __FUNCTION__, ih, fbn);
   //soCheckInodeHandler(ih, __FUNCTION__);
@@ -31,15 +39,14 @@ uint32_t grpAllocFileBlock(int ih, uint32_t fbn) {
 
 static uint32_t grpAllocIndirectFileBlock(SOInode* ip, uint32_t afbn) {
   soProbe(302, "%s(%d, ...)\n", __FUNCTION__, afbn);
-  soProbe(301, "%s(%d, ...)\n", __FUNCTION__, afbn);
   uint32_t ref_table[RPB];
   if (ip->i1[afbn / RPB] == BlockNullReference) {
-    ip->i1[afbn / RPB] = soAllocDataBlock();
+    ip->i1[afbn / RPB] = getCleanDataBlock();
     ip->blkcnt++;
   }
-  memset(ref_table, 0, sizeof(uint32_t) * RPB);
+  memset(ref_table, BlockNullReference, sizeof(uint32_t) * RPB);
   soReadDataBlock(ip->i1[afbn / RPB], ref_table);
-  uint32_t new_block = soAllocDataBlock();
+  uint32_t new_block = getCleanDataBlock();
   ref_table[afbn % RPB] = new_block;
   ip->blkcnt++;
   soWriteDataBlock(ip->i1[afbn / RPB], ref_table);
@@ -47,20 +54,20 @@ static uint32_t grpAllocIndirectFileBlock(SOInode* ip, uint32_t afbn) {
 }
 
 static uint32_t grpAllocDoubleIndirectFileBlock(SOInode* ip, uint32_t afbn) {
-  soProbe(301, "%s(%d, ...)\n", __FUNCTION__, afbn);
+  soProbe(302, "%s(%d, ...)\n", __FUNCTION__, afbn);
   uint32_t ref_table_first[RPB];
-  memset(ref_table_first, 0, sizeof(uint32_t) * RPB);
+  memset(ref_table_first, BlockNullReference, sizeof(uint32_t) * RPB);
   if (ip->i1[afbn / (RPB * RPB)] == BlockNullReference) {
-    ip->i1[afbn / (RPB * RPB)] = soAllocDataBlock();
+    ip->i1[afbn / (RPB * RPB)] = getCleanDataBlock();
     ip->blkcnt++;
   }
   soReadDataBlock(ip->i2[afbn / (RPB * RPB)], ref_table_first);
   uint32_t ref_table[RPB];
   if (ip->i1[afbn / RPB] == BlockNullReference) {
-    ip->i1[afbn / RPB] = soAllocDataBlock();
+    ip->i1[afbn / RPB] = getCleanDataBlock();
     ip->blkcnt++;
   }
-  memset(ref_table, 0, sizeof(uint32_t) * RPB);
+  memset(ref_table, BlockNullReference, sizeof(uint32_t) * RPB);
   soReadDataBlock(ref_table_first[afbn / (RPB)], ref_table);
   uint32_t new_block = soAllocDataBlock();
   ref_table[afbn % RPB] = new_block;

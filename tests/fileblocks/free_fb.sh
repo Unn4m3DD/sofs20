@@ -5,24 +5,34 @@ source ./create_disk.sh
 # $1 inode count
 # $2 inode type (0 - random, 1 - file, 2 - dir, 3 - link)
 
-# alloc_fb_test
+# free_fb_test
 # $1 inode number
 # $2 fb index
 # $3 analysis block range begin
 # $4 analysis block range end
 # $5 disk size
+
 create_disk 1000
 alloc_inode_bin 10 1
-for ((j = 1; j < 100; j += 1)); do
-  alloc_fb_test 1 $j 1 5 1000
+for ((j = 1; j < 5; j += 1)); do
+  alloc_fb_bin 1 $j 1 5 1000
 done
-create_disk 30
+free_fb_test 1 3 1 8 1000
+return
+
+create_disk 1000
 alloc_inode_bin 10 1
-for ((j = 1; j < 20; j += 1)); do
-  alloc_fb_test 1 $j 1 5 30
+for ((j = 1; j < 3; j += 1)); do
+  alloc_fb_bin 1 $j 1 5 1000
 done
-create_disk 5000
+free_fb_test 1 1 1 8 1000
+
+
+create_disk 1000
 alloc_inode_bin 10 1
-for ((j = 1; j < 100; j += 1)); do
-  alloc_fb_test 1 $j 1 5 5000
+for ((j = 1; j < 200; j += 1)); do
+  alloc_fb_bin 1 $j 1 5 1000
+done
+for ((j = 200; j > 2; j -= 1)); do
+  free_fb_test 1 $j 1 8 1000
 done
