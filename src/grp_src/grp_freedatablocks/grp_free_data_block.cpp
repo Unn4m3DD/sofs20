@@ -18,6 +18,7 @@
 namespace sofs20 {
 void grpFreeDataBlock(uint32_t bn) {
   soProbe(442, "%s(%u)\n", __FUNCTION__, bn);
+  //The following code inserts a block from the insertion cache
 
   SOSuperblock* sb = soGetSuperblockPointer();
   if (bn < 0 || sb->dbtotal <= bn) throw SOException(EINVAL, __FUNCTION__);

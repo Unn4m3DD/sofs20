@@ -15,7 +15,6 @@ printf "fdb\n2\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
 printf "fdb\n2\nq\n" | bin/testtool -q 2 -p 444-444 -b -r 444-444 tmp/disk | grep "444" | grep "31m" >/dev/null
 alloc_db_test_replenish 1 30 39 40
 alloc_db_test_replenish 1 30 39 40
-return
 create_disk 150
 replenish_test 150 2 140 149
 create_disk 75

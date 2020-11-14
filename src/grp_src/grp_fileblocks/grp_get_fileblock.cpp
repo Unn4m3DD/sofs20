@@ -27,14 +27,17 @@ uint32_t grpGetFileBlock(int ih, uint32_t fbn) {
 static uint32_t grpGetIndirectFileBlock(SOInode* ip, uint32_t afbn) {
   soProbe(301, "%s(%d, ...)\n", __FUNCTION__, afbn);
   uint32_t ref_table[RPB];
+  if(ip->i1[afbn / RPB] == BlockNullReference) return BlockNullReference;
   soReadDataBlock(ip->i1[afbn / RPB], ref_table);
   return ref_table[afbn % RPB];
 }
 static uint32_t grpGetDoubleIndirectFileBlock(SOInode* ip, uint32_t afbn) {
   soProbe(301, "%s(%d, ...)\n", __FUNCTION__, afbn);
   uint32_t ref_table_first[RPB];
+  if(ip->i2[afbn / (RPB * RPB)] == BlockNullReference) return BlockNullReference;
   soReadDataBlock(ip->i2[afbn / (RPB * RPB)], ref_table_first);
   uint32_t ref_table[RPB];
+  if(ref_table_first[afbn / (RPB)] == BlockNullReference) return BlockNullReference;
   soReadDataBlock(ref_table_first[afbn / (RPB)], ref_table);
   return ref_table[afbn % RPB];
 }

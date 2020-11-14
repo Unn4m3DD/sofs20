@@ -12,26 +12,27 @@ source ./create_disk.sh
 # $4 analysis block range end
 # $5 disk size
 
-create_disk 1000
-alloc_inode_bin 10 1
-for ((j = 1; j < 5; j += 1)); do
-  alloc_fb_bin 1 $j 1 5 1000
-done
-free_fb_test 1 3 1 8 1000
+echo "free fileblock cannot be tested comparing to the binaries because they delete the blocks in a differente order"
 return
 
 create_disk 1000
 alloc_inode_bin 10 1
+for ((j = 1; j < 200; j += 1)); do
+  alloc_fb_bin 1 $j
+done
+free_fb_test 1 3 1 8 1000
+
+create_disk 1000
+alloc_inode_bin 10 1
 for ((j = 1; j < 3; j += 1)); do
-  alloc_fb_bin 1 $j 1 5 1000
+  alloc_fb_bin 1 $j
 done
 free_fb_test 1 1 1 8 1000
-
 
 create_disk 1000
 alloc_inode_bin 10 1
 for ((j = 1; j < 200; j += 1)); do
-  alloc_fb_bin 1 $j 1 5 1000
+  alloc_fb_bin 1 $j
 done
 for ((j = 200; j > 2; j -= 1)); do
   free_fb_test 1 $j 1 8 1000

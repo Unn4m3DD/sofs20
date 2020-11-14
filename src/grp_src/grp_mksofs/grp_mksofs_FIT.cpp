@@ -14,7 +14,7 @@
 namespace sofs20 {
 void grpFillInodeTable(uint32_t itotal, bool date) {
   soProbe(604, "%s(%u)\n", __FUNCTION__, itotal);
-  //TODO reduzir utilizacao de memoria
+  //the following code fills the structure with first inode pointing to the root
   SOInode inodes[itotal];
   inodes[0].mode = S_IFDIR | 0755;
   inodes[0].lnkcnt = 2;
@@ -27,10 +27,12 @@ void grpFillInodeTable(uint32_t itotal, bool date) {
   inodes[0].atime = date ? timestamp : 0;
   inodes[0].mtime = date ? timestamp : 0;
   inodes[0].ctime = date ? timestamp : 0;
+  //the following code will set d, i1 and i2 to BlockNullReference
   memset(((int8_t*)(&inodes[0])) + sizeof(SOInode) - N_DIRECT * 4 - N_INDIRECT * 4 - N_DOUBLE_INDIRECT * 4,
          BlockNullReference, N_DIRECT * 4 + N_INDIRECT * 4 + N_DOUBLE_INDIRECT * 4);
   inodes[0].d[0] = 0;
 
+  //the following code fills the structure with the other inodes with 0s in all fields except d, i1 and i2
   for (uint32_t i = 1; i < itotal; i++) {
     memset(&inodes[i], 0, sizeof(SOInode) - N_DIRECT * 4 - N_INDIRECT * 4 - N_DOUBLE_INDIRECT * 4);
     memset(((int8_t*)(&inodes[i])) + sizeof(SOInode) - N_DIRECT * 4 - N_INDIRECT * 4 - N_DOUBLE_INDIRECT * 4,
@@ -39,6 +41,5 @@ void grpFillInodeTable(uint32_t itotal, bool date) {
 
   for (uint block = 0; block < (itotal + IPB - 1) / IPB; block++)
     soWriteRawBlock(block + 1, &inodes[block * IPB]);
-  //soWriteRawBlock(1, inodes);
 }
 };  // namespace sofs20

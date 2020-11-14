@@ -19,13 +19,13 @@
 namespace sofs20 {
 
 void set_freed_inode_index(uint32_t* ibitmap, uint32_t current_inode) {
+  //ands the ibitmap with a 0 in the current_inodeth place
   ibitmap[current_inode / 32] = ibitmap[current_inode / 32] & (~(0b01 << (current_inode % 32)));
 }
 void grpFreeInode(uint16_t in) {
   soProbe(402, "%s(%u)\n", __FUNCTION__, in);
 
-  /* replace the following line with your code */
-  //binFreeInode(in);
+  //The following code sets all fields of the freed inode to its default
   if (in >= MAX_INODES || in < 0) throw SOException(EINVAL, __FUNCTION__);
   SOSuperblock* super_block = soGetSuperblockPointer();
   int inodeHandler = soOpenInode(in);
