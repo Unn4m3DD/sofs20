@@ -17,7 +17,7 @@ uint16_t grpGetDirentry(int pih, const char* name) {
     SODirentry dir_entries[DPB];
     if (inode->d[i] == BlockNullReference) continue;
     soReadDataBlock(inode->d[i], dir_entries);
-    for (int dir_idx = 0; dir_idx < DPB; dir_idx++) {
+    for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
       if (strcmp(dir_entries[dir_idx].name, name))
         return dir_entries[dir_idx].in;
     }
@@ -28,11 +28,11 @@ uint16_t grpGetDirentry(int pih, const char* name) {
     uint32_t ref_block[RPB];
     if (inode->i1[i] == BlockNullReference) continue;
     soReadDataBlock(inode->i1[i], ref_block);
-    for (int j = 0; j < RPB; j++) {
+    for (uint32_t j = 0; j < RPB; j++) {
       SODirentry dir_entries[DPB];
       if (ref_block[j] == BlockNullReference) continue;
       soReadDataBlock(ref_block[j], ref_block);
-      for (int dir_idx = 0; dir_idx < DPB; dir_idx++) {
+      for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
         if (strcmp(dir_entries[dir_idx].name, name))
           return dir_entries[dir_idx].in;
       }
@@ -44,15 +44,15 @@ uint16_t grpGetDirentry(int pih, const char* name) {
     uint32_t outer_ref_block[RPB];
     if (inode->i2[i] == BlockNullReference) continue;
     soReadDataBlock(inode->i2[i], outer_ref_block);
-    for (int k = 0; k < RPB; k++) {
+    for (uint32_t k = 0; k < RPB; k++) {
       uint32_t ref_block[RPB];
       if (outer_ref_block[k] == BlockNullReference) continue;
       soReadDataBlock(outer_ref_block[k], ref_block);
-      for (int j = 0; j < RPB; j++) {
+      for (uint32_t j = 0; j < RPB; j++) {
         SODirentry dir_entries[DPB];
         if (ref_block[j] == BlockNullReference) continue;
         soReadDataBlock(ref_block[j], dir_entries);
-        for (int dir_idx = 0; dir_idx < DPB; dir_idx++) {
+        for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
           if (strcmp(dir_entries[dir_idx].name, name))
             return dir_entries[dir_idx].in;
         }
