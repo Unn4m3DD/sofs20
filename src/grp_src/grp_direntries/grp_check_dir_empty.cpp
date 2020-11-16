@@ -17,7 +17,10 @@ namespace sofs20
         soProbe(205, "%s(%d)\n", __FUNCTION__, ih);
 
         /* replace the following line with your code */
-        return binCheckDirEmpty(ih);
+        //return binCheckDirEmpty(ih);
+        SODirentry dirEntries[DPB];
+        soReadFileBlock(ih, 0,  dirEntries); 
+        return !strcmp(dirEntries[2].name, "");
     }
 };
 
