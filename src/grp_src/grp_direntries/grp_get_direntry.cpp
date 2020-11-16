@@ -11,6 +11,7 @@
 
 namespace sofs20 {
 uint16_t grpGetDirentry(int pih, const char* name) {
+  soProbe(201, "%s(%d, %s)\n", __FUNCTION__, pih, name);
   SOInode* inode = soGetInodePointer(pih);
   //This loop will search the directory in direct references
   for (int i = 0; i < N_DIRECT; i++) {
