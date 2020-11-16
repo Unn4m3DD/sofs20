@@ -30,66 +30,17 @@ void assert_exceptions(int path_len, SOInode* inode) {
 uint16_t traversePath(char** path, int path_len, int current_inode) {
   int ih = soOpenInode(current_inode);
   SOInode* inode = soGetInodePointer(ih);
-  assert_exceptions(path_len, inode);
-
-  //This loop will search the directory in direct references
-  for (int i = 0; i < N_DIRECT; i++) {
-    SODirentry dir_entries[DPB];
-    if (inode->d[i] == BlockNullReference) continue;
-    soReadDataBlock(inode->d[i], dir_entries);
-    for (int dir_idx = 0; dir_idx < DPB; dir_idx++) {
-      if (strcmp(dir_entries[dir_idx].name, path[0]))
-        if (path_len == 1)
-          return dir_entries[dir_idx].in;
-        else
-          return traversePath(&path[1], path_len - 1, dir_entries[dir_idx].in);
-    }
-  }
-
-  //This loop will search the directory in indirect references
-  for (int i = 0; i < N_INDIRECT; i++) {
-    uint32_t ref_block[RPB];
-    if (inode->i1[i] == BlockNullReference) continue;
-    soReadDataBlock(inode->i1[i], ref_block);
-    for (int j = 0; j < RPB; j++) {
-      SODirentry dir_entries[DPB];
-      if (ref_block[j] == BlockNullReference) continue;
-      soReadDataBlock(ref_block[j], ref_block);
-      for (int dir_idx = 0; dir_idx < DPB; dir_idx++) {
-        if (strcmp(dir_entries[dir_idx].name, path[0]))
-          if (path_len == 1)
-            return dir_entries[dir_idx].in;
-          else
-            return traversePath(&path[1], path_len - 1, dir_entries[dir_idx].in);
-      }
-    }
-  }
-
-  //This loop will search the directory in double indirect references
-  for (int i = 0; i < N_DOUBLE_INDIRECT; i++) {
-    uint32_t outer_ref_block[RPB];
-    if (inode->i2[i] == BlockNullReference) continue;
-    soReadDataBlock(inode->i2[i], outer_ref_block);
-    for (int k = 0; k < RPB; k++) {
-      uint32_t ref_block[RPB];
-      if (outer_ref_block[k] == BlockNullReference) continue;
-      soReadDataBlock(outer_ref_block[k], ref_block);
-      for (int j = 0; j < RPB; j++) {
-        SODirentry dir_entries[DPB];
-        if (ref_block[j] == BlockNullReference) continue;
-        soReadDataBlock(ref_block[j], ref_block);
-        for (int dir_idx = 0; dir_idx < DPB; dir_idx++) {
-          if (strcmp(dir_entries[dir_idx].name, path[0]))
-            if (path_len == 1)
-              return dir_entries[dir_idx].in;
-            else
-              return traversePath(&path[1], path_len - 1, dir_entries[dir_idx].in);
-        }
-      }
-    }
-  }
-
+  if (path_len > 1)
+    assert_exceptions(path_len, inode);
+  uint32_t path_inode_number = soGetDirentry(ih, path[0]);
   soCloseInode(ih);
+  if (path_inode_number != InodeNullReference) {
+    if (path_len > 1)
+      traversePath(&path[1], path_len - 1, path_inode_number);
+    else
+      return path_inode_number;
+  }
+  throw SOException(ENOENT, __FUNCTION__);
 }
 
 uint16_t grpTraversePath(char* path) {
