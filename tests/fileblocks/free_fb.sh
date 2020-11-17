@@ -17,10 +17,18 @@ return
 
 create_disk 1000
 alloc_inode_bin 10 1
-for ((j = 1; j < 200; j += 1)); do
+for ((j = 1; j < 50; j += 1)); do
   alloc_fb_bin 1 $j
 done
 free_fb_test 1 3 1 8 1000
+
+create_disk 1000
+alloc_inode_bin 10 1
+for ((j = 1; j < 5; j += 1)); do
+  alloc_fb_bin 1 $j
+done
+free_fb_test 1 4 1 8 1000
+
 
 create_disk 1000
 alloc_inode_bin 10 1
