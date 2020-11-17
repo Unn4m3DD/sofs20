@@ -838,15 +838,6 @@ function ttrde() {
   local ttoptions="-g" verbose=0
   while [[ $# -gt 0 ]]; do
     case $1 in
-    "-b" | "-g") # testtool options are the same
-      ttoptions+=" $1"
-      shift 1
-      ;;
-    "-p") # probe only this function
-      ttoptions+=" -p 204"
-      verbose=1
-      shift 1
-      ;;
     "-v") # probe all functions
       ttoptions+=" -p 0-999"
       verbose=1
@@ -861,8 +852,6 @@ function ttrde() {
       InfoMessage "$helpmsg"
       break
       ;;
-    esac
-  done
 
   if [ $verbose -eq 1 ]; then
     echo -ne "rde\n$pin\n$sname\n$nname\nq\n" | tt -q 1 $ttoptions
@@ -887,7 +876,7 @@ function ttcde() {
   helpmsg+="  -p           --- probe this function\n"
   helpmsg+="  -v           --- probe all functions\n"
   helpmsg+="  -h           --- this help"
-
+s
   local pin=$1
   shift 1
   local ttoptions="-g" verbose=0
