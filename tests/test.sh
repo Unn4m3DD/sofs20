@@ -28,6 +28,10 @@ if [[ $1 == "" || $1 == "fileblocks" ]]; then
   source fileblocks/test.sh 
   fileblocks $2 $3
 fi
+if [[ $1 == "" || $1 == "direntries" ]]; then
+  source direntries/test.sh 
+  direntries $2 $3
+fi
 
 errors="$(cat diff_bin.log)$(cat diff.log)$(cat bin_detect.log)"
 

@@ -30,7 +30,7 @@ function free_inode_test() {
   test_tmp_diff_and_append 402
 }
 
-# alloc_inode
+# alloc_inode_bin
 # $1 inode count
 # $2 inode type (0 - random, 1 - file, 2 - dir, 3 - link)
 function alloc_inode_bin() {
