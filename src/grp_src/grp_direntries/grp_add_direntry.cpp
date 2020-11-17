@@ -10,30 +10,16 @@
 #include "fileblocks.h"
 
 namespace sofs20 {
-uint32_t getLastUsedFileBlock(SOInode* inode) {
+uint32_t getLastUsedFileBlock(int ih) {
   //It is know that there are no holes in a directory so the loop searches for the last used block
   uint32_t result = -1;
-  for (uint32_t i = 0; i < N_DIRECT + N_INDIRECT + N_DOUBLE_INDIRECT; i++) {
-    if (*(inode->d + i) == BlockNullReference) {
-      result = --i;
-      break;
-    }
-  }
-  if (result < N_DIRECT) {
-    return inode->d[result];
-  } else if (result > N_DIRECT) {
-    SODirentry references[RPB];
-    soReadDataBlock(*(inode->d + result), references);
-    for (uint32_t i = 0; i < RPB; i++) {
-    }
-  } else {
-  }
+  while (soGetFileBlock(ih, ++result) != BlockNullReference)
+    ;
+  return result;
 }
 void grpAddDirentry(int pih, const char* name, uint16_t cin) {
   soProbe(202, "%s(%d, %s, %u)\n", __FUNCTION__, pih, name, cin);
-  SOInode* inode = soGetInodePointer(pih);
-  uint32_t last_used_file_block = -1;
-  uint32_t last_used_file_block = getLastUsedFileBlock(inode);
+  uint32_t last_used_file_block = getLastUsedFileBlock(pih);
   SODirentry direntries[DPB];
   soReadDataBlock(last_used_file_block, direntries);
   for (uint32_t i; i < DPB; i++) {
