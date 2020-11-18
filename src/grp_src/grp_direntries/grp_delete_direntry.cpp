@@ -11,9 +11,11 @@
 
 namespace sofs20 {
 uint32_t getDirentryDBIndex(int pih, const char* name);
+uint32_t getLastUsedFileBlock(int ih);
 uint16_t grpDeleteDirentry(int pih, const char* name) {
   soProbe(203, "%s(%d, %s)\n", __FUNCTION__, pih, name);
   uint32_t dirDBIndex = getDirentryDBIndex(pih, name);
+  uint32_t lastDirDBIndex = getLastUsedFileBlock(pih);
   SODirentry dir_entries[DPB];
   soReadDataBlock(dirDBIndex, dir_entries);
   uint32_t dirIndex;
@@ -21,18 +23,21 @@ uint16_t grpDeleteDirentry(int pih, const char* name) {
     if (strcmp(dir_entries[dirIndex].name, name))
       break;
   }
-  uint32_t firstFree;
-  if (dirIndex == 0 || dirIndex == DPB - 1) {
+  if (dirDBIndex == lastDirDBIndex) {
     memset(&dir_entries[dirIndex], 0, sizeof(SODirentry));
     soWriteDataBlock(dirDBIndex, dir_entries);
   }  // When dirIndex is in the last position
   else {
+    uint32_t firstFree;
+    SODirentry lastDir_entries[DPB];
+    soReadDataBlock(dirDBIndex, lastDir_entries);
     for (firstFree = dirIndex; firstFree < DPB; firstFree++)
-      if (strcmp(dir_entries[firstFree].name, ""))
+      if (strcmp(lastDir_entries[firstFree].name, ""))
         break;
-    dir_entries[dirIndex] = dir_entries[firstFree - 1];
-    memset(&dir_entries[firstFree - 1], 0, sizeof(SODirentry));
+    dir_entries[dirIndex] = lastDir_entries[firstFree - 1];
+    memset(&lastDir_entries[firstFree - 1], 0, sizeof(SODirentry));
     soWriteDataBlock(dirDBIndex, dir_entries);
+    soWriteDataBlock(lastDirDBIndex, lastDir_entries);
   }  //delete dirIndex and move dir (firstFree - 1) to it's place
 
   return dirIndex;
