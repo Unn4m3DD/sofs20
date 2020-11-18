@@ -10,10 +10,38 @@
 #include "fileblocks.h"
 
 namespace sofs20 {
+uint32_t getDirentryDBIndex(int pih, const char* name);
+uint16_t grpDeleteDirentry(int pih, const char* name) {
+  soProbe(203, "%s(%d, %s)\n", __FUNCTION__, pih, name);
+  uint32_t dirDBIndex = getDirentryDBIndex(pih, name);
+  SODirentry dir_entries[DPB];
+  soReadDataBlock(dirDBIndex, dir_entries);
+  uint32_t dirIndex;
+  for (dirIndex = 0; dirIndex < DPB; dirIndex++) {
+    if (strcmp(dir_entries[dirIndex].name, name))
+      break;
+  }
+  uint32_t firstFree;
+  if (dirIndex == 0 || dirIndex == DPB - 1) {
+    memset(&dir_entries[dirIndex], 0, sizeof(SODirentry));
+    soWriteDataBlock(dirDBIndex, dir_entries);
+  }  // When dirIndex is in the last position
+  else {
+    for (firstFree = dirIndex; firstFree < DPB; firstFree++)
+      if (strcmp(dir_entries[firstFree].name, ""))
+        break;
+    dir_entries[dirIndex] = dir_entries[firstFree - 1];
+    memset(&dir_entries[firstFree - 1], 0, sizeof(SODirentry));
+    soWriteDataBlock(dirDBIndex, dir_entries);
+  }  //delete dirIndex and move dir (firstFree - 1) to it's place
 
-uint32_t GetDirentryDBIndex(int pih, const char* name) {
+  return dirIndex;
+}
+uint32_t getDirentryDBIndex(int pih, const char* name) {
   soProbe(201, "%s(%d, %s)\n", __FUNCTION__, pih, name);
   SOInode* inode = soGetInodePointer(pih);
+  inode->size -= sizeof(SODirentry);
+
   //This loop will search the directory in direct references
   for (int i = 0; i < N_DIRECT; i++) {
     SODirentry dir_entries[DPB];
@@ -63,30 +91,4 @@ uint32_t GetDirentryDBIndex(int pih, const char* name) {
   }
   return InodeNullReference;
 }
-uint16_t grpDeleteDirentry(int pih, const char* name) {
-  soProbe(203, "%s(%d, %s)\n", __FUNCTION__, pih, name);
-  uint32_t dirDBIndex = GetDirentryDBIndex(pih, name);
-  SODirentry dir_entries[DPB];
-  soReadDataBlock(dirDBIndex, dir_entries);
-  int dirIndex;
-  for (dirIndex = 0; dirIndex < DPB; dirIndex++) {
-    if (strcmp(dir_entries[dirIndex].name, name))
-      break;
-  }
-  int nextEmpty;
-  if (dirIndex == 0)
-    ;  //When dirIndex is in the first position (delete the reference to this block)
-  else if (dirIndex == DPB - 1) {
-    SODirentry emptyDir;
-    emptyDir.in = dir_entries[0].in;
-    memset(emptyDir.name, 0, sizeof(emptyDir.name));
-    dir_entries[DPB - 1] = emptyDir;
-  }  // When dirIndex is in the last position
-  else {
-    for (int nextEmpty = dirIndex; nextEmpty < DPB; nextEmpty++)
-      if (strcmp(dir_entries[nextEmpty].name, ""))
-        break;
-  }  //delete dirIndex and move dir (nextEmpty - 1) to it's place
-}
-
 };  // namespace sofs20

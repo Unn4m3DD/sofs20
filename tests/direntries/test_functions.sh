@@ -33,6 +33,7 @@ function add_direntry_test() {
   e=0
   printf "ade\n$1\n$2\n$3\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
   printf "ade\n$1\n$2\n$3\nq\n" | bin/testtool -q 2 -p 202-202 -b -r 202-202 tmp/disk | grep "202" | grep "31m" >/dev/null
+  #bin/showblock -i 1-1 tmp/original_disk
   if [ $? == 0 ]; then e=1; fi
   if [ $e == 1 ]; then
     echo "binary form of 202 beeing called" >>bin_detect_tmp.log
@@ -44,10 +45,49 @@ function add_direntry_test() {
   touch tmp/original_inode_bin
   touch tmp/inode_bin
 
-  # bin/showblock -x "0-$(($6 - 1))" tmp/original_disk | grep -v "atime" >>tmp/original_inode_bin
-  # bin/showblock -x "0-$(($6 - 1))" tmp/disk | grep -v "atime" >>tmp/inode_bin
+  bin/showblock -x "$4-$(($6 - 1))" tmp/original_disk >>tmp/original_inode_bin
+  bin/showblock -x "$4-$(($6 - 1))" tmp/disk >>tmp/inode_bin
 
   diff tmp/original_inode tmp/inode -d >>diff_tmp.log
   diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
   test_tmp_diff_and_append 202
+}
+
+# add_direntry_bin
+# $1 parent inode number
+# $2 name
+# $3 child inode number
+function add_direntry_bin() {
+  printf "ade\n$1\n$2\n$3\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
+  printf "ade\n$1\n$2\n$3\nq\n" | bin/testtool -q 2 -b tmp/disk >/dev/null
+}
+
+# remove_direntry_test
+# $1 parent inode number
+# $2 name
+# $3 analysis block range begin
+# $4 analysis block range end
+# $5 disk size
+function remove_direntry_test() {
+  touch bin_detect_tmp.log
+  e=0
+  printf "dde\n$1\n$2\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
+  printf "dde\n$1\n$2\nq\n" | bin/testtool -q 2 -p 203-203 -b -r 203-203 tmp/disk | grep "203" | grep "31m" >/dev/null
+  if [ $? == 0 ]; then e=1; fi
+  if [ $e == 1 ]; then
+    echo "binary form of 203 beeing called" >>bin_detect_tmp.log
+  fi
+  bin/showblock -d $3-$4 tmp/original_disk | grep -v "atime" >>tmp/original_inode
+  bin/showblock -d $3-$4 tmp/disk | grep -v "atime" >>tmp/inode
+  bin/showblock -i 1-4 tmp/original_disk | grep -v "atime" >>tmp/original_inode
+  bin/showblock -i 1-4 tmp/disk | grep -v "atime" >>tmp/inode
+  touch tmp/original_inode_bin
+  touch tmp/inode_bin
+
+  bin/showblock -x "$3-$(($5 - 1))" tmp/original_disk >>tmp/original_inode_bin
+  bin/showblock -x "$3-$(($5 - 1))" tmp/disk >>tmp/inode_bin
+
+  diff tmp/original_inode tmp/inode -d >>diff_tmp.log
+  diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
+  test_tmp_diff_and_append 203
 }
