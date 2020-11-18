@@ -1,6 +1,6 @@
 cd ../build
 make -j
 cd ../bin
-./createDisk /tmp/dsk 1000
+./createDisk /tmp/dsk 2000
 ./mksofs /tmp/dsk 
 ./testtool /tmp/dsk -b
