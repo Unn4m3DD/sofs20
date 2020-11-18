@@ -62,13 +62,13 @@ function add_direntry_bin() {
   printf "ade\n$1\n$2\n$3\nq\n" | bin/testtool -q 2 -b tmp/disk >/dev/null
 }
 
-# remove_direntry_test
+# delete_direntry_test
 # $1 parent inode number
 # $2 name
 # $3 analysis block range begin
 # $4 analysis block range end
 # $5 disk size
-function remove_direntry_test() {
+function delete_direntry_test() {
   touch bin_detect_tmp.log
   e=0
   printf "dde\n$1\n$2\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
@@ -79,13 +79,36 @@ function remove_direntry_test() {
   fi
   bin/showblock -d $3-$4 tmp/original_disk | grep -v "atime" >>tmp/original_inode
   bin/showblock -d $3-$4 tmp/disk | grep -v "atime" >>tmp/inode
-  bin/showblock -i 1-4 tmp/original_disk | grep -v "atime" >>tmp/original_inode
-  bin/showblock -i 1-4 tmp/disk | grep -v "atime" >>tmp/inode
+  bin/showblock -i 1-9 tmp/original_disk | grep -v "atime" >>tmp/original_inode
+  bin/showblock -i 1-9 tmp/disk | grep -v "atime" >>tmp/inode
   touch tmp/original_inode_bin
   touch tmp/inode_bin
 
   bin/showblock -x "$3-$(($5 - 1))" tmp/original_disk >>tmp/original_inode_bin
   bin/showblock -x "$3-$(($5 - 1))" tmp/disk >>tmp/inode_bin
+
+  diff tmp/original_inode tmp/inode -d >>diff_tmp.log
+  diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
+  test_tmp_diff_and_append 203
+}
+
+# delete_direntry_bin
+# $1 parent inode number
+# $2 name
+function delete_direntry_bin() {
+  printf "dde\n$1\n$2\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
+  printf "dde\n$1\n$2\nq\n" | bin/testtool -q 2 -b tmp/disk >/dev/null
+}
+
+# check_dir_empty_test
+# $1 parent inode number
+function check_dir_empty_test() {
+  touch bin_detect_tmp.log
+  e=0
+  printf "cde\n$1\nq\n" | bin/testtool -q 2 -b tmp/original_disk | grep "Directory" >>tmp/original_inode
+  printf "cde\n$1\nq\n" | bin/testtool -q 2 -p 203-203 -b -r 203-203 tmp/disk | grep "Directory" >>tmp/inode
+  touch tmp/original_inode_bin
+  touch tmp/inode_bin
 
   diff tmp/original_inode tmp/inode -d >>diff_tmp.log
   diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log

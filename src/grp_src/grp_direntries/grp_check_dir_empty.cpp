@@ -1,26 +1,19 @@
-#include "direntries.h"
-
-#include "core.h"
-#include "devtools.h"
-#include "daal.h"
-#include "fileblocks.h"
-#include "bin_direntries.h"
-
 #include <errno.h>
 #include <string.h>
 #include <sys/stat.h>
 
-namespace sofs20
-{
-    bool grpCheckDirEmpty(int ih)
-    {
-        soProbe(205, "%s(%d)\n", __FUNCTION__, ih);
+#include "bin_direntries.h"
+#include "core.h"
+#include "daal.h"
+#include "devtools.h"
+#include "direntries.h"
+#include "fileblocks.h"
 
-        /* replace the following line with your code */
-        //return binCheckDirEmpty(ih);
-        SODirentry dirEntries[DPB];
-        soReadFileBlock(ih, 0,  dirEntries); 
-        return !strcmp(dirEntries[2].name, "");
-    }
-};
-
+namespace sofs20 {
+bool grpCheckDirEmpty(int ih) {
+  soProbe(205, "%s(%d)\n", __FUNCTION__, ih);
+  SODirentry dirEntries[DPB];
+  soReadFileBlock(ih, 0, dirEntries);
+  return dirEntries[2].name[0] == 0;
+}
+};  // namespace sofs20

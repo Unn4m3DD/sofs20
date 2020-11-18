@@ -14,38 +14,46 @@ uint32_t getDirentryDBIndex(int pih, const char* name);
 uint32_t getLastUsedFileBlock(int ih);
 uint16_t grpDeleteDirentry(int pih, const char* name) {
   soProbe(203, "%s(%d, %s)\n", __FUNCTION__, pih, name);
+  SOInode* inode = soGetInodePointer(pih);
+  inode->size -= sizeof(SODirentry);
   uint32_t dirDBIndex = getDirentryDBIndex(pih, name);
-  uint32_t lastDirDBIndex = getLastUsedFileBlock(pih);
-  SODirentry dir_entries[DPB];
-  soReadDataBlock(dirDBIndex, dir_entries);
-  uint32_t dirIndex;
-  for (dirIndex = 0; dirIndex < DPB; dirIndex++) {
-    if (strcmp(dir_entries[dirIndex].name, name))
-      break;
-  }
-  if (dirDBIndex == lastDirDBIndex) {
-    memset(&dir_entries[dirIndex], 0, sizeof(SODirentry));
-    soWriteDataBlock(dirDBIndex, dir_entries);
-  }  // When dirIndex is in the last position
-  else {
-    uint32_t firstFree;
-    SODirentry lastDir_entries[DPB];
-    soReadDataBlock(dirDBIndex, lastDir_entries);
-    for (firstFree = dirIndex; firstFree < DPB; firstFree++)
-      if (strcmp(lastDir_entries[firstFree].name, ""))
-        break;
-    dir_entries[dirIndex] = lastDir_entries[firstFree - 1];
-    memset(&lastDir_entries[firstFree - 1], 0, sizeof(SODirentry));
-    soWriteDataBlock(dirDBIndex, dir_entries);
-    soWriteDataBlock(lastDirDBIndex, lastDir_entries);
-  }  //delete dirIndex and move dir (firstFree - 1) to it's place
+  uint32_t lastDirDBIndex = soGetFileBlock(pih, getLastUsedFileBlock(pih));
+  SODirentry dir_entries_dest[DPB];
+  SODirentry dir_entries_src[DPB];
+  SODirentry* dir_entries_dest_ptr = dir_entries_dest;
+  SODirentry* dir_entries_src_ptr = dir_entries_src;
 
-  return dirIndex;
+  soReadDataBlock(dirDBIndex, dir_entries_dest);
+  if (dirDBIndex == lastDirDBIndex) {
+    dir_entries_src_ptr = dir_entries_dest_ptr;
+  } else {
+    soReadDataBlock(lastDirDBIndex, dir_entries_src);
+  }
+
+  uint32_t dest_idx;
+  for (dest_idx = 0; dest_idx < DPB; dest_idx++)
+    if (!strcmp(dir_entries_dest_ptr[dest_idx].name, name))
+      break;
+  uint32_t src_idx;
+  for (src_idx = DPB - 1; src_idx >= 0; src_idx--)
+    if (dir_entries_src_ptr[src_idx].name[0] != 0)
+      break;
+  uint32_t result = dir_entries_dest_ptr[dest_idx].in;
+
+  memcpy(&dir_entries_dest_ptr[dest_idx], &dir_entries_src_ptr[src_idx], sizeof(SODirentry));
+  memset(&dir_entries_src_ptr[src_idx], 0, sizeof(SODirentry));
+  soWriteDataBlock(dirDBIndex, dir_entries_dest_ptr);
+  soWriteDataBlock(lastDirDBIndex, dir_entries_src_ptr);
+
+  /*
+    Deletar fileblock qndo src_idx == 0
+  */
+
+  return result;
 }
 uint32_t getDirentryDBIndex(int pih, const char* name) {
   soProbe(201, "%s(%d, %s)\n", __FUNCTION__, pih, name);
   SOInode* inode = soGetInodePointer(pih);
-  inode->size -= sizeof(SODirentry);
 
   //This loop will search the directory in direct references
   for (int i = 0; i < N_DIRECT; i++) {
@@ -53,7 +61,7 @@ uint32_t getDirentryDBIndex(int pih, const char* name) {
     if (inode->d[i] == BlockNullReference) continue;
     soReadDataBlock(inode->d[i], dir_entries);
     for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
-      if (strcmp(dir_entries[dir_idx].name, name))
+      if (!strcmp(dir_entries[dir_idx].name, name))
         return inode->d[i];
     }
   }
@@ -68,7 +76,7 @@ uint32_t getDirentryDBIndex(int pih, const char* name) {
       if (ref_block[j] == BlockNullReference) continue;
       soReadDataBlock(ref_block[j], ref_block);
       for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
-        if (strcmp(dir_entries[dir_idx].name, name))
+        if (!strcmp(dir_entries[dir_idx].name, name))
           return ref_block[j];
       }
     }
@@ -88,7 +96,7 @@ uint32_t getDirentryDBIndex(int pih, const char* name) {
         if (ref_block[j] == BlockNullReference) continue;
         soReadDataBlock(ref_block[j], dir_entries);
         for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
-          if (strcmp(dir_entries[dir_idx].name, name))
+          if (!strcmp(dir_entries[dir_idx].name, name))
             return ref_block[j];
         }
       }
