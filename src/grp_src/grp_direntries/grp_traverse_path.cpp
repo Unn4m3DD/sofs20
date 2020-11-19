@@ -28,6 +28,7 @@ void assert_exceptions(int path_len, SOInode* inode) {
 }
 
 uint16_t traversePath(char** path, int path_len, int current_inode) {
+  //if the current path_len is > 1 it searches recursively else it return the found/not found inode
   int ih = soOpenInode(current_inode);
   SOInode* inode = soGetInodePointer(ih);
   if (path_len > 1)
@@ -44,6 +45,7 @@ uint16_t traversePath(char** path, int path_len, int current_inode) {
 }
 
 uint16_t grpTraversePath(char* path) {
+  //convers path to an array of char* splitted by "/", analogous to path.split("/") on a higher level language
   soProbe(221, "%s(%s)\n", __FUNCTION__, path);
   int path_len = strlen(path);
   char* path_copy = (char*)alloca(path_len + 1);

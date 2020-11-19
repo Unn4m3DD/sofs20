@@ -47,15 +47,10 @@ uint16_t grpDeleteDirentry(int pih, const char* name) {
   soWriteDataBlock(lastDirDBIndex, dir_entries_src_ptr);
   if(src_idx == 0) 
     soFreeFileBlocks(pih, lastUsedFB);
-  
-  /*
-    Deletar fileblock qndo src_idx == 0
-  */
 
   return result;
 }
 uint32_t getDirentryDBIndex(int pih, const char* name) {
-  soProbe(201, "%s(%d, %s)\n", __FUNCTION__, pih, name);
   SOInode* inode = soGetInodePointer(pih);
 
   //This loop will search the directory in direct references

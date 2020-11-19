@@ -33,7 +33,6 @@ function add_direntry_test() {
   e=0
   printf "ade\n$1\n$2\n$3\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
   printf "ade\n$1\n$2\n$3\nq\n" | bin/testtool -q 2 -p 202-202 -b -r 202-202 tmp/disk | grep "202" | grep "31m" >/dev/null
-  #bin/showblock -i 1-1 tmp/original_disk
   if [ $? == 0 ]; then e=1; fi
   if [ $e == 1 ]; then
     echo "binary form of 202 beeing called" >>bin_detect_tmp.log
@@ -131,4 +130,37 @@ function get_dir_entry_test() {
   diff tmp/original_inode tmp/inode -d >>diff_tmp.log
   diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
   test_tmp_diff_and_append 201
+}
+
+
+
+# rename_direntry_test
+# $1 parent inode number
+# $2 old name
+# $3 new name
+# $4 analysis block range begin
+# $5 analysis block range end
+# $6 disk size
+function rename_direntry_test() {
+  touch bin_detect_tmp.log
+  e=0
+  printf "rde\n$1\n$2\n$3\nq\n" | bin/testtool -q 2 -b tmp/original_disk >/dev/null
+  printf "rde\n$1\n$2\n$3\nq\n" | bin/testtool -q 2 -p 204-204 -b -r 204-204 tmp/disk | grep "204" | grep "31m" >/dev/null
+  if [ $? == 0 ]; then e=1; fi
+  if [ $e == 1 ]; then
+    echo "binary form of 204 beeing called" >>bin_detect_tmp.log
+  fi
+  bin/showblock -d $4-$5 tmp/original_disk | grep -v "atime" >>tmp/original_inode
+  bin/showblock -d $4-$5 tmp/disk | grep -v "atime" >>tmp/inode
+  bin/showblock -i 1-4 tmp/original_disk | grep -v "atime" >>tmp/original_inode
+  bin/showblock -i 1-4 tmp/disk | grep -v "atime" >>tmp/inode
+  touch tmp/original_inode_bin
+  touch tmp/inode_bin
+
+  bin/showblock -x "$4-$(($6 - 1))" tmp/original_disk >>tmp/original_inode_bin
+  bin/showblock -x "$4-$(($6 - 1))" tmp/disk >>tmp/inode_bin
+
+  diff tmp/original_inode tmp/inode -d >>diff_tmp.log
+  diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
+  test_tmp_diff_and_append 204
 }
