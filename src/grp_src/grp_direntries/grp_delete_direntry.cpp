@@ -17,7 +17,8 @@ uint16_t grpDeleteDirentry(int pih, const char* name) {
   SOInode* inode = soGetInodePointer(pih);
   inode->size -= sizeof(SODirentry);
   uint32_t dirDBIndex = getDirentryDBIndex(pih, name);
-  uint32_t lastDirDBIndex = soGetFileBlock(pih, getLastUsedFileBlock(pih));
+  uint32_t lastUsedFB = getLastUsedFileBlock(pih);
+  uint32_t lastDirDBIndex = soGetFileBlock(pih, lastUsedFB);
   SODirentry dir_entries_dest[DPB];
   SODirentry dir_entries_src[DPB];
   SODirentry* dir_entries_dest_ptr = dir_entries_dest;
@@ -44,7 +45,9 @@ uint16_t grpDeleteDirentry(int pih, const char* name) {
   memset(&dir_entries_src_ptr[src_idx], 0, sizeof(SODirentry));
   soWriteDataBlock(dirDBIndex, dir_entries_dest_ptr);
   soWriteDataBlock(lastDirDBIndex, dir_entries_src_ptr);
-
+  if(src_idx == 0) 
+    soFreeFileBlocks(pih, lastUsedFB);
+  
   /*
     Deletar fileblock qndo src_idx == 0
   */
