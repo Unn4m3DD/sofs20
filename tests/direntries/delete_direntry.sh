@@ -22,7 +22,6 @@ done
 for ((j = 1; j < 200; j++)); do
   delete_direntry_test $(($j - 1)) "d$j" 9 $((9 + 201 - $j)) 5000
 done
-return
 
 create_disk 5000
 alloc_inode_bin 200 2

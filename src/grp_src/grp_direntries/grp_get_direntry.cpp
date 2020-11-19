@@ -19,7 +19,7 @@ uint16_t grpGetDirentry(int pih, const char* name) {
     if (inode->d[i] == BlockNullReference) continue;
     soReadDataBlock(inode->d[i], dir_entries);
     for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
-      if (strcmp(dir_entries[dir_idx].name, name))
+      if (!strcmp(dir_entries[dir_idx].name, name))
         return dir_entries[dir_idx].in;
     }
   }
@@ -34,7 +34,7 @@ uint16_t grpGetDirentry(int pih, const char* name) {
       if (ref_block[j] == BlockNullReference) continue;
       soReadDataBlock(ref_block[j], ref_block);
       for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
-        if (strcmp(dir_entries[dir_idx].name, name))
+        if (!strcmp(dir_entries[dir_idx].name, name))
           return dir_entries[dir_idx].in;
       }
     }
@@ -54,7 +54,7 @@ uint16_t grpGetDirentry(int pih, const char* name) {
         if (ref_block[j] == BlockNullReference) continue;
         soReadDataBlock(ref_block[j], dir_entries);
         for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
-          if (strcmp(dir_entries[dir_idx].name, name))
+          if (!strcmp(dir_entries[dir_idx].name, name))
             return dir_entries[dir_idx].in;
         }
       }

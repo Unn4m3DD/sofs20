@@ -114,3 +114,21 @@ function check_dir_empty_test() {
   diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
   test_tmp_diff_and_append 203
 }
+
+
+
+# get_dir_entry_test
+# $1 parent inode number
+# $2 dir name
+function get_dir_entry_test() {
+  touch bin_detect_tmp.log
+  e=0
+  printf "gde\n$1\n$2\nq\n" | bin/testtool -q 1 -b tmp/original_disk | grep "Child inode number\|does not exist" >>tmp/original_inode
+  printf "gde\n$1\n$2\nq\n" | bin/testtool -q 1 -p 201-201 -b -r 201-201 tmp/disk | grep "Child inode number\|does not exist" >>tmp/inode
+  touch tmp/original_inode_bin
+  touch tmp/inode_bin
+
+  diff tmp/original_inode tmp/inode -d >>diff_tmp.log
+  diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
+  test_tmp_diff_and_append 201
+}
