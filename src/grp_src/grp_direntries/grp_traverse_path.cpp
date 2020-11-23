@@ -58,10 +58,7 @@ uint16_t grpTraversePath(char* path) {
       path_args[current_args++] = &path_copy[i + 1];
     }
   }
-  printf("%s\n", path);
-  for(int i = 0; i < current_args; i++){
-    printf("%s -> ", path_args[i]);
-  }
+  //recursively determines the path
   return traversePath(path_args, current_args, 0);
 }
 };  // namespace sofs20
