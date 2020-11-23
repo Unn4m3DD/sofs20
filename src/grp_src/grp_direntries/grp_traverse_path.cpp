@@ -17,11 +17,11 @@ void assert_exceptions(int path_len, SOInode* inode) {
   if (path_len != 0 && !(inode->mode | S_IFDIR))
     throw SOException(ENOTDIR, __FUNCTION__);
   bool valid_permissions = true;
-  if (inode->owner != getuid() && inode->group != getgid() && !(inode->mode & 0b010))
+  if (inode->owner != getuid() && inode->group != getgid() && !(inode->mode & 0001))
     valid_permissions = false;
-  if (inode->owner == getuid() && !(inode->mode | 0b010000000))
+  if (inode->owner == getuid() && !(inode->mode | 0100))
     valid_permissions = false;
-  if (inode->group == getgid() && !(inode->mode | 0b000010000))
+  if (inode->group == getgid() && !(inode->mode | 0010))
     valid_permissions = false;
   if (!valid_permissions)
     throw SOException(EACCES, __FUNCTION__);
@@ -58,6 +58,7 @@ uint16_t grpTraversePath(char* path) {
       path_args[current_args++] = &path_copy[i + 1];
     }
   }
+  //recursively determines the path
   return traversePath(path_args, current_args, 0);
 }
 };  // namespace sofs20
