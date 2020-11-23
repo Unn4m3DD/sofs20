@@ -114,8 +114,6 @@ function check_dir_empty_test() {
   test_tmp_diff_and_append 203
 }
 
-
-
 # get_dir_entry_test
 # $1 parent inode number
 # $2 dir name
@@ -131,8 +129,6 @@ function get_dir_entry_test() {
   diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
   test_tmp_diff_and_append 201
 }
-
-
 
 # rename_direntry_test
 # $1 parent inode number
@@ -163,4 +159,20 @@ function rename_direntry_test() {
   diff tmp/original_inode tmp/inode -d >>diff_tmp.log
   diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
   test_tmp_diff_and_append 204
+}
+
+# traverse_path_test
+# $1 path
+
+function traverse_path_test() {
+  touch bin_detect_tmp.log
+  e=0
+  printf "tp\n$1\nq\n" | bin/testtool -q 1 -b tmp/original_disk 2>&1 | grep "traversePath: error 2\|inode number" >tmp/original_inode
+  printf "tp\n$1\nq\n" | bin/testtool -q 1 -p 221-221 -b -r 221-221 tmp/disk 2>&1 | grep "traversePath: error 2\|inode number" >tmp/inode
+  touch tmp/original_inode_bin
+  touch tmp/inode_bin
+
+  diff tmp/original_inode tmp/inode -d >>diff_tmp.log
+  diff tmp/original_inode_bin tmp/inode_bin -d >>diff_bin_tmp.log
+  test_tmp_diff_and_append 221
 }
