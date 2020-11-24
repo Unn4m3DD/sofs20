@@ -34,7 +34,6 @@ if [[ $1 == "" || $1 == "direntries" ]]; then
 fi
 if [[ $1 == "" || $1 == "syscalls" ]]; then
   source syscalls/global_test.sh 
-  syscalls $2 $3
 fi
 
 errors="$(cat diff_bin.log)$(cat diff.log)$(cat bin_detect.log)"
@@ -45,3 +44,4 @@ else
   echo -e "\e[34mAll tests passed"
 fi
 rm -rf bin
+rm -rf tmp

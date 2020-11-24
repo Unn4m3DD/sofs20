@@ -2,8 +2,9 @@
 function populate_fs() {
   local path
   path=$(pwd)
-  cd $1
-  for ((i = 0; i < 50; i++)); do
+  cd "$path/$1"
+  if [ "$?" != 0 ]; then return; fi
+  for ((i = 0; i < 2; i++)); do
     mkdir "d"$i
     if [ $(($i % 2)) == 0 ]; then
       for ((j = 0; j < 50; j++)); do
@@ -15,7 +16,7 @@ function populate_fs() {
       done
     fi
   done
-  cd path
+  cd $path
 }
 # $1 target directory
 function clean_fs() {
