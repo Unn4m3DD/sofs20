@@ -45,57 +45,56 @@ uint16_t grpDeleteDirentry(int pih, const char* name) {
   memset(&dir_entries_src_ptr[src_idx], 0, sizeof(SODirentry));
   soWriteDataBlock(dirDBIndex, dir_entries_dest_ptr);
   soWriteDataBlock(lastDirDBIndex, dir_entries_src_ptr);
-  if(src_idx == 0) 
+  if (src_idx == 0)
     soFreeFileBlocks(pih, lastUsedFB);
 
   return result;
 }
 uint32_t getDirentryDBIndex(int pih, const char* name) {
   SOInode* inode = soGetInodePointer(pih);
-
-  //This loop will search the directory in direct references
-  for (int i = 0; i < N_DIRECT; i++) {
-    SODirentry dir_entries[DPB];
+  //Loop to search the direct refs
+  for (uint32_t i = 0; i < N_DIRECT; i++) {
     if (inode->d[i] == BlockNullReference) continue;
-    soReadDataBlock(inode->d[i], dir_entries);
-    for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
-      if (!strcmp(dir_entries[dir_idx].name, name))
-        return inode->d[i];
+    SODirentry dir_entries[DPB];
+    soReadDataBlock(inode->d[i], dir_entries);  //Reads the db with dirs
+    for (uint32_t dir_i = 0; dir_i < DPB; dir_i++) {
+      if (strcmp(dir_entries[dir_i].name, name) == 0)
+        return inode->d[i];  //Returns the ref
     }
   }
-
-  //This loop will search the directory in indirect references
-  for (int i = 0; i < N_INDIRECT; i++) {
-    uint32_t ref_block[RPB];
+  //dir not found in the direct refs
+  //Loop to search the indirect refs
+  for (uint32_t i = 0; i < N_INDIRECT; i++) {
     if (inode->i1[i] == BlockNullReference) continue;
-    soReadDataBlock(inode->i1[i], ref_block);
+    uint32_t i_ref_block[RPB];
+    soReadDataBlock(inode->i1[i], i_ref_block);  //Reads db with refs
     for (uint32_t j = 0; j < RPB; j++) {
+      if (i_ref_block[j] == BlockNullReference) continue;
       SODirentry dir_entries[DPB];
-      if (ref_block[j] == BlockNullReference) continue;
-      soReadDataBlock(ref_block[j], dir_entries);
-      for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
-        if (!strcmp(dir_entries[dir_idx].name, name))
-          return ref_block[j];
+      soReadDataBlock(i_ref_block[j], dir_entries);  //Reads db with dirs
+      for (uint32_t dir_i = 0; dir_i < DPB; dir_i++) {
+        if (strcmp(dir_entries[dir_i].name, name) == 0)
+          return i_ref_block[j];  //Returns the ref
       }
     }
   }
-
-  //This loop will search the directory in double indirect references
-  for (int i = 0; i < N_DOUBLE_INDIRECT; i++) {
-    uint32_t outer_ref_block[RPB];
+  //dir not found in the indirect refs
+  //Loop to search the doubl indirect refs
+  for (uint32_t i = 0; i < N_DOUBLE_INDIRECT; i++) {
     if (inode->i2[i] == BlockNullReference) continue;
-    soReadDataBlock(inode->i2[i], outer_ref_block);
-    for (uint32_t k = 0; k < RPB; k++) {
-      uint32_t ref_block[RPB];
-      if (outer_ref_block[k] == BlockNullReference) continue;
-      soReadDataBlock(outer_ref_block[k], ref_block);
-      for (uint32_t j = 0; j < RPB; j++) {
+    uint32_t di_ref_block[RPB];
+    soReadDataBlock(inode->i2[i], di_ref_block);  //Reads db with refs
+    for (uint32_t j = 0; j < RPB; j++) {
+      if (di_ref_block[j] == BlockNullReference) continue;
+      uint32_t i_ref_block[RPB];
+      soReadDataBlock(di_ref_block[j], i_ref_block);  //Reads db with refs
+      for (uint32_t k = 0; k < RPB; k++) {
+        if (i_ref_block[k] == BlockNullReference) continue;
         SODirentry dir_entries[DPB];
-        if (ref_block[j] == BlockNullReference) continue;
-        soReadDataBlock(ref_block[j], dir_entries);
-        for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
-          if (!strcmp(dir_entries[dir_idx].name, name))
-            return ref_block[j];
+        soReadDataBlock(i_ref_block[k], dir_entries);  //Reads db with dirs
+        for (uint32_t dir_i = 0; dir_i < DPB; dir_i++) {
+          if (strcmp(dir_entries[dir_i].name, name) == 0)
+            return i_ref_block[k];  //Returns the ref
         }
       }
     }
