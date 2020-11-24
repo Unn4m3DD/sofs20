@@ -49,6 +49,7 @@ uint16_t traversePath(char** path, int path_len, int current_inode) {
 uint16_t grpTraversePath(char* path) {
   //convers path to an array of char* splitted by "/", analogous to path.split("/") on a higher level language
   soProbe(221, "%s(%s)\n", __FUNCTION__, path);
+  if(!strcmp(path, "/")) return 0;
   int path_len = strlen(path);
   char* path_copy = (char*)alloca(sizeof(char) * (path_len + 1));
   strcpy(path_copy, path);

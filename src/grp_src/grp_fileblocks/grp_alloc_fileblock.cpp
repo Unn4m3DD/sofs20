@@ -29,8 +29,7 @@ uint32_t grpAllocFileBlock(int ih, uint32_t fbn) {
   //the logic to select the fileblock in use is the same as in getFileBlock
   if (fbn < N_DIRECT) {
     //as the given block is guaranteed to be a BlockNullReference no check is made an its given the alloced db
-    uint32_t new_block = soAllocDataBlock();
-    current_inode->d[fbn] = new_block;
+    current_inode->d[fbn] = soAllocDataBlock();
     current_inode->blkcnt++;
     return current_inode->d[fbn];
   } else if (fbn - N_DIRECT < N_INDIRECT * RPB)

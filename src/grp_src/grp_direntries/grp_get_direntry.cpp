@@ -32,7 +32,7 @@ uint16_t grpGetDirentry(int pih, const char* name) {
     for (uint32_t j = 0; j < RPB; j++) {
       SODirentry dir_entries[DPB];
       if (ref_block[j] == BlockNullReference) continue;
-      soReadDataBlock(ref_block[j], ref_block);
+      soReadDataBlock(ref_block[j], dir_entries);
       for (uint32_t dir_idx = 0; dir_idx < DPB; dir_idx++) {
         if (!strcmp(dir_entries[dir_idx].name, name))
           return dir_entries[dir_idx].in;

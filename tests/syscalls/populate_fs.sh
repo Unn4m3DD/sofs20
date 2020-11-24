@@ -4,7 +4,7 @@ function populate_fs() {
   path=$(pwd)
   cd "$path/$1"
   if [ "$?" != 0 ]; then return; fi
-  for ((i = 0; i < 2; i++)); do
+  for ((i = 0; i < 3; i++)); do
     mkdir "d"$i
     if [ $(($i % 2)) == 0 ]; then
       for ((j = 0; j < 50; j++)); do

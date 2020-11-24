@@ -37,7 +37,7 @@ void grpAddDirentry(int pih, const char* name, uint16_t cin) {
   uint32_t new_block_number = soAllocFileBlock(pih, last_used_file_block + 1);
   soReadDataBlock(new_block_number, direntries);
   memset(direntries, 0, DPB * sizeof(SODirentry));
-  if (last_used_file_block == 0) {
+  if (last_used_file_block - 1 == 0) {
     direntries[0].in = cin;
     strcpy(direntries[0].name, ".");
     direntries[1].in = soGetInodeNumber(pih);
