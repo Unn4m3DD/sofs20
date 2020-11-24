@@ -53,11 +53,6 @@ uint16_t grpDeleteDirentry(int pih, const char* name) {
 
 uint32_t getDirentryDBIndex(int pih, const char* name) {
   SOInode* inode = soGetInodePointer(pih);
-
-}
-
-uint32_t getDirentryDBIndex(int pih, const char* name) {
-  SOInode* inode = soGetInodePointer(pih);
   //Loop to search the direct refs
   for (uint32_t i = 0; i < N_DIRECT; i++) {
     if (inode->d[i] == BlockNullReference) continue;
