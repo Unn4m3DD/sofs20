@@ -1,8 +1,9 @@
-function populateFS() {
+# $1 target directory
+function populate_fs() {
   local path
   path=$(pwd)
-  cd /tmp/dirTest
-  for ((i = 0; i < 200; i++)); do
+  cd $1
+  for ((i = 0; i < 50; i++)); do
     mkdir "d"$i
     if [ $(($i % 2)) == 0 ]; then
       for ((j = 0; j < 50; j++)); do
@@ -13,10 +14,14 @@ function populateFS() {
         mv "d"$i"/"$j "d"$i"/d""$(($j % 2))"
       done
     fi
-    #echo "This is a great file" > "d"$i"/f1"
-    #truncate "d"$i"/f1" --size=50
   done
-  touch $path"/populatedDirTree.log"
-  tree > $path"/populatedDirTree.log"
+  cd path
 }
-populateFS
+# $1 target directory
+function clean_fs() {
+  local path
+  path=$(pwd)
+  cd $1
+  rm -rf *
+  cd path
+}

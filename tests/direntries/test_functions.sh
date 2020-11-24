@@ -167,8 +167,8 @@ function rename_direntry_test() {
 function traverse_path_test() {
   touch bin_detect_tmp.log
   e=0
-  printf "tp\n$1\nq\n" | bin/testtool -q 1 -b tmp/original_disk 2>&1 | grep "traversePath: error 2\|inode number" >tmp/original_inode
-  printf "tp\n$1\nq\n" | bin/testtool -q 1 -p 221-221 -b -r 221-221 tmp/disk 2>&1 | grep "traversePath: error 2\|inode number" >tmp/inode
+  printf "tp\n$1\nq\n" | bin/testtool -q 1 -b tmp/original_disk 2>&1 | grep "inode number" >tmp/original_inode
+  printf "tp\n$1\nq\n" | bin/testtool -q 1 -p 221-221 -b -r 221-221 tmp/disk 2>&1 | grep "inode number" >tmp/inode
   touch tmp/original_inode_bin
   touch tmp/inode_bin
 
