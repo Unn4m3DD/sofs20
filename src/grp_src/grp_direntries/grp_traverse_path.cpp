@@ -37,9 +37,11 @@ uint16_t traversePath(char** path, int path_len, int current_inode) {
   soCloseInode(ih);
   if (path_inode_number != InodeNullReference) {
     if (path_len > 1)
-      traversePath(&path[1], path_len - 1, path_inode_number);
-    else
+      return traversePath(&path[1], path_len - 1, path_inode_number);
+    else {
+      printf("%u\n", path_inode_number);
       return path_inode_number;
+    }
   }
   throw SOException(ENOENT, __FUNCTION__);
 }
@@ -48,9 +50,9 @@ uint16_t grpTraversePath(char* path) {
   //convers path to an array of char* splitted by "/", analogous to path.split("/") on a higher level language
   soProbe(221, "%s(%s)\n", __FUNCTION__, path);
   int path_len = strlen(path);
-  char* path_copy = (char*)alloca(path_len + 1);
+  char* path_copy = (char*)alloca(sizeof(char) * (path_len + 1));
   strcpy(path_copy, path);
-  char** path_args = (char**)alloca(path_len);
+  char** path_args = (char**)alloca(sizeof(char*) * (path_len + 1) / 2);  //maximum number of '/'
   int current_args = 0;
   for (int i = 0; i < path_len; i++) {
     if (path[i] == '/') {
@@ -58,6 +60,13 @@ uint16_t grpTraversePath(char* path) {
       path_args[current_args++] = &path_copy[i + 1];
     }
   }
+  // for (int i = 0; i < path_len; i++) {
+  //   printf("%c", path_copy[i] != 0 ? path_copy[i] : ' ');
+  // }
+  // printf("\n");
+  // for (int i = 0; i < current_args; i++) {
+  //   printf("%s\n", path_args[i]);
+  // }
   //recursively determines the path
   return traversePath(path_args, current_args, 0);
 }
