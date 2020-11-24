@@ -12,16 +12,16 @@ source ./syscalls/populate_fs.sh
 # [303] - Free File Blocks
 # [331] - Read File Block
 # [332] - Write File Block
-# [201] - Get Dir Entry // not using gives error
+# [201] - Get Dir Entry // TODO test it
 # [202] - Add Dir Entry
 # [203] - Delete Dir Entry
 # [204] - Rename Dir Entry
 # [205] - Check Directory Emptiness
 # [221] - Traverse Path
-declare -a functions=(0 401 402 441 442 443 444 301 302 331 332 201 202 203 204 205 221)
+declare -a functions=(0 401 402 441 442 443 444 301 302 303 331 332 201 202 203 204 205 221)
 
 for ((z = 0; z < ${#functions[@]}; z++)); do
-  echo "all bin with ${functions[$z]}grp ->"
+  echo "all bin with ${functions[$z]}grp"
   create_disk 20000
   mkdir -p tmp/mount_bin
   mkdir -p tmp/mount_grp
