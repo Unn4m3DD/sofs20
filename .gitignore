@@ -14,4 +14,4 @@
 !.vscode
 !failed_tests
 !bin/launch_tt.sh
-
+!report.pdf
